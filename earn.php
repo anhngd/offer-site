@@ -1,0 +1,21 @@
+<?php
+	include_once("./managerOffer/function/config.php");
+	if(isset($_GET['id']))
+	{
+		$id=addslashes(str_replace("earn/","",$_GET['id'])); 
+		$id=base64_decode($id);		
+		$offerID=preg_replace("/_(.+)/","",$id);
+		$loginId=preg_replace("/^(.+)_/","",$id);
+		$codeloginBase64=base64_encode(base64_encode($loginId));
+		header("Location:".$domainsite."/".$dir_member."/earnMoney.php?id=".$offerID."&loginId=".$codeloginBase64);
+	}
+	if(isset($_GET['wall']))
+	{
+		$id=addslashes(str_replace("earnwall/","",$_GET['wall']));
+		$id=base64_decode($id);
+		$offerID=preg_replace("/_(.+)/","",$id);
+		$loginId=preg_replace("/^(.+)_/","",$id);
+		$codeloginBase64=base64_encode(base64_encode($loginId));
+		header("Location:".$domainsite."/".$dir_member."/earnMoney.php?id=".$offerID."&loginId=".$codeloginBase64."&offerWall");
+	}
+?>

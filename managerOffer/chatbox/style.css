@@ -1,0 +1,108 @@
+
+body{
+	font-family:Tahoma;
+	font-size:12px;}
+#wrapper{
+	float:left;
+	margin:5px;
+	background:#bebebe;
+	overflow:auto;
+	width:700px;
+	border:2px solid #afafaf;}
+#form_notify
+{
+margin:0px !important;
+}
+#text_notify
+{
+height:30px;
+}
+.box-content-static
+{
+margin:5px;
+}
+#nav{
+	overflow:auto;
+	padding:4px;
+	background:#d6d6d6;
+	margin:4px 4px 0 4px;
+	width:684px;}	
+#nav a{
+	text-decoration:none;
+	color:#066;}	
+#nav_link{
+	float:left}	
+#welcome{
+	float:right}		
+#content_chat{
+	word-wrap:break-word;
+	overflow:auto !important;
+	height:200px !important;
+	background:#fff auto !important;
+	width:100% auto !important;
+	}
+#content_chat a{
+	text-decoration:none;
+	color:blue;}	
+
+#userlist{
+	overflow:auto;
+	height:350px;
+	background:#fff;
+	width:180px;
+	}
+#userlist ul{
+	margin:4px 4px;}		
+#userlist li{
+	font-weight:bold;
+	color:#000080;
+	list-style:none;}	
+#shoutform{
+	clear:both;
+	margin:2px 2px 2px 6px;
+	
+	}	
+#chatbox_form
+{
+margin-bottom:5px !important;
+}
+#uptext{
+	width:90%;
+	height:30px;
+	background:#fff;
+	border:1px solid #b3b6b0}	
+#submitform{
+	border:2px solid #9ebfef;
+	box-pack:center;
+	box-align:center;
+	}
+.time{
+	font-size:11px;
+	color:#555}	
+.sbutton_active{
+	-moz-border-radius:3px;
+	border:1px solid #999;
+	text-shadow:1px 1px 1px #fff;
+	padding:1px 2px;
+	background:#989898;}	
+/*for FireFox*/
+Table,Tr,Td {
+	Font-size: 13px; 
+	Font-family: Arial;
+	border-collapse: collapse;}	
+.fr{
+	background-color:#FFFFFF;
+	border:1px solid #E9E9E9;
+	padding:3px;
+	font-weight:bold; }
+.fr_2{
+	background-color:#FBFBFB;
+	border:1px solid #E9E9E9;
+	padding:3px; }		
+	
+#regform label{
+	padding-top:4px;
+	float:left;
+	width:120px;}	
+#regform  div{
+	margin:2px;}	

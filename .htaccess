@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteRule ^earn/[a-zA-Z0-9\=]+ earn.php?id=$0
+RewriteRule ^earnwall/[a-zA-Z0-9\=]+ earn.php?wall=$0
+RewriteRule ^about index.php?about
+RewriteRule ^mission index.php?mission
+RewriteRule ^profile index.php?profile
+RewriteRule ^mediakit index.php?mediakit
+RewriteRule ^publishers index.php?publishers
+RewriteRule ^advertisers index.php?advertisers
+RewriteRule ^social index.php?social
+RewriteRule ^events index.php?events
+RewriteRule ^contact index.php?contact
+RewriteRule ^pubsignup index.php?login
+RewriteRule ^login index.php?login
+RewriteRule ^advsignup index.php?login
+RewriteRule ^pub_register index.php?login

@@ -1,0 +1,279 @@
+@font-face{font-family:Tahoma;}
+.reponse_post
+{
+	padding:8px 0px 5px 8px;
+	font-size:16px;
+}
+._form
+{
+	margin:0px auto;
+	max-width:530px;
+}
+
+.box_form
+{
+	margin:0px auto;
+	max-width:500px;
+	text-height:20px;
+	padding:5px;
+}
+.text_form
+{
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2c3e50;
+	font-size: 13px;
+	margin:5px 0px 5px 0px;
+}
+.select_form
+{
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2c3e50;
+	font-size: 13px;
+	margin:5px 0px 5px 0px;
+
+}
+
+.submit_form
+{
+	width: 100%;
+	background: #444;
+	font-weight: bold;
+	color: #fff;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin:5px 0px 5px 0px;
+
+}
+@font-face{font-family:Tahoma;}
+
+body{background:url(../images/headerbg.png) repeat-x scroll left top #003333;color:#555;font-family:Calibri,Tahoma,sans-serif;font-size:12px;height:100%;margin:0;padding:0}
+a{color:#006a25;text-decoration:none;}
+a:hover{color:#e19b9b;text-decoration:underline;text-decoration:none}
+#wrapper {width:1050px;margin:0 auto}
+
+#header{height:100px;width:900px;margin:0;padding:20px 0 0}
+#header .logo{background:url(../images/adminlogo.png) no-repeat scroll left top transparent;float:left;height:79px;width:438px;margin:20px 0 0 0;padding:0}
+#nav {background: url(../images/navbg.png) no-repeat; height: 110px; width: 1070px}
+
+#navigation {
+     float: right;
+     height: 37px;
+     list-style: none outside none;
+     margin: 14px -10px 0px 0px;
+     padding: 0px;
+     width: 1000px;
+}
+
+#navigation li {text-align:center;width:130px;
+     float: left;
+}
+#set0 {position: absolute;width: 32px;height:32px;z-index: 999;margin:-2px 0 0 955px}
+#logout0 {position: absolute;width: 32px;height:32px;z-index: 888;margin:5px 0 0 495px}
+#set1 ,#logout1 {list-style:none outside none;    }
+
+
+#navigation li a {-moz-border-radius: 12px; border-radius : 12px;box-shadow:0 0 1px #000;overflow:hidden;
+     background-color:#989898;
+color: #FFF;
+     display: block;
+     font-family: Calibri,Tahoma,sans-serif;
+     font-size: 20px;
+     margin-right: 0px;
+     padding: 0px 5px;
+     text-decoration: none;
+     
+}
+
+#navigation li a:hover {
+     color: #980034;
+}
+
+#navigation li ul {
+     display: none;
+}
+
+#navigation li:hover ul {
+     display: block;
+     list-style: none outside none;
+     margin: 0px;
+     padding: 5px 0px 0px;
+     position: absolute;
+     z-index: 999;
+}
+
+#navigation li:hover li {
+     float: none;
+}
+
+#navigation li:hover ul a {
+     background-color: #e3e3e3;
+     border: medium none;
+     box-shadow: 0px 0px 2px #909090;
+     color: #666666;
+     display: block;
+     font-size: 20px;
+     padding: 4px 5px;
+     text-shadow: none;
+     width: 120px;
+}
+
+#navigation li:hover ul a:hover {
+     background-color: #d3d2d2;
+     color: #980034;
+}
+.box.offeradding .btn{margin: 10px 0px}
+#content{background:none repeat scroll 0 0 #FFF; -moz-border-radius: 12px; border-radius : 12px;width:1050px;box-shadow: 0px 0px 4px #000000; margin: 10px 0px 0 -150px;overflow: hidden;padding: 20px 10px;position: relative;z-index: 89;margin:8px auto;	}
+.clear {clear: both}
+#content th {background-color: #00709e;color: #FFFFFF;font-family: Tahoma,sans-serif;font-size: 12px;padding: 2px 5px; text-align: left}
+#content td { border: 1px dashed #999999;background-color: #FFFFFF;color: #005073; font-family: Tahoma,sans-serif;  margin: 0px;  padding: 2px 5px;  vertical-align: top}
+.box.login .btn{margin:10px -0px 0 0}
+input { border: medium none;  float: right; font-family: Calibri,Tahoma,sans-serif;font-size: 14px; height: 30px; margin: 0px 0px 3px}
+input.btn {-moz-border-radius: 12px; border-radius : 12px;overflow:hidden;background: none repeat scroll 0px 0px #005073;color: #FFFFFF;font-family: Calibri,Tahoma,serif;font-size: 20px;margin-top: 3px;text-transform: uppercase;width: 100%;font-weight: bold;}
+input.txt {-moz-border-radius: 12px; border-radius : 12px;overflow:hidden; float: right;   margin: 0px 0px 3px;  padding: 0px;text-align: left; text-indent: 5px; background-color: #DDD;}
+.label {-moz-border-radius: 12px; border-radius : 12px;overflow:hidden;background-color: #00709e;color: #FFFFFF;float: left;text-align:center; font-family: Calibri,Tahoma,sans-serif; font-size: 15px;font-weight: 400; height: 28px;line-height: 25px; margin-bottom: 3px; padding-top: 2px;text-indent: 5px;width: 100px}
+textarea {border: medium none;height: 100px;margin-bottom: 3px;max-width: 100%;padding-top: 5px;text-indent: 5px;width: 100%;background-color: #DDD;color: #999}
+select {border: medium none;height: 30px;margin: 0px 0px 3px; padding: 5px 2px;background-color: #DDD}
+.box {-moz-border-radius: 12px; border-radius : 12px;background-color: #EEEEEE;border: 1px solid #CCCCCC;box-shadow: 0px 0px 2px #CCCCCC;margin: 50px auto 50px;overflow: hidden;padding: 0px 10px 10px}
+.box.nwkpb {width: 720px}
+.box.nwkmng {width: 920px}
+.box.offeradding input.txt {width: 520px}
+.box.offeradding input.globalrate {background-color: transparent;float: left;width: 30px}
+.box.snap .label {background-color: #005073;color: #FFFFFF;float: left;font-family: Calibri,Tahoma,sans-serif;font-size: 18px;height: 30px;line-height: 30px;margin: 0px 0px 3px;width: 200px}
+.box.snap .txt {background-color: #FFFFFF;color:#005073;float: right;font-family: Calibri,Tahoma,sans-serif;font-size: 18px;font-weight: 700;height: 30px;line-height: 30px;margin: 0px 0px 3px;padding: 0px 5px;text-align: right;width: 110px}
+.box .label.click {background-color: #00709e}
+.box .txt.click {color: #00709e}
+.box .label.rev {background-color: #013045;font-size: 18px}
+.box .txt.rev {color: #013045;font-size: 22px}
+#content .setting h2 {background-color: #EEEEEE;border: 1px solid #CCCCCC;box-shadow: 0px 0px 2px #CCCCCC;float: left;font-size: 20px;margin: 0px 10px 10px 0px;overflow: hidden;padding: 2px 10px;text-align: left;width: 320px}
+.setting {margin: 0px 0px 10px;width: 680px}
+.setting .txt {background-color: #DDD}
+.normal .txt {float: left;width: 120px}
+.normal .btn {float: left; margin-top: 0px;width: 100px}
+.setting select {background-color: #DDD;float: left;width: 120px}
+.setting textarea {background-color: #DDD;width: 675px}
+.setting .proxy {margin-left: 360px;width: 320px}
+.setting .proxy .txt {float: left;width: 220px}
+.setting .proxy .btn {margin-top: 0px;width: 100px}
+.setting .datepicker {width:850px; margin:60px 0 0 -15px}
+
+.userupdate {border-bottom: 2px dashed #CCCCCC;margin-bottom: 10px;overflow: hidden;width: 700px}
+.updateUserPoint .form input.btn {float: left;margin: 0 0 10px;width: 80px}
+#content .userupdate h2{background-color: #EEEEEE;border: 1px solid #CCCCCC;box-shadow: 0px 0px 2px #CCCCCC;float: left;font-size: 20px;margin: 0px 10px 0px 0px;overflow: hidden;padding: 2px 10px;text-align: left;width: 320px}
+#content .userupdate .form {margin-left: 360px}
+#no1 {width:800px; margin: 10px 0 0 90px}
+.usercheck {border-bottom: 2px dashed #CCCCCC;padding-bottom: 10px;width: 700px}
+.usercheck.point {margin-top: 20px}
+#content .usercheck h2 {background-color: #EEEEEE;border: 1px solid #CCCCCC;box-shadow: 0px 0px 2px #CCCCCC;float: left;font-size: 20px;margin: 0px 10px 0px 0px;overflow: hidden;padding: 2px 10px;text-align: left;width: 320px}
+#content .usercheck .form {margin-left: 360px}
+.form .txt {float: left;background-color: #DDD}
+.form input.btn {float: left;margin: 0 0 10px;width: 80px}
+.box.requester {width: 800px}
+#content h2 {color: #00709e;font-family: Calibri,Tahoma,sans-serif;font-size: 23px;margin: 10px 0px;text-align: center;text-shadow: 1px 1px 1px #FFFFFF;text-transform: uppercase}
+#content h4 {color: #9BB50B;font-family: Calibri,Tahoma,sans-serif;font-size: 18px; margin: 10px 0px;text-align: left;text-shadow: 1px 1px 1px #FFFFFF;text-transform: uppercase}
+#content .error {color: red;display: block; font: 14px Calibri,Tahoma,sans-serif; margin-top: 5px;text-align: right; width: 100%}
+#content .form_page { margin: 0px auto;width: 300px}
+#content .log {border: 1px solid #BBBBBB;color: #AAAAAA;font-size: 14px;height: 22px;margin: 0px 5px 3px 0px; padding-left: 5px; width: 200px}
+#content .log_submit {background-color: #008BD3;border: 1px solid #AAAAAA;color: #FFFFFF;float: right;font-family: Impact,Calibri,Tahoma,sans-serif; font-size: 24px;height: 56px; margin: -58px 0px 0px;text-shadow: 1px 1px 0px #000000;text-transform: uppercase;width: 90px}
+table, .setting .pass .btn {width: 100%}
+input.txt:focus, textarea:focus, select:focus, .setting select:focus, .setting textarea:focus {background-color: #dadada;color: #333}
+.box.nwkadding{width: 420px}
+.box.nwkadding .btn{margin:0px}
+.box.nwkmng{width: 720px}
+.box.login {width: 420px}
+.box.nwkmng .tablesorter {margin:0 0 0 -11px}
+.box.nwkadding input.txt, .box.login input.txt, .box.snap {width: 320px}
+.box.nwkpb input.txt, .box.offeradding { width: 620px;background-color: #FFF}
+.box.offeradding input.rate, .label.globalrate {float: left;width: 100px}
+.wallmng input[type="password"] {height: 15px}
+.setting .pass, .setting .normal {margin-left: 360px;width: 320px}
+.setting .pass .txt, .box.userupdate input.txt {width: 220px}
+.setting .adbox textarea {	height: 50px}
+.setting .adbox p {	margin: 0;
+padding-left: 5px;font-size: 13px;font-family: Tahoma;}
+.setting .adbox input {border: 1px solid #CCC;font-family: Calibri,Tahoma,sans-serif; height: 20px;width: 100%;padding: 2px 0;text-indent: 5px}
+.setting .adbox input:focus {background-color: #FFFF99}
+.setting .adbox input.btn {height: 30px}
+#guide { background:url(../images/guide2.png) no-repeat;font-family: Calibri,Tahoma,sans-serif; font-size: 12px;  position: absolute; text-align: center; width: 372px;margin:-20px; z-index: 999;}
+#guide2{margin:5px -15px;width:372px;height:29px;list-style:none outside none;}
+#guide a { color: #FFFFFF;font-weight: bold;text-transform: none;margin:10px}
+#content .guide h3 {background-color: #005073; background: none repeat scroll 0px 0px #9BB50B; color: #FFFFFF; font-family: Tahoma,sans-serif; font-size: 18px;margin: 10px 0px 0px;padding: 5px 0px;text-align: center;text-shadow: 1px 1px 0px #333333;text-transform: uppercase}
+#content .guide h4 { background-color: #FFF; color: #005073; font-family: Tahoma,sans-serif; font-size: 18px; margin: 10px 0px 0px;padding: 0px 10px; text-align: left;text-transform: uppercase}
+#content .guide p {padding: 0px 20px}
+.box.userlists {background-color: #FFFFFF;
+     bottom: 10px;
+     font-size: 20px;
+     padding: 5px;
+     position: fixed;
+     right: 0px;
+     text-align: center;
+     width: 300px;
+     z-index: 999;float: right;width: 180px;}
+.box.userlists input.txt {width: 170px}
+.userlists h2{width:200px;text-align: center;}
+#listusers .btn{width:100px;text-align: center;margin:0 38px 0 0}
+.calc {margin: 0  0 0 -7px;width: 90px}
+.calc table {width: 60px}
+.calc td {border: medium none;padding: 0 0 0 0;width:30px;height:15px}
+.calc .disp {border: 1px solid #00709e;color: #333333; font-family: Calibri,Tahoma,sans-serif;font-size: 14px; font-weight: bold; padding: 0 2px;text-align: right;width: 162px}
+.calc .butt {background-color: #00709e; color: #FFFFFF; font-family: Calibri,Tahoma,sans-serif; font-size: 14px;   font-weight: bold;  width: 30px;height:20px;text-align: center;}
+.calc input.butt:hover {background-color: #005073}
+#content .calc h2 {font-size: 20px; margin: 1px 0 0 44px; text-shadow: 1px 1px 0 #CCCCCC;width:105px}
+/******** TableSorter Style ******/
+
+#content .reqReport{width:800px; margin:10px auto}
+#content .tablesorter {width:1050px}
+#content .tablesorter h3 {color: #FFFFFF;font-family: Calibri,Tahoma,sans-serif; margin: 2px;text-shadow: none;font-weight: normal}
+#content .tablesorterre {width:800px}
+#content .tablesorterre h3 {color: #FFFFFF;font-family: Calibri,Tahoma,sans-serif; margin: 2px;text-shadow: none;font-weight: normal}
+#content .tablesorreq {width:800px}
+#content .tablesorreq h3 {color: #FFFFFF;font-family: Calibri,Tahoma,sans-serif; margin: 2px;text-shadow: none;font-weight: normal}
+#content .tablesornet2 {width:600px}
+#content .tablesornet2 h3 {color: #FFFFFF;font-family: Calibri,Tahoma,sans-serif; margin: 2px;text-shadow: none;font-weight: normal}
+
+#content .tablenetedit{width:800px}
+#content .tablenetedit h3 {color: #FFFFFF;font-family: Calibri,Tahoma,sans-serif; margin: 2px;text-shadow: none;font-weight: normal}
+#content .pager {text-align: right;color: #666666;margin: 0 -5px 0 0}
+#content .pager .pagedisplay {font-size: 14px;   vertical-align: middle}
+#content .pager select {background-color: #EEE;border: 1px solid #DDD;height: 20px}
+.idcheckbox input[type="checkbox"] {height: 20px}
+input.deletebtn {float: left;margin-top: 5px;color: #FFF;background-color: #ec6b76;-moz-border-radius: 12px; border-radius : 12px;overflow:hidden;}
+.box.nwkReport {width: 600px}
+#content .datepicker .error {text-align: center}
+#from, #to {background-color:#dadada}
+.datepicker input[type="submit"] {color: #FFF;background-color: #0093E0}
+.datepicker {text-align: center}
+.datepicker input {float: none;height: 25px}
+.box.usersReport {width: 600px}
+.filterdata {text-align: left}
+.filterdata .label {height: 25px}	
+.filterdata .textarea {text-indent: 0}
+.filterdata select {height: 27px}
+.filterdata input {float: none;height: 25px;padding-left: 5px}
+.filterdata input[type="submit"] {color: #FFF;background-color: #0093E0}
+.box.import {width: 400px}
+.box input[type="submit"] {background-color: #005073;color: #FFFFFF;margin:0 80px 0 0;font-weight: bold}
+.import input[type="file"], .import input[type="text"] {float: none;background-color:#dadada}
+#content .filter {height: 30px}
+#content .filter .label {background-color: transparent;color: #333333;width: 50px}
+#content .filter input[type="submit"] {background-color: #005073;color: #FFFFFF;float: left;font-weight: bold}
+#content .filter input[type="text"] {background-color: #EEEEEE;float: left;height: 30px;margin: 0;padding: 0;width: 100px}
+#content .filter select {float: left}
+#content .reset a {color: #FF0000;float: left;font-size: 14px;height: 14px;padding: 8px}
+#footer{background:url(../images/footer.png) repeat-x scroll left top;height:91px;margin-top:10px}
+#footertext{outline:none;color:#0092E0;height:20px;text-align:center;width:300px;margin:2px auto 0}
+#face{background:url(../images/face1.png) no-repeat; width:155px;height:73px; float:right;margin: -10px 40px}
+#footerx{background:url(../images/footerx.png) repeat-x scroll left top;font-family:Calibri,Tahoma,sans-serif;font-size:14px;width: 903px;height:91px;margin:10px auto;-moz-border-radius-bottomright:12px;-webkit-border-bottom-right-radius:12px;-moz-border-radius-bottomleft:12px;-webkit-border-bottom-left-radius:12px;}

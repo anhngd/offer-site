@@ -1,0 +1,149 @@
+/* **********************************
+Zing Me Layout Version 4
+Created: 23.10.2013
+-------------------------------------
+PLEASE DON'T EDIT ANYTHING
+IF YOU DON'T MAKE SURE ABOUT
+SOME CHANGES IN ALL STRUCTURE
+-------------------------------------
+UI INDEX LAYER (MAX=50):
+# Center: 1-20
+# Left + Right: 38
+# Header: 39
+#Tooltip + Dropdownlist + Display box: 40-49
+# Popup Overlay: 50
+# Popup + Boxy: 50
+************************************ */
+
+/* ----------------------------------------------
+[ Reset styles ]
+------------------------------------------------- */
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video{margin:0;padding:0;border:0 none;list-style:none;font-size:100%;border-spacing:0;border-collapse:collapse;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+nav, article, section,header,footer,aside,footer{display:block;margin:0;padding:0;}
+html, body{height:100%;width:100%;position:absolute;}
+body{font-family:"Roboto",Helvetica,arial,Tahoma,sans-serif;font-size:13px;line-height:18px;color:#404040;background-color:#eee;}
+input,select,textarea{font-family:"Roboto",Helvetica,arial,Tahoma,sans-serif;font-size:13px;outline:none;border:1px solid #ccc;padding:3px;background-color:#fff;border-radius:2px;color:#404040;margin:0;}
+select{padding:2px;}
+textarea{overflow:auto;}
+a{text-decoration:none;color:#2d81b8;outline:none;}
+a:hover{color:#404040;text-decoration:none;}
+
+/* ----------------------------------------------
+[ Main layout structure ]
+------------------------------------------------- */
+.zmviewport{min-height: 100%;position: relative;width: 100%;}
+.zmbody{min-height:1000px;padding:52px 12px 175px;}
+.zmbody .zm_innerwrapper,.zmhcont,.zmfcont{width:830px;margin:0 auto;position:relative;}
+.zmpagecont{width:inherit;}
+
+/*Transition effect*/
+	.zmbody, .zm_innerwrapper {
+		transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+	}
+
+/*Z-index order*/
+	.zmh{z-index:39;}
+	.zml{z-index:36;}
+	.zmr{z-index:39;}
+
+/*Header*/
+	.zmh{background-color:#252525;height:50px;position:fixed;top:0;left:0;width:100%;min-width:800px;}
+	.zmh .zm_innerwrapper{padding:0 12px;}
+
+/* Footer */
+	.zmfooter{line-height:20px;position:absolute;bottom:0;width:100%;background-color:#eee;color:#404040;}
+	.zmfcont{border-top:#e1e1e1 1px solid;padding:15px 0;margin:0 auto;}
+	.zmflink{font-weight:bold;padding-bottom:5px;}
+	.zmflink .fdiv{margin:0 5px;color:#ccc;font-weight:normal;}
+	.minifooter{padding:12px 15px;border:1px solid #d8d8d8;border-radius:3px;background-color:#f9f9f9;}
+	.miniflinks{padding-top:3px;}
+	.miniflinks a:hover{text-decoration:underline;}
+	.miniflinks strong{margin:0 6px;font-size:15px;color:#888;display:inline-block;vertical-align:3px;}
+	.fmobilelink{display:inline-block;padding-top:3px;}
+	.fmobilelink .mobile_ico{width:7px;height:11px;background-position:-48px -128px;vertical-align:-1px;}
+
+/*Left + Right side*/
+	.zml,.zmr{width:209px;}
+	.zml{
+		background-color: #fff;
+		position: absolute;
+		min-height: 100%;
+		top: 0;left: 0;
+		border-right: 1px solid #e5e5e5;
+		box-shadow: 0 0 2px #ddd;
+		-moz-box-shadow: 0 0 2px #ddd;
+	}
+	.zmr{right:0;position:fixed;height:0;border-left:1px solid transparent;}
+	.zml_inner,.zmr_inner{margin:40px 0 10px;}
+
+/* ----------------------------------------------
+[ Page layout styles ]
+------------------------------------------------- */
+.zmmaincontent{margin-right:257px;overflow:hidden;}
+.zmsidepanel{width:244px;float:right;}
+.zmsidepanel_inner{width:inherit;}
+
+/*Back to Top Link*/
+	.fixedposlink {
+		position: absolute;
+		right: 45px;
+		display: block;
+		z-index: 18;
+		text-align: right;
+		height: 1px;
+}
+	.backtotop_link {
+		height: 38px;
+		width: 38px;
+		display: inline-block;
+		background-color: #1f83dd;
+		border: 3px solid #1779d1;
+		overflow: hidden;
+		transition: width 0.3s ease 0s;
+		-moz-transition: width 0.3s ease 0s;
+		border-radius: 100%;
+		position: fixed;
+		bottom: 50px;
+}
+	.backtotop_link .backtotop_icn {
+		margin: 9px 0 0 9px;
+		width: 20px;
+		height: 20px;
+		background-position: -64px 0;
+		float: left;
+		transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		border-radius: 100%;
+}
+	.backtotop_link .btntext{display:none;}
+	.backtotop_link:hover .backtotop_icn{background-position:-64px -32px;}
+
+/*Move layout: Only for viewport size 1068 - 1275*/
+.zmh .zm_innerwrapper.moveto_left,
+.zmfooter .zm_innerwrapper.moveto_left,
+.zmbody.moveto_left{margin-left:-160px !important;} /* subtract 50px for left mini-menu */
+.zmh .zm_innerwrapper.moveto_right,
+.zmfooter .zm_innerwrapper.moveto_right,
+.zmbody.moveto_right{margin-left:210px;}
+
+/*Case: Not logined*/
+	.zmnotlogined .zmbody,
+	.zmnotlogined .zmh .zm_innerwrapper,
+	.zmnotlogined .zmfooter .zm_innerwrapper{margin-left:0;padding-left:12px;}
+
+/* Case: Layout with min-width value */
+.zm_minwidth .zm_partner,.zm_minwidth .zmh .zm_search{display:block;}
+.zm_minwidth .zmh .zm_search{width:254px;}
+.zm_minwidth.zmviewport{min-width:830px;}
+.zm_minwidth .zmh{min-width:830px;}
+.zm_minwidth .zmh .zmhcont{min-width:806px;}
+.zm_minwidth .zmbody{min-width:806px;}
+.zm_minwidth  .zmfooter{min-width:830px;}
+
+
+
+
+

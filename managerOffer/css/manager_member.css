@@ -1,0 +1,77 @@
+.mouse_pointer
+{
+	cursor: pointer;
+}
+.input_form_filter
+{
+	padding:2px 4px;
+	float:left;
+}
+.input_form_filter .btn
+{
+	padding:4px 6px !important;
+}
+#form_add_app
+{
+padding:10px 0px 0px 10px;
+}
+.box_notify_admin
+{
+	height:200px;
+	overflow: auto !important;
+	max-height: 500px !important;
+	word-wrap:break-word;
+}
+
+.box_form_bottom
+{
+	height:293px;
+	overflow: auto !important;
+	max-height: 500px !important;
+	word-wrap:break-word;
+}
+#box_notify_leads
+{
+	overflow: auto !important;
+	/*max-height: 500px !important;*/
+}
+.dashboard
+{
+/*min-height:900px !important;*/
+border:0px !important;
+}
+.notify_admin
+{
+	margin-left:0px !important;
+}
+.form_member
+{
+margin-left:0px !important;
+}
+#mainchat
+{
+margin-left:0px !important;
+margin-bottom:0px !important;
+
+}
+.select_chat
+{
+margin:5px 0px 5px 0px;
+}
+#upstyle_chat
+{
+margin-bottom:8px;
+}
+#upfont
+{
+margin-bottom:8px;
+}
+#upcolor
+{
+margin-bottom:8px;
+}
+
+.btnChat
+{
+	padding:3px 8px!important;
+}

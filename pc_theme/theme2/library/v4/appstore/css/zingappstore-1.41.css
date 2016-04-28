@@ -1,0 +1,1323 @@
+/* @@@@@[ COMMON STYLES ]@@@@@ */
+a {color: #3384aa;transition: background-color 0.3s ease 0s;-moz-transition: background-color 0.3s ease 0s;-webkit-transition: background-color 0.3s ease 0s;}
+.clr{clear:both;}
+.fl{float:left !important;}
+.fr{float:right;}
+
+body {position:relative;}
+.botarr, .viewmore_categame, .vipuser, .socialicn, .zingxu, .boxctn .label,.noticeicn, .searchicn, .hoticn, .newicn, .hotrib, .newrib, .categame, .rightarr, .zapp_rightbtn, .zapp_leftbtn, .srightarr
+, .introicn, .reviewicn, .screenshot_icn, .video_icn, .poll_icn, .vote_star, .app_icons a, .wrightarr, .gbotarr, .errbtn, .faqicn, .poparrow, .slidebotarr, .slidetoparr, .back_listcate, .vipmedal_level, 
+.gifticn, .closebtn, .signout, .patharr, .appsicon, .kmicn, .closepopup, .popupimg_left, .popupimg_right, .left_slider, .right_slider, .vqmm_vipmedal, .usericn, .pwicn, .hotrib, .event_item 
+, .newgame_label, .leftslidearr, .rightslidearr, .playgamebtn, .detailbtn{background-image:url(../images/sprt-1.08.png);background-repeat:no-repeat}
+
+.event_bg {background-image:url(../temp/teacherday_bg_1.jpg);background-repeat:no-repeat;position:fixed;margin:0 auto;display:block;height:944px;width:100%;background-position:center}
+.event_bg img {margin:300px auto 0;width:1365px;display:block}
+/* header bar */
+.appstore .zmhcont{width: 980px;}
+.zmh .zm_search {margin-left:107px}
+.zas {width:100%;height:40px;display:block;position:fixed;top:40px;z-index:21;}
+.zaswrapper {transition: all 0.3s ease 0s;}
+.hide_zml .zaswrapper.moveto_left {margin-left:-160px}
+.zas .zas_inner {width:957px;margin:0 auto;box-shadow: 0 0 1px #c6c6c6;background: #fff;padding:7px 8px 0 13px;height:35px;}
+	.applogo {width:140px;height:28px;display:block;float:left;margin-right:73px;background-position: -400px -228px}
+	.applogo:hover {opacity:0.8}
+.topnav {position:relative}
+.topnav li {float:left;}
+.topnav li .titlenav{color: #555;display: block;font-size: 13px;font-weight: bold;height: 27px;line-height: 25px;margin-top: -7px;padding: 8px 10px;text-shadow: 0 0 2px #fff;text-transform: uppercase;white-space:nowrap}
+.topnav li .titlenav:hover {background: #e9e9e9}
+	.botarr {width:9px;height:6px;display:inline-block;background-position: 0 -123px;vertical-align:1px;margin-left:5px}
+.showfanpage {position:relative}
+.topnav li .fanapps_sub {width:135px;padding-top:5px;background: #fff;position: absolute;left:0;top: 34px;z-index: 9999;box-shadow:0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);font-size: 12px;border:2px solid #bbb;border-top:0 none;opacity:0; transition: all 0.2s ease 0s;visibility:hidden;border-radius:0 0 3px 3px}
+.showfanpage:hover .fanapps_sub {opacity:1;visibility:visible;top:42px}
+.topnav li .fanapps_sub li {float:none}
+.topnav li .fanapps_sub a {display:block;color: #555;font-size:13px;font-weight:bold;padding:5px 10px;display: block;font-weight: bold;margin-top: -5px;padding: 8px 10px;text-shadow: #fff 0 0 2px;transition: background-color 0.3s ease 0s;-moz-transition: background-color 0.3s ease 0s;-webkit-transition: background-color 0.3s ease 0s;}
+.topnav li .fanapps_sub a:hover {background: #e9e9e9}
+.hide_zml.zmviewport .zmbody,.hide_zml.zmviewport .zmh .zm_innerwrapper,.hide_zml.zmviewport .zmfooter .zm_innerwrapper{margin-left:0;}
+.cateappstore_sub {
+padding: 10px;
+background: #fff;
+position: absolute;
+top: 28px;
+left: -13px;
+z-index: 9999;
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+font-size: 12px;
+width: 958px;
+/* border: 2px solid #bbb; */
+border-top: 0 none;
+opacity: 0;
+transition: all 0.2s ease 0s;
+visibility: hidden;
+border-radius: 0 0 3px 3px;
+height: 150px;
+border-bottom: 1px solid #ccc;
+}
+.cateappstore_sub  h1 {border-bottom: 1px solid #ebebeb;font-size: 13px;font-weight: bold;margin-bottom: 6px;padding-bottom: 8px;width: 164px;}
+.cateappstore_sub  h1 a {color: #555;}
+.cateappstore_sub  h1 a:hover {color: #3384aa}
+.gamelist_cate {margin-left: 10px;}
+.gamegroup {float: left;margin-right: 25px;}
+.gamegroup li {float: none;min-width: 156px;}
+.gamegroup li a {color: #555;display: block;font-weight: normal;height: 17px;padding: 4px 5px;margin-top:0}
+.gamegroup li a:hover {background: #e9e9e9}
+.gamegroup li a .gameplay {display: block;float: left;font-size: 12px;height: 17px;max-width: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-left:3px;}
+.gamegroup .item {margin:3px 0 0 3px}
+.showgame:hover .cateappstore_sub{opacity:1;visibility:visible;top:35px;left:-13px}
+	.viewmore_categame {width:16px;height:15px;display:block;background-position: -38px -84px;margin-right:5px;display:inline-block;vertical-align:-2px}
+	.gifticn {width:16px;height:16px;display:inline-block;background-position: -30px -105px;margin-left:5px}
+.view_more {border-top: 1px solid #E1E1E1;display: block;margin-top: 7px;padding-top: 10px;}
+.gamegroup .view_more a {display:inline-block;padding:0;font-weight:normal}
+.gamegroup .view_more a:hover {background: 0 none}
+.cate_allgame {float:left;padding:0 5px}
+.cate_allgame h1 {width:auto}
+.cate_allgame .list li {min-width:150px;float:left}
+	.back_listcate {width:40px;height:40px;display:block;position:absolute;bottom:10px;left:45%;background-position:-178px -183px;}
+	.back_listcate:hover {opacity:0.8;}
+
+.vipuser {width:122px;height:30px;display:block;background-position: -110px -119px;float:right}
+.vipuser:hover {background-position: -110px -150px}
+
+
+.fixed_banner {display:block;z-index:21;position:relative}
+.leftads {  left: -161px;
+  position: absolute;
+  top: -40px;
+  cursor: pointer;}
+.rightads{  right: -80px;
+  position: absolute;
+  top: -40px;
+  cursor: pointer;}
+.fixed_banner .rightbanner {right: 300px;position: fixed;bottom: 85px;cursor: pointer;}
+.fixed_banner .rightbanner .right_flash_link {width:141px;height:232px;display:block;position:absolute;z-index:100;left:auto;top:auto;background:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0}
+
+/* ranking stars */
+.app_tinystar, .appstar {background-image:url(../images/app_rankingstar.png);background-repeat: no-repeat;display: inline-block;height: 12px;margin-top: 2px;width: 69px;}
+.appstar{height:18px;}
+	.appstar_0{background-position:0 0;}
+	.appstar_1{background-position:0 -18px;width:20px}
+	.appstar_2{background-position:0 -36px;width:39px}
+	.appstar_3{background-position:0 -54px;width:58px}
+	.appstar_4{background-position:0 -72px;width:77px}
+	.appstar_5{background-position:0 -90px;width:96px}
+.app_tinystar{height:12px;}
+.app_tinystar.appstar_0{background-position:0 -126px;}
+.app_tinystar.appstar_1{background-position:0 -144px;width:13px}
+.app_tinystar.appstar_2{background-position:0 -162px;width:28px}
+.app_tinystar.appstar_3{background-position:0 -180px;width:42px}
+.app_tinystar.appstar_4{background-position:0 -198px;width:55px}
+.app_tinystar.appstar_5{background-position:0 -216px;width:69px}
+
+.vote_star {height:14px;width:78px}
+.vote_0{background-position:-110px 0;}
+.vote_1{background-position:-110px -15px;}
+.vote_2{background-position:-110px -32px;}
+.vote_3{background-position:-110px -48px;}
+.vote_4{background-position:-110px -64px;}
+.vote_5{background-position:-110px -80px;}
+
+.rapp_thumb .app_tinystar {display:block;margin:0 auto;margin-top:10px}
+
+
+/* Radius Sizes */
+.radius_all,.apptipbox,.apptipbox .app_thumb img{border-radius:5px;}
+.radius_toplr{border-radius:5px 5px 0 0;}
+.radius_botlr{border-radius:0 0 5px 5px;}
+.radius_topl_botl{border-radius:5px 0 0 5px;}
+.radius_topr_botr{border-radius:0 5px 5px 0;}
+
+/* button */
+.btn01 {padding:6px 20px;color: #fff;background: #25a7df;border-radius:3px;font-size:14px;font-weight:bold;width:100px;margin:0 auto;display:block}
+.btn01:hover {color: #fff;background: #1b99d0}
+.btn02 {padding:3px 8px;background: #ededed;color: #555;border-radius:3px;font-weight:bold;border:1px solid #bfbfbf}
+.btn02:hover {background: #dcdcdc}
+.btn_play {background: #d9633b;font-size:22px;color: #fff;font-weight:bold;width:139px;height:42px;display:block;text-align:center;line-height:42px;border-radius:5px;text-transform:uppercase}
+.btn_play:hover  {color: #fff;background: #c65b36}
+.btn_join:hover {color: #fff;background: #1198bc}
+.btn_join {background: #1aa8ce;color: #fff;width:58px;height:17px;line-height:17px;font-size:11px;text-align:center;padding:1px 5px;border-radius:3px;font-weight:bold;float:right} 
+.viewmore_btn {background: #f2f8fb;border-radius:3px;border:1px solid #c6dde8;font-weight:bold;color: #4e92b3;font-size:14px;display:block;width:100px;height:32px;line-height:32px;margin-top:10px}
+.viewmore_btn:hover {color: #4e92b3}
+.popup_btnplay {width:110px;height:36px;display:inline-block;line-height:36px;background: #d9633b;text-transform:uppercase;color: #fff;font-size:16px;text-align:center;border-radius:3px;margin-top:5px}
+.popup_btnplay:hover {background: #c65b36;color: #fff}
+.popup_btnaddfr {width:100px;height:36px;display:inline-block;line-height:36px;background: #3cc16e;text-transform:uppercase;color: #fff;font-size:16px;text-align:center;border-radius:3px;margin-top:5px}
+.popup_btnaddfr:hover {color: #fff;background: #30b863}
+.giftbtn {width:80px;height:26px;display:block;text-align:center;line-height:26px;color: #fff;background: #d9633b;border-radius:3px;font-weight:bold;float:right}
+.giftbtn:hover {background: #c65b36;color: #fff;}
+.joinserver_btn {background: #d9633b;color: #fff;font-weight:bold;font-size:12px;display:block;width:82px;height:26px;text-align:center;line-height:26px;border-radius:3px}
+.joinserver_btn:hover {color: #fff;background: #c65b36}
+/* Show danh sach cac mxh khac */
+.sntwshare .ntwsh_list{min-width:225px;margin-left:-12px;margin-top:27px;display:none;}
+.sntwshare .ntwsh_others:hover .ntwsh_list{display:block;}
+.sntwshare .ntwsh_list .htext{margin:0 0 5px 1px;}
+
+/* @@@@@[ APPSTORE MAIN STRUCTURE ]@@@@@ */
+.appst_wrapper{width:980px;margin:27px auto 0;font-size:12px;position:relative;background: #fff;z-index:20}
+.appst_container{border:1px solid #d7d7d7;width:978px;border-width:0 1px;position:relative}
+.appst_container.appst_linecol{background:url(../images/zingstore_bg_sidepanel.gif) 225px 0 repeat-y;}
+.appst_container .appst_sidepanel{float:left;width:225px;}
+.fixedposlink {right:-15px;text-align:left;}
+.backtotop_link {bottom:40px}
+
+/* @@@@@[ Login box ]@@@@@ */
+.login {padding:10px}
+.login h1 {margin-bottom:8px;font-size:14px;font-weight:bold}
+.login .txtinput {margin-bottom:10px;padding:5px;width:193px}
+.forgot_pw {float:right}
+.login_sp input {display:inline-block;margin-right:5px;vertical-align:-2px}
+.login .btn01 {margin:10px auto}
+	.socialicn {width:22px;height:22px;display:inline-block;margin-left:3px;vertical-align:middle}
+	.faceicn {background-position: -25px -123px}
+	.googleicn {background-position: -52px -123px}
+	.yahooicn {background-position: -79px -123px}
+.register {margin-top:5px}
+.myprof {margin-bottom:14px}
+
+	/*login event*/
+	.usericn {width:33px;height:32px;display:block;position:absolute;top: 44px;left:16px;background-position: -538px -97px}
+	.pwicn {width:33px;height:32px;display:block;position:absolute;top: 88px;left:16px;background-position: -538px -133px}
+	.eventapp .headpage .loginbox {background: rgba(255, 255, 255, 0.8);width:220px;padding:15px;border-radius:10px;position:relative;min-height:195px}
+	.eventapp .headpage .loginbox.hadlogin {min-height:180px}
+	.eventapp .headpage .loginbox h1 {font-size:16px;color: #202020;font-weight:bold}
+	.userinput {padding:5px 5px 5px 40px;width:170px;height:22px;display:block;border:1px solid #898989;border-radius:5px;margin-top:10px;}
+	.eventapp .headpage .loginbox .loginbtn {background: #009bcb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #009bcb 0%, #04a7d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009bcb), color-stop(100%,#04a7d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #009bcb 0%,#04a7d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #009bcb 0%,#04a7d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #009bcb 0%,#04a7d9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #009bcb 0%,#04a7d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009bcb', endColorstr='#04a7d9',GradientType=0 ); /* IE6-9 */text-align:center;text-transform:uppercase;color: #fff;display:block;padding:8px 0;font-weight:bold;border-radius:5px;font-size:14px;margin-bottom:10px}
+	.eventapp .headpage .loginbox .loginbtn:hover {background: #0db5e9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0db5e9 0%, #04a7d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0db5e9), color-stop(100%,#04a7d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0db5e9 0%,#04a7d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0db5e9 0%,#04a7d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0db5e9 0%,#04a7d9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #0db5e9 0%,#04a7d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0db5e9', endColorstr='#04a7d9',GradientType=0 ); /* IE6-9 */}
+
+
+.userinfo {padding:14px 0 15px 10px;background:#ecf3f6;}
+.event_item {width:41px;height:36px;display:block;background-position: -477px -82px;position:absolute;z-index:1;top:1px}
+.userinfo .avatar {border: 2px solid #FFF;border-radius: 30px;box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);float: left;height: 40px;margin-right: 8px;width: 40px;position:relative;z-index:3}
+.userinfo .username {color: #555;display: inline-block;font-size: 14px;font-weight: bold;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 110px;margin-right:3px}
+	.vipmedal_level {width:20px;height:20px;display:inline-block;vertical-align:-2px}
+	.vipmedal_level.level0 {background-position: -67px -181px}
+	.vipmedal_level.level1 {background-position: 0 -181px }
+	.vipmedal_level.level2 {background-position: -22px -181px }
+	.vipmedal_level.level3 {background-position: -45px -181px }
+	
+	.vqmm_vipmedal {width:20px;height:20px;display:inline-block;vertical-align:-2px}
+	.vqmm_vipmedal.level_1 {background-position: -456px -94px }
+	.vqmm_vipmedal.level_2 {background-position: -481px -94px }
+	.vqmm_vipmedal.level_3 {background-position: -506px -94px }
+	
+.viploc {position:relative;display:inline-block}
+.viploc:hover .level_popup {display:block}
+.level_popup {z-index:100;left:-147px;width:330px}
+.level_popup .exptxt {color: #555;font-size:14px;text-transform:none}
+.level_popup .exppoint {color: #555}
+.level_popup .arrow {height: 12px;left: 130px;margin-top: -12px;}
+.lvnumtxt, .lvnumtxt2char {width:38px}
+.userinfo .numgold {margin-top:3px;font-size:14px;font-weight:bold;position:relative}
+	.zingxu {width:16px;height:16px;display:inline-block;background-position: 0 -60px;vertical-align:-3px;margin-right:5px}
+	.loadzgoldbtn {background: #3cc16e;border-radius: 16px;padding: 3px 15px;font-size: 12px;color: #fff;margin-left: 85px;}
+	.loadzgoldbtn:hover {color: #fff;background: #30b863}
+.bartop {width:300px;display:block;position:relative}	
+.bartop .percent {background: #ffae00;border-radius: 10px;display: block;height: 15px;left: 11px;position: absolute;top: 9px;}
+.levelbar {padding:8px 10px 10px}
+.level_popup .exppoint {margin-top:5px;padding:5px 10px;font-size:14px}
+
+.list_mysup li {border-top:1px dotted #dbdee3;position:relative}
+.list_mysup li a {font-size:14px;color: #666;padding:8px 10px;display:block}
+.list_mysup li a span {color: #1c9148}
+.list_mysup li a:hover, .list_mysup li a.select {background:#EBF3F6;}
+.list_mysup .recentgame {margin-left:10px;width:220px;margin-top:2px}
+.list_mysup .recentgame li {float:left;padding:0;margin-right:11px;border-top:0 none}
+.list_mysup .recentgame li a{padding:0}
+.list_mysup .recentgame li a:hover {background: 0 none}
+.list_mysup .recentgame li img {width:43px;border-radius:5px}
+.list_mysup .rightarr {float:right;margin-top:3px}
+	.signout {width:20px;height:20px;display:inline-block;background-position: -89px -179px;vertical-align:-1px}
+/* List server */
+.boxctn {margin-bottom:10px}
+.boxctn h1 {background:url(../images/title_pattern.png) repeat;font-size:14px;text-transform:uppercase;font-weight:bold;}
+.boxctn h1 a {color: #666}
+.boxctn h1 .more {float:right;font-weight:normal;text-transform:none;color: #666;font-size:12px}
+.boxctn .list_server li {cursor: pointer;line-height: 19px;margin-top: 3px;padding: 4px 0 4px 10px;}
+.boxctn .list_server li:hover {background:#EBF3F6;}
+.sname, .snews, .stime {display: block;float: left;font-size: 12px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.stime .sday {color: #c65b36;display: block;float: left;width: 55px;}
+.stime {color: #333;margin: 0 10px 0 0;}
+.sname {font-weight: bold;width: 122px;color: #3384aa}
+
+/* Giftcode */
+.list_code {padding:6px 10px}
+.list_code li {margin-top:15px}
+.list_code li:first-child {margin-top:0}
+.savt_game {width:40px;height:40px;float:left;margin-right:10px;margin-top:4px;border-radius:5px}
+.name_event {color: #666;display: block;font-size: 13px;margin-bottom: 5px;max-width: 210px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-weight:bold}
+	.boxctn .label {height:31px;display:block;padding-left:12px;color:#fff}
+	.boxctn .label.listserver {background-position: -232px -184px;width:134px}
+	.boxctn .label.gift_code {background-position: -380px -184px;width:87px}
+	.boxctn .label.topgame {background-position: -264px -225px;width:120px}
+.boxctn.topgame h1{padding: 0 5px 0 0;line-height:31px;color: #fff}
+
+		/*slider control*/
+	.crighttxt {float:right;margin-top:5px;margin-right:2px}
+	.slidercontrol{border-radius:100%;width:10px;height:13px;background-color:#fff;border:1px solid #ddd;display:inline-block;vertical-align:bottom;margin:0 1px;}
+	.slidercontrol:hover{background-color:#eee;border-color:#ccc;}
+	.slidercontrol.prev{padding:5px 0 0 2px;width:16px;}
+	.slidercontrol.next{padding:5px 0 0 8px;}
+	.slidercontrol em{display:block;width:0;height:0;border: 4px solid transparent;vertical-align:1px;font-size:0;}
+	.slidercontrol.prev em{border-right-color:#999;}
+	.slidercontrol.next em{border-left-color:#999;}
+	.slidercontrol.prev:hover em{border-right-color:#666;}
+	.slidercontrol.next:hover em{border-left-color:#999;}
+	.slidercontrol.disable,.zmconttitle .slidercontrol.disable:hover{background-color:#e9e9e9;border-color:#e9e9e9;cursor:default;pointer-events:none;}
+	.slidercontrol.disable:hover em{border-right-color:#999;}
+
+/* Rank table */
+.ranktable {padding:10px 0 0 10px;}
+.ranktable li {margin-top:10px}
+.ranktable li:first-child {margin-top:0}
+.ranktable .gamename a{color: #666;display: block;font-size: 14px;font-weight: bold;max-width: 210px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.ranktable .numplay {color: #888;margin-top:3px}
+.rankgame .savt_game {margin-top:0}
+.rankgame .app_tinystar {margin:4px 0}
+.rankgame .savt_game {width:50px;height:50px;margin-top:3px}
+.support_banner {width:209px;margin:0 auto;display:block}
+.support_banner a img{margin-bottom:10px}
+.cateinfo {color: #888;font-style:italic}
+
+/* Home banner */
+.topbanner_slide {position: absolute; height:29px; width: 500px; left: 0; bottom: 1px;}
+.topbanner_bar {background:url(../images/topbanner_bg.png) repeat;width:573px;height:30px;padding: 0 7px;}
+.topbanner_slide p {float:left;font-size:14px;font-weight:bold;text-transform:uppercase;color:#fff;display:block;width:300px;overflow: hidden;text-overflow: ellipsis;text-transform: uppercase;white-space: nowrap;line-height:30px}
+.slideright_banner {background:url(../images/topbanner_bg.png) repeat;width:165px;height:240px;display:block;position:absolute;top:0;right:0}
+.slide_wrp{display: block;height: 240px;overflow: hidden;position: relative;width: 165px;}	
+.slide li {margin:0;padding:0;transition: all 0.3s ease 0s; position: absolute;transition: all 0.3s ease 0s;}
+.slide li a {height:60px;display:block;border-bottom:1px solid #333;opacity:0.5}
+.slide li a:hover, .slide li.active a, .slide li:hover {opacity:1}
+	.slidetoparr {width:24px;height:20px;display:block;background-position: -62px -86px;position:absolute;top:5px;right:68px;z-index:99; }
+	.slidebotarr {width:24px;height:18px;display:block;background-position: -62px -105px;position:absolute;bottom:2px;right:68px;z-index:99; }
+	.slidecontrol{display:none}
+	.slidecontrol a:hover {opacity:0.8}
+	.slidecontrol.active {display:block}
+.frame_slide {background:url(../images/frame.png) no-repeat;display:block;width:172px;height:62px;position:absolute;top:60px;right:0;z-index: 1;transition: all 0.3s ease 0s;}
+.topbanner_slide p .numuplay {text-transform:none;font-size:14px}
+.slide li .banner_caption{display: none;}
+.topbanner_slide p .numuplay {text-transform:none;font-size:14px}
+
+/* Notice line */
+.notice_game {font-size:13px;margin: 8px 0 0 8px;font-weight:bold}
+	.noticeicn {width:13px;height:12px;display:inline-block;background-position: 0 -83px;margin-right:5px}
+.notice_game a {text-decoration:underline}
+.notice_game .gameevt {font-weight:bold;color: #3384aa}
+
+/* Search */
+.game_content .searchbox {background: #f9f9f9;padding:15px;position:relative}
+.game_content .searchbox .searchinput {width:340px;padding:5px;border:1px solid #c6c6c6;float:left;margin-right:10px}
+	.searchicn {width:14px;height:14px;display:block;background-position: -19px -84px;position:absolute;top:23px;left:334px}
+.game_content .searchbox .game_keyword {margin-top: 5px;float: left;font-weight: bold;font-size: 14px;max-width: 330px;white-space: nowrap;
+overflow: hidden;text-overflow: ellipsis;}
+.hotkey, .hotkey a {color: #e7501b;font-style:italic}
+.game_content .searchbox .game_keyword .hotkey a:hover {text-decoration:underline}
+.mplaygamebtn {background:#d9633b;border-radius: 3px;color: #fff;display: block;float: right;font-weight: bold;height: 26px;line-height: 26px;text-align: center;width: 80px;font-size:12px;margin-top:12px}
+.mplaygamebtn:hover {background: #c65b36;color: #fff}
+/* Game content */
+.appst_contcol{float:right;width:752px;line-height:18px;font-size:12px;min-height:500px}
+.appst_container .appst_contcol .banner {position:relative;height:240px}
+.game_content {padding:15px}
+.moregame {background: #f8f8f8;border:1px solid #e5e5e5;border-radius:3px;padding:3px 10px;float:right;color: #777;font-size:12px;margin-top:-3px}
+.game_content .gamebox {margin:20px 0 0;position:relative}
+.game_content .gamebox h1 {font-weight:bold;font-size:16px;color: #555;margin-bottom:15px}
+.game_content .gamebox h1 a {color: #555}
+	.hoticn {width:20px;height:20px;display:inline-block;background-position: 0 -154px;margin-right:5px;vertical-align:bottom}
+	.categame {width:20px;height:18px;display:inline-block;background-position: -51px -155px;margin-right:5px;vertical-align:bottom}
+	.newgame_label {width:100px;height:32px;display:block;background: none;position:absolute;top:-15px;left:-2px}
+.title_bars {background: #f5f5f5;height:18px;margin-bottom:10px;border-left:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;padding:4px 5px 5px;cursor:pointer}
+.listgame{width:785px;margin-left:-40px;}
+.listgame li{float:left;width:112px;height:180px;margin-left:40px;font-size:11px;padding-bottom:5px;vertical-align:bottom;}
+	.rapp_thumb,.rapp_thumb a,.rapp_thumb img{display:block;width:110px;height:110px;}
+	.rapp_thumb{border-radius:6px;border:1px solid #979797;margin-bottom:5px;background-repeat:no-repeat;background-size:cover;position:relative}
+	.rapp_thumb:hover{border:1px solid #333;box-shadow:0 0 5px #888;}
+	.rapp_thumb img{vertical-align:bottom;border-radius:6px}
+	.rapp_thumb a {text-align:center}
+	.rapp_thumb .zmloading32 {display:block;padding-top:50px}
+	.rappname{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;width:110px}
+	.rappname a{color:#333;}
+	.rappname a:hover{color:#476DA4;text-decoration:underline;}
+	.playcount{color:#888;padding-top:4px;font-size:12px}
+	.applistview li .playcount{margin-right:-10px;}
+	.listgame .app_tinystar {margin:3px 0 0}
+.app_bottommore{cursor: pointer; display:block;padding:5px;border:1px solid #dee5ed;text-align:center;font-size:11px;font-weight:bold;text-transform:uppercase;clear:both;background-color:#eef3f8;border-radius:2px;}
+.app_bottommore span{display:inline-block;margin-right:5px;width:9px;height:5px;background-position:-32px -128px;vertical-align:middle;}
+	.hotrib {background-position:-51px -212px;display:block;width:47px;height:46px;position:absolute;top:-3px;right:-3px;z-index:10}
+	.newrib {background-position:0 -212px;display:block;width:47px;height:46px;position:absolute;top:-3px;right:-3px;z-index:10}
+.kmicn {width:48px;height:48px;position:absolute;top:-3px;right:-3px;display:block}
+.km25rib {background-position: -265px 0}
+.km30rib {background-position: -315px 0}
+.km50rib {background-position: -266px -53px}
+.km75rib {background-position: -315px -53px}
+.km100rib {background-position: -266px -106px}
+
+.playgamebtn {width:81px;height:22px;display:block;background-position: -283px -262px;text-indent:-9999em;margin:0 auto}
+.playgamebtn:hover {background-position: -283px -288px }
+.detailbtn{width:81px;height:22px;display:block;background-position: -368px -262px;text-indent:-9999em;margin:10px auto 0}
+.detailbtn:hover {background-position: -368px -288px;}
+	
+
+/* Box newgame */
+.gamebox.newgame {border:1px solid #c6c6c6;border-radius:5px;width:720px;margin-bottom:15px;height:155px;}
+.gamebox.newgame .boxslide_newgame {width:705px;display:block;overflow:hidden;position:relative;height:125px}
+.gamebox.newgame .listgame {margin-left:0;}
+.gamebox.newgame .listgame li {margin-left:17px;width:220px;height:110px;position:absolute;top:5px;transition: left 400ms ease;-webkit-transition: left 400ms ease;}
+.gamebox.newgame .listgame li .rapp_thumb {float:left;margin-right:6px;}
+.gamebox.newgame .listgame li .appname a {color: #555;font-size: 14px;}
+.gamebox.newgame .listgame li .playcount {padding-top:0}
+.gamebox.newgame .listgame li .app_tinystar {margin-bottom:4px}
+.gamebox.newgame .listgame li p {margin-bottom:1px}
+.numlist {float:right;margin:7px 5px 0 0}
+.numlist li {float:left;margin-right:2px}
+.numlist li .numslide {width:9px;height:9px;display:block;background: #777;border-radius:100%}
+.numlist li .numslide.active, .numlist li .numslide:hover {background: #bf4a36}
+	.leftslidearr {width:19px;height:20px;display:block;background-position: 0 -286px}
+	.leftslidearr:hover {background-position: -42px -286px}
+	.rightslidearr {width:19px;height:20px;display:block;background-position: -21px -286px;}
+	.rightslidearr:hover {background-position: -63px -286px}
+
+/* Game cate box */
+.game_list_cate {background: #f9f9f9;padding:10px 15px;border:1px solid #e6e6e6;border-radius:3px;}
+.game_list_cate .titlecate {border-bottom:1px solid #ddd;padding:5px 5px 10px 0;}
+.game_list_cate .titlecate li {display:inline-block;}
+.game_list_cate .titlecate li a {padding:5px 8px;color: #555;font-weight:bold;font-size:14px;display:block;}
+.game_list_cate .titlecate li a:hover, .game_list_cate .titlecate li a.active {background: #3cc16e;color: #fff}
+.game_list_cate .titlecate li .botarr {margin-left:3px}
+.game_list_cate .titlecate li a:hover .botarr, .game_list_cate .titlecate li a.active .botarr {background-position: 0 -117px}
+.game_list_cate .titlecate .more_categame {position:relative}
+.game_list_cate .titlecate .more_categame:hover .morebox, .game_list_cate .titlecate .more_categame.active .morebox {opacity:1;top:27px;visibility:visible}
+.game_list_cate .titlecate .morebox {background: #fff;box-shadow: 0 0 5px #7589A3;position:absolute;top:23px;left:0;width:110px;opacity:0;transition: all 0.2s ease 0s;visibility:hidden}
+.game_list_cate .titlecate .morebox li {display:block}
+.game_list_cate .titlecate .morebox li a {display:block;padding:5px 8px}
+.game_list_cate .titlecate .morebox li a:hover {background: #ebf3f6;color: #555}
+.gamecate_detail {margin-left:-20px}
+.gamecate_detail li {margin-left:20px;float:left;margin-top:15px}
+.gamecate_detail li .gamedv {width:215px;display: block;}
+.gamecate_detail li .gamedv a:hover {text-decoration:underline}
+.savt {width:60px;height:60px;display:block;border-radius:3px;float:left;margin-right:10px}
+.titlegame {color: #555;font-size:14px;font-weight:bold;display:inline-block;margin-bottom:2px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width:140px}
+.playnum {display:block;color: #888;margin-top:5px}
+
+.zapp_numpages {margin:20px 0;}
+.zapp_numpages li {display:inline-block;}
+.zapp_numpages li a {background: #fff;padding:3px 8px;font-size:12px;color: #666;border:1px solid #dedede;border-radius:3px;font-weight:bold}
+.zapp_numpages li a.select, .zapp_numpages li a:hover {background: #3498db;color: #fff;border:1px solid #25a7df;}
+.zapp_numpages li span {border:4px solid #555;border-top-color:transparent;border-bottom-color:transparent;height:0;width:0;display:inline-block;font-size:0;}
+.zapp_numpages li a:hover span, .zapp_numpages li a.select span {border:4px solid #fff;border-top-color:transparent;border-bottom-color:transparent;height:0;width:0;display:inline-block;font-size:0;}
+.zapp_numpages li a.pager_prev span{border-left:0 none;}
+.zapp_numpages li a.pager_next span{border-right:0 none;}
+.tag_game {background: #f0f8fb;padding:5px 10px;margin:15px 0;font-size:14px;color: #666}
+.tag_game a {margin-left:5px;font-weight:bold}
+.tag_game a:hover {text-decoration:underline}
+
+.description_box {background: #fbfdfc;border: 2px dashed #c9e1d5;padding:10px;border-radius:5px}
+.description_box h2 {color: #46a128;font-weight:bold;font-size:15px;margin-bottom:5px}
+.description_box p {color: #666;line-height:20px}
+
+/* banner detail */
+.profile_banner_bar {background:url(../images/topbanner_bg.png) repeat; height: 30px;padding: 0 7px;width: 738px;position:absolute;bottom:0;left:0}
+.profile_banner_bar .path {font-size:14px;font-weight:bold;text-transform:uppercase;color:#fff;display:block;width:300px;overflow: hidden;text-overflow: ellipsis;text-transform: uppercase;white-space: nowrap;line-height:30px}
+	.rightarr {width:6px;height:11px;display:inline-block;margin:0 3px;background-position: -15px -117px}
+.profile_banner_bar .path a {color: #ccc}
+.profile_banner_bar .path a:hover, .profile_banner_bar .path .current_game {color: #fff}
+
+/* detail game */
+.app_shortdesc{padding:15px;!height:1%}
+.app_shortdesc .rapp_thumb{float:left;margin-right:15px;}
+.app_shortdesc .app_desctext{display:block;color:#666;float:left;width:210px;display:block}
+.app_shortdesc .app_desctext li{ display: block;overflow: hidden;padding: 0 0 8px;text-overflow: ellipsis;white-space: nowrap;font-size:14px}
+.app_shortdesc .app_desctext li .gametits {font-size:20px;font-weight:bold}
+.app_shortdesc .app_desctext li select {margin-left:3px;border:1px solid #999;padding:2px 2px 2px 1px}
+.app_shortdesc .app_desctext li .app_copyright{color:#c9c9c9;}
+.app_shortdesc .app_desctext li .numplay {color: #555;}
+.dt_serveropen {width:360px;background: #f3f3f3;border:1px solid #e3e3e3;padding:10px;border-radius:3px;margin-bottom:10px}
+.dt_serveropen .head {color: #933c1f;font-weight:bold;text-transform:uppercase}
+.dt_serveropen .nameserver {width:135px;margin-right:15px;display:inline-block}
+.dt_serveropen .timeopen {width:130px;display:inline-block}
+.dt_serveropen .timeopen.today {color: #b76d26}
+.dt_serveropen .timeopen .date {display: block;float: left;width: 75px;}
+.dt_serveropen ul li {margin-top:5px}
+.dt_serveropen .joinserver {width:66px;height:19px;display:inline-block;background-position: -164px -638px;text-indent:-9999em}
+.giftcode {width:86px;height:20px;display:block;float:right;background-position: -164px -667px;margin-top:10px}
+
+/* List Friend app  */
+.zapp_addfrbox {border:1px solid #f3f3f3;border-width:1px 0;padding-top:10px;margin-top:20px}
+.frplay {font-weight:bold;font-size:14px;text-transform:uppercase;color: #555}
+.zapp_headtxt {width:162px;height:17px;display:block;background-position: 0 -1063px}
+.zapplist_friend {margin:15px 0;float:left}
+.zapplist_friend li {float:left;margin-right:10px}
+.zapplist_friend li img {border-radius:5px}
+.zapp_leftbtn {width:12px;height:23px;display:block;float:left;background-position: -22px -57px;margin-top:25px;margin-right:20px}
+.zapp_rightbtn {width:12px;height:23px;display:block;float:left;background-position: -37px -57px;margin-top:25px;margin-left:10px}
+
+
+.newsbox {margin-top:15px;border-bottom:1px solid #f4f4f4;}
+.newsbox .ctnbox {float:left;width:350px;margin-right:10px;padding-bottom:10px}
+.newsbox .ctnbox h1 {color: #3399cc;font-weight:bold;text-transform:uppercase;font-size:16px}
+.newsbox .ctnbox .listnews {margin:10px 0 5px;}
+.newsbox .ctnbox .listnews li {margin-top:5px;}
+.newsbox .ctnbox .listnews li a {color: #555;display: inline-block;font-size: 14px;max-width: 270px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.newsbox .ctnbox .listnews li a:hover {text-decoration:underline}
+.newsbox .ctnbox .listnews li img {display:inline-block;vertical-align:top}
+.newsbox .ctnbox .viewmore_list {text-decoration:underline;font-size: 13px;margin-left: 15px;color: #666}
+	.srightarr {width:5px;height:9px;display:inline-block;background-position: -15px -131px;margin-right:8px;vertical-align:4px}
+	.introicn {width:16px;height:16px;display:inline-block;background-position: 0 -268px;margin-right:3px;vertical-align:top}
+.intro_game_detail {margin-top:10px}
+.intro_game_detail h1 {text-transform:uppercase;font-size:16px;font-weight:bold;color: #555;margin:20px 0 10px}
+.gamecontent {height:90px;overflow:hidden;}
+.gamecontent p {font-size:14px;color: #555;line-height:22px}
+.gamecontent .imggame {max-width:500px;margin: 15px 0}
+.appdesc_section{margin-bottom:35px;line-height:20px;}
+.appdesc_section.last {margin-top:-10px}
+
+/* Screen shot list */
+.screenshot_list{position:relative;width:734px;overflow:hidden;overflow:hidden;}
+.screenshot_list .photolist_slider{width:739px;height:192px;}
+.screenshot_list .sliderarrow a{width:18px;height:24px;text-indent:-999999em;position:absolute;display:block;z-index:2;top:80px;border:3px solid #fff;background-color:#333;display:none;}
+.screenshot_list .sliderarrow a.prevlink{background-position:2px 3px;left:0;border-radius:0 3px 3px 0;border-left:none}
+.screenshot_list .sliderarrow a.nextlink{background-position:-30px 3px;right:0;border-radius:3px 0 0 3px;border-right:none}
+.screenshot_list img{margin-right:4px;border:1px solid #ddd;vertical-align:bottom;float:left;}
+	.screenshot_icn {width:16px;height:15px;background-position: -41px -269px;display:inline-block;margin-right:5px;vertical-align:-2px}
+	.video_icn {width:16px;height:16px;display:inline-block;margin-right:5px;background-position: -60px -268px;vertical-align:top}
+	.poll_icn {width:16px;height:16px;display:inline-block;margin-right: 5px;background-position: -22px -268px}
+
+/* Review */	
+.starvote_list{float:left;margin-right:10px;}
+.starvote_list li{padding:0 0 10px;height:16px;font-size:14px;font-weight:bold;color: #777}
+.app_rankingbar{border-left:1px solid #666;float:left;margin-top:5px;!margin-top:3px;width:250px;}
+.app_rankingbar li{padding-top:7px;display:block;height:18px;vertical-align:bottom;}
+.app_rankingbar li .appstar{vertical-align:bottom;}
+.app_rankingbar li:first-child{padding:0;}
+.app_rankingbar .app_votebar{height:15px;display:block;float:left;max-width:200px;min-width:5px;}
+.app_rankingbar .app_votenumber{float:left;margin-left:5px;color:#666;line-height:16px;}
+.app_rankingbar .vote_1star .app_votebar{background-color:#00becc;}
+.app_rankingbar .vote_2star .app_votebar{background-color:#1bc7b1;}
+.app_rankingbar .vote_3star .app_votebar{background-color:#fddf5b;}
+.app_rankingbar .vote_4star .app_votebar{background-color:#ec6464;}
+.app_rankingbar .vote_5star .app_votebar{background-color:#7f8c8d;}
+.app_gpa{float:right;padding:10px;border-radius:3px;background-color:#fafafa;width:130px;text-align:center;margin-left:10px;border:1px solid #f1f1f1}
+.app_gpa .gpa_texttitle{font-size:15px;color:#777;text-transform:uppercase;}
+.app_gpa .gpa_mark{font-size:30px;font-weight:bold;color:#2d94bf;padding:8px 0}
+.app_gpa .gpa_number{color:#888;margin-top:5px}
+.appst_makevote{color: #fff;float: right;font-size: 14px;margin-top: 5px;}
+.appst_makevote strong{float:left;margin-right:5px;font-size:14px}
+
+/* Vote game */
+.appst_makevote .vote_star .star_tooltip{position:absolute;padding:5px 8px;background-color:#fff;font-size:11px;width:118px;border:1px solid #ccc;border-radius:3px;line-height:18px;color:#666;top:22px;display:none;z-index: 99999;text-align:center}
+.appst_makevote .vote_star .star_tooltip .arrowicn{display:block;background-position:-48px -128px;width:12px;height:8px;margin:-13px 0 5px 23px;}
+.appst_makevote .vote_star:hover .star_tooltip{display:block;}
+.appst_makevote .vote_star{margin-top:2px;position:relative;display:inline-block;vertical-align:-1px}
+.appst_makevote .vote_star a, .app_gpa .app_tinystar span{display:block;width:15px;height:14px;text-indent:-9999em;float:left;}
+
+/* Game tuong tu */
+.related_app{padding:15px 0 0;border-top:1px solid #f4f4f4}
+.related_app .relapp_header{display:block;float:none;width:100%;padding-bottom:10px;font-weight:bold;text-transform:uppercase;font-size:16px;color: #666}
+
+/* Comment */
+.appnav_event {padding-left:10px;*height:2%;*padding-bottom:0;margin-top:-30px;text-align:right;margin-bottom:-2px;position:relative;z-index:100}
+.appnav_event li {display:inline-block;cursor:pointer;margin-left:5px;}
+.appnav_event li a {text-transform:uppercase;font-size:11px;font-weight:bold;color:#fff;border:1px solid #25a7df;padding:5px 20px;background: #25a7df;*line-height:30px;display:inline-block;margin-bottom:-4px;*padding:0px 20px;*margin-bottom:-1px;border-radius:3px 3px 0 0}
+.appnav_event li a:hover  {text-decoration:none;background: #1d9ed5}
+.appnav_event li a.active {background: #fff;padding:5px 20px;*padding:0 8px;color: #666;border:1px solid #e6e6e6;border-bottom:1px solid #fff}
+
+/* Share social */	
+.appdesc_bottom{border-bottom:1px solid #E6E6E6;padding-bottom:10px;margin-bottom:15px;!height:1%;}
+.app_socialshare{float:left}
+.appdesc_bottom .app_socialshare {float:left}
+.appdesc_bottom .app_socialshare {padding-top:18px}
+.appvote_section .numplay {color: #666666;font-size: 12px; margin-bottom: 6px;margin-top: 36px;}
+.sntwshare .sntwshare_label{float:left;margin-right:4px;text-transform:uppercase;font-size:14px;padding-top:2px;}
+
+.app_icons {float:right;margin-top:-4px;}
+.app_icons a{height:20px;display:block;float:left;text-indent:-99999em;margin-left:5px;}
+.app_icons a.app_bookmark{background-position:-103px -235px;width:65px;}
+.app_icons a.app_bookmarked{background-position:-172px -235px;width:88px;}
+.app_icons a.app_faqs{background-position:-103px -213px;width:66px;}
+.app_icons a.app_fanpage{background-position:-103px -257px;width:70px;}
+.appvote_section .app_icons {float:right;margin-top:3px}
+.event_act_box .zmnetshare.event {float:right;margin-top:3px}
+.event_act_box .codedttab {float:left;margin-top:7px}
+.event_act_box .codedttab li {display:inline-block;margin-right:5px}
+.event_act_box .codedttab li a {border:1px solid #c6c6c6;padding:5px 15px;border-radius:3px;font-weight:bold;color: #555}
+.event_act_box .codedttab li a:hover, .event_act_box .codedttab li a.active {background: #229fd5;color: #fff;border:1px solid #178cbf}
+
+/* Menu event */
+.headevent_box {background: #333;margin-bottom:10px}	
+.event_nav li {float:left;text-align:center;position:relative;width:144px}
+.event_nav li a {display:block;padding:8px 10px;font-size:14px;color: #fff;font-weight:bold;text-transform:uppercase;}
+.event_nav li a:hover,.event_nav li a.select  {background: #3CC16E;}
+.event_nav li:last-child{width:146px;}
+.event_nav.topgame li:last-child {width:180px}
+.listevent {margin-left:-13px}
+.listevent li {border:1px solid #f1f1f1;width:230px;float:left;margin-left:13px;margin-top:13px;}
+	.imgevt img{width:230px;height:110px;display:block}
+.gameevent_inf {padding:5px}
+.gameevt {color: #555;font-weight:bold;font-size:14px}
+	.gbotarr {width:9px;height:5px;display:block;background-position: 0 -109px;position:absolute;bottom:-5px;left:45%;display:none}
+.event_nav li a:hover .gbotarr,.event_nav li a.select .gbotarr {display:block}
+
+/* Mobile code */
+.listmobile_event {margin-top:20px;margin-left:-16px}
+.listmobile_event li {display:inline-block;border:1px solid #c7c5c4;padding:15px 10px 15px 15px;border-radius:5px;width:323px;margin-left:16px;margin-bottom:14px}
+.listmobile_event li .mobile_img {width:110px;height:110px;display:block;float:left;margin-right:10px;border-radius:5px}
+.listmobile_event li .moblie_desc {float:left;width:200px}
+.listmobile_event li .moblie_desc .app_tinystar {margin:5px 0}
+.listmobile_event li .moblie_desc h1 {color: #555;font-weight:bold;font-size:14px}
+.listmobile_event li .moblie_desc .desc_txt {max-height:36px;display:block;overflow:hidden}
+.listmobile_event li .moblie_desc .giftbtn {float:none;margin-top:5px}
+
+.codenav {border-bottom: 1px solid #d6d6d6;margin-top: 15px;padding-bottom: 3px;padding-left: 10px;padding-top:8px}
+.codenav li {cursor: pointer;display: inline;margin-right: 5px;}
+.codenav li a {background:#fff;border: 1px solid #e6e6e6;border-radius: 3px 3px 0 0;color: #666;display: inline-block;font-size: 12px;font-weight: bold;margin-bottom: -4px;padding: 5px 20px;text-transform: uppercase;}
+.codenav li a.active {background: #fff;border-bottom: 1px solid #fff;border-top: 2px solid #ff7604;padding: 5px 20px;}
+
+/* News Box detail */
+.eventtxt {font-size:16px;text-transform:uppercase;font-weight:bold;color: #555;margin-top:20px}
+.eventtxt .crighttxt {margin-top:0}
+.appevent_table.eventbox {border:0 none;margin-top:10px}
+.appevent_table.eventbox .row_ctn { border-bottom: 1px solid #e4e4e4;}
+.appevent_table.eventbox .appgame, .appevent_table.eventbox .appevent, .appevent_table.eventbox .apptime  {border-right:0 none}
+.appevent_table.eventbox .appgame {width:60px;padding:10px 0;margin-right:10px}
+.appevent_table.eventbox .appevent {width:385px}
+.appevent_table.eventbox .apptime {width:120px}
+.zappnewsevt_page {width:720px;margin:10px 0 20px;}
+.zappnewsevt_box li .newsdt {float:left;padding:10px;width:338px;}
+.zappnewsevt_box li .newsdt img {width:152px;height:109px;float:left;margin-right:10px;border:1px solid #e4e4e4}
+.zappnewsevt_box li .newsdt .txtdt {font-weight:bold;color: #555;display:block;max-height:35px;overflow:hidden}
+.zappnewsevt_box li .newsdt .txtdt a{color: #555;font-size:13px}
+.zappnewsevt_box .newsevticn, .zappnewsevt_box .hotevticn {width:20px;height:13px;display:inline-block;vertical-align:-2px}
+.zappnewsevt_box .newsevticn {background-position:-252px -707px;}
+.zappnewsevt_box .hotevticn {background-position:-288px -707px;}
+.zappnewsevt_box li .newsdt .vm_newevt {float:right; margin: 10px 5px 0 0;}
+.zappnewsevt_box li .newsdt .newstime {font-size:12px;font-style:italic;color: #999;display:block;margin-top:3px}
+.zappnewsevt_box li .newsdt .newsctn {display:block;max-height:52px;overflow:hidden;margin-top:5px}
+
+/* Event detail */
+.app_event_box {margin-top:10px;width:720px}
+.app_event_box .header_event .image {border:1px solid #d6d4d7;margin:7px 5px 8px 0;border-radius:5px;padding:4px}
+.app_event_box .header_event .event_ctn {float:left;padding: 8px 0 0 10px;width:469px;line-height:20px}
+.app_event_box .header_event .event_ctn h1 {font-size:16px;font-weight:bold;color:#336699;text-transform:uppercase; display:block;line-height:21px;margin-bottom:5px}
+.app_event_box .header_event .event_ctn p {color: #666666;display: block;height: 80px;max-height: 80px;
+overflow: hidden;padding-top: 5px;}
+.app_event_box .header_event .event_ctn .zapptimepost {color: #888;font-style:italic}
+.app_event_box .event_request {background: #fff;padding:10px 0;border-radius:5px}
+.app_event_box .event_request .about_event {border-bottom:1px solid #e3e3e3}
+.app_event_box .event_request .about_event .about_icn {background-position: -203px -97px; width:19px;height:19px;display:inline-block;margin-right:5px;vertical-align:bottom}
+.app_event_box .event_request .about_event h1, .app_event_box .event_request .request_event h1, .app_event_box .event_request .time_event h1, .app_event_box .event_request .gift_event h1 {color:#336699;font-size:14px;font-weight:bold;padding-bottom:12px;text-transform:uppercase}
+.app_event_box .event_request .about_event p,.app_event_box .event_request .request_event p, .app_event_box .event_request .time_event p{padding-bottom:10px;color:#666;line-height:20px}
+.app_event_box .event_request .request_event {margin-top:15px;border-bottom:1px solid #e3e3e3}
+.app_event_box .event_request .request_event .request_icn {background-position: -228px -98px;width:18px;height:18px;display:inline-block;margin-right:5px;vertical-align:bottom}
+.app_event_box .event_request .time_event {margin-top:15px;border-bottom:1px solid #e3e3e3}
+.app_event_box .event_request .time_event .time_icn {background-position:-256px -98px;width:12px;height:18px;display:inline-block;margin-right:5px;vertical-align:bottom}
+.app_event_box .event_request .gift_event {margin-top:15px}
+.app_event_box .event_request .gift_event .gift_icn {background-position:-274px -97px;width:18px;height:20px;display:inline-block;margin-right:5px;vertical-align:bottom}
+.app_event_box .event_request .gift_event p {color:#666;line-height:20px}
+.app_event_box .other_news {border-top: 1px solid #e3e3e3;padding:15px 0 0;margin:25px 0 20px}
+.app_event_box .other_news h1 {text-transform:uppercase;font-size:16px}
+.app_event_box .other_news .list_news {margin-top:15px}
+.app_event_box .other_news .list_news li{margin-top:6px}
+.app_event_box .other_news .list_news li em {width:3px;height:3px;display:inline-block;background: #a5a5a5;vertical-align:3px;margin-right:10px}
+.app_event_box .other_news .list_news li a {font-size:14px}
+.pathlink {display: block;font-size: 14px;font-weight: bold;padding: 7px 0 7px 15px;border-bottom:1px dashed #d7d7d7;text-transform:uppercase}
+.pathlink .rightarr {margin: 0 5px}
+.pathlink span {color: #555;}
+.wrightarr {width:5px;height:9px;display:inline-block;background-position: -15px -132px;margin:0 5px;}
+ 
+
+/* Event Box */
+.appevent_table {border:1px solid #E4E4E4;border-radius: 3px;margin: 13px 0 15px;border-bottom:0 none}
+.appevent_table .row_table {border-bottom:1px solid #e4e4e4}
+.appevent_table .row_ctn {border-bottom:1px solid #e4e4e4;}
+.appevent_table .appgame {width:173px;border-right:1px solid #e4e4e4;float:left;padding:10px}
+.appevent_table .name {text-align:center;font-weight:bold;padding:7px 0;font-size:13px}
+.appevent_table .appevent {width:290px;border-right:1px solid #e4e4e4;float:left;padding:10px;cursor:pointer}
+.appevent_table .appevent a {font-size:14px;overflow:hidden;display:block;white-space:nowrap;text-overflow:ellipsis;color: #555}
+.appevent_table .appevent a:hover {text-decoration:none}
+.appevent_table .row_ctn .appevent, .appevent_table .row_ctn .apptime, .appevent_table .row_ctn .appgame {height:70px}
+.appevent_table .appevent .gamectn {display: block;height: 38px;overflow: hidden;padding-top: 5px;line-height:20px;color:#666;text-align:justify}
+.appevent_table .apptime {width:89px;border-right:1px solid #e4e4e4;float:left;padding:10px;font-size:13px}
+.appevent_table .apptime p strong{line-height:68px;}
+.appevent_table .appgame .rapp_thumb {float: left;margin-right: 10px;margin-top: 2px;vertical-align: bottom;}
+.appevent_table .appgame .desc_txt {float: left;width: 96px;}
+.appevent_table .appgame .desc_txt p {padding-bottom:7px}
+.appevent_table .row_ctn .joinbtn {padding:30px 11px;float:left}
+.appevent_table .row_ctn .joinbtn .btn_L10 {*width:55px}
+.appgame_txt {width:170px}
+.appgame_txt .evtappname{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px;margin-bottom:3px;line-height:68px}
+.appgame_txt .evtappname a{color:#333;}
+.appgame_txt .evtappname a:hover{color:#476DA4;text-decoration:underline;}
+.row_chart .row_desc .rapp_thumb, .row_chart .row_desc .rapp_thumb a, .row_chart .row_desc .rapp_thumb img, .row_ctn .appgame .rapp_thumb, .row_table .appgame .rapp_thumb a, .row_ctn .appgame .rapp_thumb img {display: block;
+height: 64px;width: 64px;}	
+
+/* top week*/	
+.appst_contcol .chart_title {background-position: 0px -441px;width:90px;height:30px;display:block;text-indent:-9999em;margin-bottom:5px;margin-top:25px}
+.appst_contcol .app_title {background-position: -160px -470px;width:105px;height:30px;display:block;text-indent:-9999em;margin-bottom:5px;margin-top:25px}
+.growth_title {background-position: -1px -1252px;display: block;height: 30px;margin: 25px auto 0;text-indent: -9999em;width: 135px;}
+
+.sapp_thumb {float:left;margin-right:10px;margin-top:2px;vertical-align: bottom;}
+.sapp_thumb, .sapp_thumb a, .sapp_thumb img {width:35px;height:35px;display:block;border-radius:6px}
+.sappname, .mappname {padding-top:8px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width:240px}
+.sappname a, .mappname a {font-size: 14px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #555;padding-top:5px}
+
+.top_week {margin-left:-30px}
+.topcate {margin-top:15px;width:207px;float:left;margin-left:15px;*margin-left:33px}
+.topcate ul {background:#fff;border: 1px solid #eee;border-radius: 5px;margin-top: 3px;position: relative;}
+.topcate ul li {border-top:1px dashed #dbdee3;height: 24px;padding: 5px 10px 10px;}
+.topcate ul li:first-child {border-top:0 none}
+.topcate li .sappname {padding:0 0 2px 0;width:140px}
+.mapp_thumb {float:left;margin-right:10px;margin-top:2px;vertical-align: bottom;}
+.mapp_thumb, .mapp_thumb a, .mapp_thumb img {width:25px;height:25px;display:block;border-radius:6px}
+.mappname {padding-top:3px;width:150px}
+.topcate li.top {padding:10px;height:40px}
+.title_rank {color: #555;font-size: 15px;font-weight: bold;text-transform: uppercase;}
+
+.topchart {width:220px;float:left;margin:15px 0 15px 30px;}
+.topchart ul {border: 1px solid #DFDFDF;border-radius:5px;margin-top:10px;position:relative;background: #fff}
+.topchart ul li {border-top: 1px dashed #888;padding:7px 0 9px 9px;}
+.topchart ul li:first-child {border-top: 0 none}
+.topchart li .sappname {padding: 0 0 3px;width: 150px;}
+.desc_txt .playcount{font-size:11px;padding-top:0}
+.topchart .mappname {width:150px}
+
+.table_chart {background: #fafafa;border:1px solid #e4e4e4;border-radius:3px;margin-top:15px;border-bottom:0 none;width:720px}
+.table_chart .row_chart {border-bottom:1px solid #e4e4e4;}
+.odd {background: #fff;border-radius:3px}
+.table_chart .row_chart .numbox {border-right: 1px solid #e4e4e4;float: left;padding: 18px 0;width: 40px;}
+.table_chart.topgrowth {width:720px;margin:20px 0}
+.table_chart.topgrowth .row_desc {width:640px}	
+.table_chart.topgrowth .numbox {padding:35px 0;text-align:center}
+.numgrowth {font-size:18px;font-weight:bold}
+.row_chart .row_desc {float: left;padding: 9px 10px 0;width: 288px;}
+.table_chart .row_chart .row_desc .rapp_thumb {float: left;margin-right: 10px;margin-top: 2px;vertical-align: bottom;}
+.row_chart .row_desc .desc_txt {float: left;margin-right: 15px;width: 150px;}
+.row_chart .row_desc .user_num_play {font-size: 11px;padding-top: 15px;float:left}
+.row_chart .row_desc .chart {background: #b1c5cf;display: block;height: 9px;margin-top: 4px;min-width: 2px;}
+.row_desc .joinserver_btn {float:right;margin-top:20px}
+	
+/* Binh luan */
+.appcomment{padding-top:15px;border-top:1px solid #E6E6E6;}
+.appcomment .comment_select {border-bottom:1px solid #ccc}
+.appcomment .appcomment_title{font-weight:bold;padding-bottom:5px;font-size:14px}
+.appcomment .bxcomment{margin:5px 15px 0 0; display:block;font-size:11px;}
+	.rowcomment{ display:block; background:#f0f3f7;border-bottom:1px solid #eaeff4;margin-bottom:1px;padding:5px;overflow:hidden;}
+	.rowcomment .icn_commt12x12{vertical-align:-3px;}
+	.rowcomment.wid{padding:5px 8px;}
+	.rowcomment.cmtwid{padding:5px 8px; border-top:1px solid #fff;}
+		.rowcommentlt{width:32px; float:left;}
+		.rowcommentlt a{display:block;}
+		.rowcommentrt{margin-left:37px; margin-right:20px;display:block;}
+		.rowcommentrt img{ vertical-align:-6px;}
+		.rowcommentrtwid{margin-left:37px; padding-right:20px; display:block;}
+		.rowcommentrtwid img{ vertical-align:-6px;}
+		.bxwrtcmt{ background:#fff; padding:3px 4px; border:1px solid #d9e2eb;margin-right:0}
+		.tmpcmt{ height:20px; color:#888; cursor:text;}
+		.rowcommentrt textarea{outline:none; resize: none; border:none; width:100%; _width:98%; padding:0!important; overflow:hidden; min-height:48px;line-height:13px;}
+		.bxcmtend{display:block;padding-top:5px;height:20px;_overflow: hidden;}
+		.bxcmtend.wid{padding-top:8px;}
+		.tipcmtend{padding-left:37px; float:left; color:#808080}
+		.btncmtend{float:right}
+
+/* App list display */
+	.appst_total{font-weight:bold;font-size:14px;line-height:27px;margin-bottom:5px;color: #666}	
+	.appsearchbox{float:right;height:27px;position:relative;}
+	.appsearchbox .appsrch_keyword{height:19px;float:right;padding:3px 5px;margin:0;border:1px solid #959595;border-right:0 none;background-color:#efefef;font-size:12px;width:200px;border-radius:2px 0 0 2px;}
+	.appsearchbox .appsrch_keyword:focus{background-color:#fff;box-shadow:0 0 3px #ccc inset;}
+	.appsearchbox .appsrch_btn{padding-top:27px;text-indent:-99999em;margin:0;width:27px;height:27px;float:right;background-position:-32px -64px;cursor:pointer;}
+	.appsearch_resulttext{clear:both;display:block;padding:10px 0;border-top:1px solid #DEE5ED;color:#666;margin-bottom:15px;}
+	.key_suggest {float: left;line-height: 24px;margin-right: 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 210px;}
+	.key_suggest a {color: #850808;}
+	/* Search autocomplete */
+	.appddlist li{padding:10px;font-weight:bold;border-top:1px solid #eaeaea;font-size:11px;color:#555;cursor:pointer;}
+	.appddlist li p {font-weight:normal;font-size:12px;margin-bottom:3px}
+	.appddlist li.selected, .appddlist li:hover{background:#F3F2F2;color:#333;}	
+	.appddlist li img {width:50px;height:50px;margin-right:7px;border-radius:2px;float:left}
+	.appddlist li .appddlist_text {display:block;width:160px;overflow:hidden;height:18px}
+	.appddlist li .appsearch_cate {color: #888;line-height:18px}
+	.appddlist li:first-child {border-top: medium none;}
+	.appst_recentlist .rapp_thumb, .appst_recentlist .rapp_thumb a, .appst_recentlist .rapp_thumb img {width:100px;height:100px}
+	.bmrk_apptext .app_tinystar, .bmrk_apptext .appstar {margin-top:4px}
+	
+/* FAQ */
+.faqicn {width:23px;height:23px;display:inline-block;margin-right:7px;vertical-align:-5px}
+	.zingid {background-position: -24px 0}
+	.agreement {background-position: -48px 0}
+	.request {background-position: 0 -25px}
+	.hadrequest {background-position: -24px -25px}
+	.contact {background-position: -48px -25px}
+	.comments {background-position: -72px 0}
+.list_mysup.faq {margin-bottom:10px}
+.list_mysup.faq li {border-bottom: 1px dotted #dbdee3;border-top:0 none}
+.list_mysup.faq a{padding:10px}
+.list_mysup.faq .rightarr {float:right;margin-top:7px;display:none}
+.list_mysup.faq a:hover .rightarr, .list_mysup.faq a.select .rightarr {display:block}
+.supportloc {border-top:1px solid #dfdfdf}
+.supportloc h1 {text-transform:uppercase; background: #1474a3;padding: 8px;color: #fff}
+.list_support {background: #fff}
+.list_support li {border-bottom:1px solid #e1e1e1}
+.list_support li.select, .list_support li:hover {background: #ebf3f6}
+.list_support li a {font-weight: bold;color: #555;padding: 0px 8px;height: 31px;line-height: 31px;display: block;}
+.list_support li a:hover {text-decoration:none}
+.list_support li .rightarr {display:none}
+.list_support li.select .rightarr {display:block}
+.support_detail_content {padding:15px}
+.support_detail_content .listcontent {background:#fbfdfc;border: 2px dashed #c9e1d5;margin-bottom: 15px;padding: 20px 20px 10px;}
+.support_detail_content .listcontent ul li {margin-bottom:7px}
+.support_detail_content .listcontent ul li a {font-weight:bold;font-size:14px;color: #555}
+.list_detail_question li {margin-bottom:15px}
+.list_detail_question li a {font-weight:bold;font-size:14px;color: #555}
+.list_detail_question li a:hover {color: #555}
+.support_detail_content .listcontent ul li a:hover {text-decoration:underline}
+.list_detail_question li div {margin-top:8px;font-size:13px}
+.list_detail_question li div img {margin: 10px 0}
+
+.support_detail_content .headtxt {text-transform:uppercase;color: #555;background: #f4f4f4;padding:5px 10px;font-weight:bold}
+
+
+
+/* Tip game bookmark */
+.app_subcate{position:absolute;right:-205px;z-index:2;padding-left:4px;display:none}
+.app_subcate .sp_row {border-bottom: 1px solid #e1e1e1;border-top: 1px solid #fff;}
+.app_subcate .sp_row2{border-top: 1px solid #fff;}
+.app_subcate .sp_row:hover,.app_subcate .sp_row2:hover {text-decoration:none;background: #fff}
+.app_subcate .icondot {width:6px;height:6px;display:inline-block;background-position:0 -831px;margin-right:8px;vertical-align: 1px;}
+.app_subcate ul{border-radius:4px;background-color:#fff; box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);border:1px solid #bbb;width:190px;margin-left:10px;}
+	.app_subcate li.appsubcate_header,.myapps .app_subcate li.appsubcate_header:hover{font-weight:bold;font-size:15px;padding:8px 10px;border-top:0 none;background-color:transparent;}
+	.app_subcate li:last-child{border-bottom:none 0;border-radius:0 0 4px 4px;}
+	.app_subcate li .app_icn{width:25px;height:25px;margin-right:8px;vertical-align:middle;border-radius:4px;}
+	.app_subcate li a{font-weight:normal}
+	.app_subcate li.mygame {padding: 5px 2px}
+	.poparrow {background-position: -56px -56px;color: #fff;display: block;float: left;height: 27px;margin-right: -1px;position: relative;width: 11px;}
+.list_mysup li:hover .app_subcate {display:block}
+	
+.list_sponl li.appsubcate_header {border-bottom: 1px solid #e1e1e1} 
+.zapp_hotbox .apptipbox {display:none}
+.zapp_hotbox:hover .apptipbox {display:block}
+.appst_sidepanel .zapp_sponline {background-position: -125px -979px;display: block;height: 29px;width: 210px;}
+.zapp_hotbox {position:relative}
+.zapp_hotline {display:block;position:fixed;top:445px;left:0;z-index:9999;padding-left:2px}
+.zapplikebox {background: #e1e1e1;padding:5px;border-radius:3px;border:1px solid #dddddd;margin-bottom:10px;width:64px;position:relative}
+.zapplikebox .zme_box {border-bottom:1px solid #c6c6c6;padding-bottom:35px;}
+.zapplikebox .face_box {border-top:1px solid #f8f8f8;padding-top:10px}
+.sub_hotline {width:17px;height:17px;display:block;float:right;background-position: -53px 0;margin: 6px 7px 0 0;}
+.dtviewmore {background: #cbe4f5;border:1px solid #88b7d8;padding:3px 8px;font-weight:bold;color: #346f97}
+.bg_likecount_box {background: #fff;width:62px;height:37px;display:block}
+.bg_likecount_box .line {background:#e1e1e1;width:64px;height:2px;display:block;position:absolute;top:5px;left:4px}
+
+/* Footer */
+.zmbody {padding-bottom:0;position:relative;overflow:hidden}
+.footer {border:1px solid #dfdfdf;color: #555;font-size: 12px;line-height: 20px;margin: 0;padding: 10px 15px;background: #f4f4f4}
+.footer a {color: #555;font-weight:bold}
+.footer .rightctn img {float: right;margin: -5px 0 0 8px;padding-top:3px}
+.rightctn {width:162px;float:right;margin-top:10px}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {.moveLeft .appst_sidepanel .appst_cate.fixed_pos{margin-left: -95px;}}
+@media \0screen {.moveLeft .appst_sidepanel .appst_cate.fixed_pos{margin-left: -95px;}}
+/* Ung dung cua toi - Sub menu */
+.profileloc {border-top:1px solid #dfdfdf;}
+.profileloc .profinfo {background: #ddeef4;padding:8px;border-bottom:1px solid #dfdfdf}
+.prof_avt {float:left;margin-right:10px}
+.prof_avt img{width:40px;height:40px;display:block;border:2px solid #fff;box-shadow: 0 1px 0 0 #949494, 0 1px 0 0 #949494, 0 0 2px #949494;}
+.profinfo .myinfo {float:left;padding-top:2px;}
+.profinfo .myinfo .numzgold {color: #0099cc;margin-top:5px}
+.profileloc ul {background: #fff}
+.profileloc ul li {border-bottom:1px solid #e1ebf0;position:relative}
+.profileloc ul li:hover {background: #ebf3f6}
+.profileloc ul li a {font-weight:bold;color: #555;padding:0px 8px;height:31px;line-height:31px;display:block;*display:inline}
+.profileloc ul li a:hover {text-decoration:none}
+.profileloc ul li strong {color: #389015;}
+.myapps li{position:relative;z-index:2}
+	.myapps li:hover .app_subcate{display:block;}
+	.myapps .app_subcate li.app_subcate_viewall a{font-size:10px;color:#666;text-transform:uppercase;}
+	.myapps .app_subcate li.app_subcate_viewall em{display:inline-block;margin-right:3px;width:4px;height:7px;background-position:-32px -176px;}
+.myapps .myavt{width:24px;height:24px;border-radius:2px;margin-right:5px;float:left;margin-top:3px;}
+.myapps .app_recentuse strong{color:#e00000;}
+.myapps .app_bmarked strong{color:#389015;}
+.mobileapp .grphead{border-left:3px solid #01b5c3;}
+.gameapps .grphead{border-left:3px solid #38a3d9;}
+.zingapps .grphead{border-left:3px solid #f6934a;}
+.downgame .grphead {border-left:3px solid #48a942;}
+.comics .grphead {border-left:3px solid #9121b6}
+.gcounter{float:right;font-size:11px;width:15px;text-align:right;font-weight:normal}
+.gameapps ul li:hover .gcounter, .gameapps ul li.selected .gcounter, .zingapps ul li:hover .gcounter, .zingapps ul li.selected .gcounter, .downgame ul li:hover .gcounter, .downgame ul li.selected .gcounter, .event ul li:hover .gcounter, .event ul li.selected .gcounter  {display:none}
+.zappforum {background-position: -337px -979px;display: block;height: 29px;width: 210px;}
+/* @@@@@[ APP STORE MAIN ]@@@@@ */
+.apptopbox{margin-bottom:13px;height:1%}
+.apptopbox .apptopbox_inner{overflow:hidden;height:145px;width:100%;}
+.apptopbox .apptopbox_inner .rapp_thumb {float:left; margin-left:7px;margin-right:10px;margin-top:7px;overflow: hidden;}
+.apptopbox .apptopbox_inner .rapp_thumb:hover {box-shadow:none;border:1px solid #BBB}
+.apptopbox .apptopbox_inner .rapp_thumb, .apptopbox .apptopbox_inner .rapp_thumb a, .apptopbox .apptopbox_inner .rapp_thumb img{width:64px;height:64px;display:block;}
+.apptopbox .topapp_icn{border: 1px solid #888888;border-radius: 6px 6px 6px 6px;float: left;margin-right: 8px;margin-top: 10px;overflow: hidden;}
+.apptopbox .topapp_icn:hover {box-shadow:none;border:1px solid #BBB}
+.apptopbox .topapp_icn img{width:53px;height:53px;}
+.apptopbox .topapp_desc .topapp_lkname{color:#333;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:5px}
+.apptopbox .topapp_desc .topapp_playcounter{color:#555;font-size:11px;}
+.apptopbox .topapp_desc .topapp_playeravt{padding-bottom:0;}
+.apptopbox .topapp_desc .topapp_playeravt img{width:20px;height:20px;margin-right:3px;border-radius:2px;}
+.topapp_boxinfo {float:right;background-position:-330px -815px;width:216px;height:138px;display:block;position:relative;padding:6px 5px 5px 10px}
+.topapp_boxinfo .topapp_event {width:49px;height:50px;display:block;background-position:-237px -586px;position:absolute;top:0;right:0}
+.topapp_boxinfo .header_evt { display: block;font-size: 14px;font-weight: bold;overflow: hidden;text-overflow: ellipsis;text-transform: uppercase;white-space: nowrap;width: 175px;}
+.topapp_boxinfo .event_detail {margin:0}
+.topapp_boxinfo .event_info { display: block;height: 40px;line-height: 18px;overflow: hidden;padding-top: 6px;width: 135px;font-size:11px}
+.topapp_boxinfo .moreinfo_btn {width:61px;height:19px;display:block;background-position:-235px -640px;margin-top:3px;float:left;text-indent:-9999em}
+.topapp_boxinfo .more_newinfo {margin-top:11px}
+.topapp_boxinfo .more_newinfo li a{ color: #555;display: inline-block;font-weight: bold;width: 200px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;height:16px;font-size:11px}
+.topapp_boxinfo .more_newinfo li em { background-color: #666;display: inline-block;height: 2px;margin-right: 3px;vertical-align: 5px;width: 2px;}
+.apptopbox .topright_banner {float:right}
+.apptopbox .topapp_excerpt{position: relative; color: #666;font-size: 11px;font-weight: bold;margin-bottom:7px;}
+.apptopbox .topapp_excerpt .slide_img {position:relative; width: 500px; height: 145px; overflow: hidden;}
+.apptopbox .topapp_excerpt .slide_img .topapp_thumb{position:absolute;left:0;background-color:#eee;height:145px;width:736px;border:1px solid #ddd;cursor:pointer}
+
+
+
+	
+	
+
+
+
+
+/* @@@@@[ APP CATEGORY ]@@@@@ */
+.app_catetitle{color: #ffffff;font-family:Arial;font-size:17px;font-weight:bold;text-transform:uppercase;background-color:#333;border-left:3px solid #000;height:35px;line-height:35px;padding:0 10px;margin-bottom:15px;}
+.app_catetitle a.txttitle{color:#ccc;text-decoration:none;}
+.app_catetitle a.txttitle:hover{text-decoration:none;color:#fff;}
+.app_catetitle em{display:inline-block;width:9px;height:14px;margin:-5px 5px 0;background-position:-148px -288px;vertical-align:middle;}
+.app_catetitle span.txttitle,.app_catetitle h1.txttitle{color:#fff;display:inline-block;}
+.zapp_descatebox {margin-bottom:15px;border-bottom:1px solid #dedede;padding-bottom:10px;margin-bottom:20px}
+.zapp_descatebox .desc_icn {text-indent:-9999em;margin-bottom:15px;height:22px;width:65px;}
+
+/* @@@@@[ APP INTRODUCTION DETAIL ]@@@@@ */
+.game_slidebanner{border:3px solid #333;border-radius:3px 3px 0 0;position:relative;width:733px;height:145px;}
+.game_slidebanner .slidebanner_photo{overflow:hidden;position:absolute;top:0;}
+.game_slidebanner .sliderarrow a{display:block;width:15px;height:18px;border:4px solid #333;text-indent:-999999em;position:absolute;display:block;z-index:2;top:60px;}
+.game_slidebanner .sliderarrow a.prevlink{background-position:0 0;left:0;border-radius:0 3px 3px 0;}
+.game_slidebanner .sliderarrow a.nextlink{background-position:-32px 0;right:0;border-radius:3px 0 0 3px;}
+.game_slidebanner .sliderpaging{position:absolute;z-index:2;top:119px;right:10px;}
+.game_slidebanner .sliderpaging li{display:inline;margin:0 3px;width:12px;height:12px;border-radius:12px;background-color:#fff;padding:3px;float:right;}
+.game_slidebanner .sliderpaging li a{text-indent:-999999em;display:block;width:12px;height:12px;border-radius:12px;}
+.game_slidebanner .sliderpaging li a:hover,.game_slidebanner .sliderpaging li a.selected{background-color:#009bfb;}
+
+.apptitlebar{background-color:#333;border-radius:0 0 3px 3px;padding:3px 8px 5px;margin-bottom:15px;height:31px;}
+.apptitlebar .apptxttile{text-transform:uppercase;color:#ccc;font-size:17px;float:left;font-family:Arial;line-height:normal;padding-top:7px;font-weight:bold;}
+.apptitlebar .apptxttile em{background-position:-148px -288px;display:inline-block;height:14px;margin:-5px 5px 0;width:9px;vertical-align:middle;}
+.apptitlebar .apptxttile .txttitle{display:inline-block;color:#fff;}
+.apptitlebar .apptxttile a.txttitle{color:#ccc;}
+.apptitlebar .apptxttile a.txttitle:hover{text-decoration:none;color:#fff;}
+.apptitlebar .appstar{float:right;margin-top:8px;}
+.apptitlebar .appranking_point{float:right;color:#fff;font-size:14px;padding-top:7px;margin-left:5px;color:#888;}
+.apptitlebar .appranking_point .point_num{font-weight:bold;color:#fff}
+
+
+
+	.zapp_startbtn {width:128px;height:44px;display:block;background-position:0 -744px;text-indent:-9999em;}
+	.zapp_downappbtn {width:136px;height:44px;display:block;background-position: 0 -1205px;text-indent:-9999em;margin-top:2px}
+
+.app_detailbody .playnow {background-position:-204px -28px;width:116px;height:34px;display:block;text-indent:-9999em;}
+.zapp_downbtn {width:128px;height:44px;display:block;background-position:-133px -744px;text-indent:-9999em;margin-top:5px}
+.app_playcounter{float:right;}
+.app_playcounter p{padding:0 0 8px 3px;}
+.app_playcounter .counting_number{font-weight:bold;font-size:11px;}
+.app_playcounter .app_playeravt{padding:0 0 8px;}
+.app_playcounter .app_playeravt img{width:20px;height:20px;margin-left:3px;vertical-align:bottom;margin-bottom:3px;border:0px solid #d7d8dc;border-radius:2px;}
+.app_btnplaynow{text-transform:uppercase;font-size:15px;height:28px;line-height:28px;}
+
+
+
+.appdesc_section .app_txtheading{margin-bottom:12px;}
+.appdesc_section .app_txtheading span{height:22px;display:block;text-indent:-999999em;}
+.appdesc_text{width:100%;margin-right:35%;margin-top:20px}
+.appvote_section{float:right;width:380px}
+
+
+
+/* news guide box  */
+.newsbox_guide {margin-bottom:10px;width:753px}
+.newsbox_guide .mainbox {width:365px;border:1px solid #e7eff3;float:left;margin-right:5px} 
+.newsbox_guide .mainbox h1 {background: #ddeef4;padding: 3px 8px;}
+.newsbox_guide .mainbox .view_more {font-size:11px;color: #555;line-height: 22px;float:right}
+.newsbox_guide .mainbox .newsevent {width:103px;height:23px;display:block;background-position: -93px -589px;text-indent: -9999em}
+.newsbox_guide .mainbox .gameguide {width:122px;height:23px;display:block;background-position: -132px -721px;text-indent: -9999em}
+.newsbox_guide .mainbox .contents {padding:10px 10px 0}
+.newsbox_guide .mainbox img {float: left;height: 59px;margin-right: 7px;width: 82px;}
+.newsbox_guide .mainbox .news {color: #555;font-weight: bold;line-height: 17px;overflow: hidden;}
+.newsbox_guide .mainbox .des {display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 258px;margin-top:2px;color: #555}
+.evttime {color: #777;font-size:12px}
+
+
+
+/* Danh gia */
+
+
+
+
+
+
+
+
+		
+/* Vote popup */
+.zingstore_popup {padding:5px}
+.zingstore_popup .votetxt {display: inline-block;font-size: 14px;margin-right: 7px;vertical-align: 3px;}
+.zingstore_popup .appstar span { display: block;float: left;height: 14px;text-indent: -9999em;width: 16px}
+.zapp_addfr {width:85px;height:28px;display:block;background-position:-250px -540px;text-indent:-9999em;margin-top:3px}
+.apptipbox .rapp_thumb.app_avt, .apptipbox .rapp_thumb.app_avt a, .apptipbox .rapp_thumb.app_avt img {width:85px;height:85px;}	
+.app_thumb.app_avt {width:87px}
+
+/* Customize displaybox */
+.apptipbox.ctndisbox{z-index:1200;!width:420px;min-width:360px;}
+.apptipbox.ctndisbox .disbox_inner {width:auto}
+.apptipbox.ctndisbox .disbox{border:2px solid #bbb;box-shadow:0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);margin:0 17px;}
+.apptipbox.ctndisbox .inner{padding:5px;}    
+.apptipbox.ctndisbox .icodisbox{background-image:url(../images/displaybox_sprt.png);margin-top:-17px;}
+.apptipbox .icodisbox.topleft,.apptipbox .icodisbox.topright,.apptipbox  .icodisbox.botleft, .apptipbox  .icodisbox.botright{width:27px;height:19px;}
+	.apptipbox .icodisbox.topleft,.apptipbox .icodisbox.topright{background-position:0 -36px;}
+		.apptipbox .icodisbox.topleft{margin-left:50px;float:left}
+		.apptipbox .icodisbox.topright{margin-right:50px;float:right;}
+	.apptipbox  .icodisbox.botleft, .apptipbox  .icodisbox.botright{background-position: 0 0;position: relative;top:15px;}
+		.apptipbox  .icodisbox.botleft{margin-left:50px;float:left;}
+		.apptipbox  .icodisbox.botright{margin-right:50px;float:right;}
+.apptipbox .icodisbox.lefttop, .apptipbox .icodisbox.leftbottom,.apptipbox .icodisbox.righttop, .apptipbox .icodisbox.rightbottom{width:19px;height:27px;}
+	.apptipbox  .icodisbox.lefttop, .apptipbox  .icodisbox.leftbottom{background-position:-32px -28px;}
+		.apptipbox  .icodisbox.lefttop{float:right;margin-top:30px;}
+		.apptipbox  .icodisbox.leftbottom{float:right;margin-top:-60px;}
+	.apptipbox  .icodisbox.righttop,.apptipbox .icodisbox.rightbottom{background-position:-32px 0;}
+		.apptipbox  .icodisbox.righttop{float:left;margin-top:30px;}
+		.apptipbox  .icodisbox.rightbottom{float:left;margin-top:-60px;}
+
+.apptipbox .app_thumb{float:left;width:112px;margin-right:10px;}
+.app_thumb.app_avt {width: 87px;}
+.apptipbox .app_thumb img{border:1px solid #888;margin-bottom:5px;clear:both;}
+.apptipbox .app_desctext{margin-left:122px;}
+.app_desctext.app_uinf {margin-left:100px}
+
+
+
+
+
+
+.apptipbox .app_desctext li{display:block;padding:0 0 4px 0px;color:#666;}
+.apptipbox .app_desctext li em{background-color:#49759a;display:inline-block;height:2px;margin-right:5px;vertical-align:middle;width:2px;margin-left:-8px;}
+.apptipbox .app_desctext li.apptipboxname{font-weight:bold;color:#333;padding:0 0 5px;font-size:14px}
+.app_desctext li .app_icons {padding-top:5px}
+.apptipbox  li.playersavt{padding-left:8px;padding-bottom:12px;}
+.apptipbox  li.playersavt img{width:29px;height:29px;border:1px solid #d2d8e8;margin-right:5px;}
+.apptipbox .app_desctext li .detailapp_link{color: #555;vertical-align:middle;margin-left:5px}
+.apptipbox .dirarrow{display:block;}
+	.dirarrow.dirbottom{background-position:-144px -256px;width:32px;height:21px;margin-bottom:-21px;margin-left:52px;}
+	.dirarrow.dirtop{background-position:-192px -251px;width:32px;height:21px;margin-top:-21px;margin-left:52px;}
+	.dirarrow.dirleft{background-position:-267px -256px;width:21px;height:32px;margin-top:52px;margin-left:-21px;float:left}
+	.dirarrow.dirright{background-position:-240px -256px;width:21px;height:32px;margin-top:52px;margin-right:-21px;float:right}
+
+/* @@@@@[ APP STORE - RECENT - BOOKMARK LIST ]@@@@@ */
+.appst_bmarklist{border-top:1px solid #eee;}
+.appst_bmarklist li{display:block;border-bottom:1px solid #eee;padding:15px 0;height:100px;position:relative;}
+.appst_bmarklist li.hightlighted{box-shadow:0 4px 3px -2px #ddd, 0 -4px 3px -2px #ddd;-moz-box-shadow:0 4px 3px -2px #ddd, 0 -4px 3px -2px #ddd;-o-box-shadow:0 4px 3px -2px #ddd, 0 -4px 3px -2px #ddd;border-top:1px solid #ccc;
+background-color:#f0f6fb;border-bottom:1px solid #ccc;}
+
+.appst_bmarklist li .rapp_thumb{float:left;}
+.appst_bmarklist li .bmrk_rlink{float:right;padding-top:5px;text-align:right;}
+.appst_bmarklist li .bmrk_rlink .bmrk_remove{display:block;padding-bottom:10px;height:30px;}
+.appst_bmarklist li .bmrk_rlink .bmrk_remove a{display:block;float:right;clear:right;width:18px;height:16px;background-position:-32px -144px;font-size:0;}
+.appst_bmarklist li .bmrk_rlink .bmrk_remove a:hover{background-position:-47px -168px;}
+.appst_bmarklist li .bmrk_apptext{margin-left:115px;margin-right:100px;}
+.appst_bmarklist li .bmrk_apptext .app_icons {float:left;margin-top:15px}
+.appst_bmarklist .move_anchor{position:absolute;top:55px;font-size:11px;color:#ccc;text-transform:uppercase;font-weight:bold;left:480px;padding:5px;border-radius:3px;border:1px solid #eee;line-height:normal;background-color:#fff;}
+.appst_bmarklist .move_anchor .move_icn{width:16px;height:16px;display:inline-block;margin-right:2px;vertical-align:-3px;background-position:-176px -288px;}
+
+
+/* @@@@@[ OTHER MODULES ]@@@@@ */
+
+	
+	
+
+
+
+
+
+
+
+
+
+.appmovie_desctext {color: #666666;display: block;float: left;width:355px}
+.appmovie_desctext li {display: block;padding: 0 0 8px;}
+.app_shortdesc .appmovie_desctext li em {background-color: #666666;display: inline-block;height: 2px;margin-right: 5px;
+vertical-align: middle;width: 2px;}
+.app_shortdesc .appmovie_thumb {float:left;margin-right:15px}
+.appmovie_btnviewnow { font-size: 15px;height: 28px;line-height: 28px;text-transform: uppercase;margin-top:10px}
+.appmovie_txtheading {margin-bottom:10px}
+.appmovie_txtheading span { display: block;height: 24px;text-indent: -999999em;}
+.appmovie_ctnicn {width:87px;background-position:-130px -508px}
+.trailer_icn {width:79px;background-position:-224px -511px}
+.appdesc_section .poster_movie {width:736;display:block;margin-top:10px}
+.appdesc_section .movie_trailer {width:640px;display:block;}
+
+.related_app .appmovie_view {margin-left:0}
+.apptxttile .movietitle {display: inline-block;height: 19px;line-height: 20px;overflow: hidden;
+text-overflow: ellipsis;vertical-align: top;white-space: nowrap;width: 380px;}
+.ifilm_btn {float:left;width:68px;height:29px;display:block;background-position:-152px -795px;text-indent:-9999em;margin-top:10px;}
+.pubvn_btn {float:left;width:68px;height:29px;display:block;background-position:-229px -795px;text-indent:-9999em;margin-top:10px;margin-left:10px}
+
+/* @@@@@[ Movie slide banner ]@@@@@ */
+.moviebox_inner {height: 110px;overflow: hidden;width: 100%;}
+.banner_mov {color: #666666;float: left;font-size: 11px;font-weight: bold;margin-bottom: 7px;padding: 0 7px 0 0;position: relative;}
+.banner_mov .slide_img {height: 110px;overflow: hidden;position: relative;width: 739px;}
+.banner_mov .slide_img img {position: absolute;}
+.banner_mov .slide_img .slide_img .topapp_thumb {background-color: #EEEEEE;border: 1px solid #DDDDDD;cursor: pointer;
+height: 110px;left: 0;position: absolute;width: 739px;}
+.banner_mov .topbanner_slide {position: absolute; height:29px; width: 500px; left: 0; bottom: 0;}
+.banner_mov .topbanner_slide .topbanner_bar {background:url(../images/topbanner_bg.png) repeat;width:572px;height:30px;padding: 0 7px;}
+.topbanner_slide p {float:left;font-size:14px;font-weight:bold;text-transform:uppercase;color:#fff;display:block;width:500px;overflow: hidden;text-overflow: ellipsis;text-transform: uppercase;white-space: nowrap;line-height:30px}
+
+
+/* @@@@@[ Bookstore ]@@@@@ */
+.appbookstore {margin-left:-45px;width: 785px;}
+.appbookstore li {float:left;margin-left:45px;height:160px;padding-bottom:40px;width:110px;margin-bottom:10px}
+.appbookstore li a {color:#555;line-height:15px}
+.appbookstore_thumb {border:1px solid #979797}
+.appbookstore_thumb,.appbookstore_thumb a,.appbookstore_thumb img {width:110px;height:160px;display:block}
+.appbookstore li .book_name {font-size: 11px;margin-top: 3px;overflow: hidden;max-height:33px;min-height:20px}
+.appbookstore_thumb:hover {border: 1px solid #333333;box-shadow: 0 0 5px #888;}
+.app_shortdesc  .appbookstore_thumb {float:left;margin-right:15px}
+.related_app .appbookstore {margin-left: 0;}
+.appebook_introicn {background-position: 0 -793px;width: 145px;}
+.appst_contcol .titlebars {background: none repeat scroll 0 0 #F5F5F5;cursor: pointer;height: 22px;
+margin-bottom: 10px;padding: 4px 5px 5px;}
+.appst_contcol .titlebars .newrp {background-position: -94px -938px;display: block;float: left;height: 26px;width: 50px;}
+.titlebars .viewmore {margin-top:1px}
+.appst_contcol .titlebars .freerp {background-position: -151px -939px;display: block;float: left;height: 21px;width: 67px;}
+.appst_contcol .titlebars .allrp {background-position: -220px -939px;display: block;float: left;height: 21px;width: 26px;}
+.appst_contcol .titlebars .collectrp {background-position: -253px -940px;display: block;float: left;height: 24px;width: 66px;}
+
+/* @@@@@[ Bookstore ]@@@@@ */
+.appst_contcol .titlebars .allcm {background-position: -94px -938px;display: block;float: left;height: 26px;width: 50px;}
+.appst_contcol .titlebars .newcm { background-position: -151px -1028px;display: block;float: left;height: 21px;width: 79px;}
+.appst_contcol .titlebars .likecm { background-position: -144px -878px;display: block;float: left;height: 23px;width: 166px;}
+.appstmenu.bookstore li a {background:url(../images/zingappreport_menusprt.html)}
+.appstmenu.bookstore li a {width:184px}
+.appstmenu.bookstore li.appm_all a:hover {background-position:0 -96px}
+.appstmenu.bookstore li.appm_all a.selected {background-psoition:0 -48px}
+.appstmenu.bookstore li.appm_recommend a {background-position: -184px 0}
+.appstmenu.bookstore li.appm_recommend a:hover {background-position: -184px -96px}
+.appstmenu.bookstore li.appm_recommend a.selected {background-position: -184px -48px}
+.appstmenu.bookstore li.appm_new a {background-position:-369px 0}
+.appstmenu.bookstore li.appm_new a:hover {background-position:-369px -96px}
+.appstmenu.bookstore li.appm_new a.selected {background-position:-369px -48px}
+.appstmenu.bookstore li.appm_rank a {background-position:-553px 0}
+.appstmenu.bookstore li.appm_rank a:hover {background-position:-554px -96px}
+.appstmenu.bookstore li.appm_rank a.selected {background-position:-553px -48px}
+.appstmenu.bookstore li.appm_all strong,.appstmenu.bookstore li.appm_recommend strong, .appstmenu.bookstore li.appm_new strong, .appstmenu.bookstore li.appm_rank strong {right:30px}
+
+
+/* @@@@@[ Comic ]@@@@@ */
+.titlebars .fiction {width:66px;height:22px;display:block;background-position: 0 -1108px;float:left}
+.titlebars .horror {width:43px;height:22px;display:block;background-position: -75px -1109px;float:left}
+.titlebars .action {width:67px;height:22px;display:block;background-position: -125px -1109px;float:left}
+.titlebars .school{width:64px;height:22px;display:block;background-position: -201px -1109px;float:left}
+.titlebars .emotional{width:55px;height:22px;display:block;background-position: -274px -1109px;float:left}
+.titlebars .detective{width:70px;height:22px;display:block;background-position: 0px -1132px;float:left}
+.titlebars .comedy{width:60px;height:22px;display:block;background-position: -78px -1132px;float:left}
+.titlebars .sport{width:60px;height:22px;display:block;background-position: -140px -1132px;float:left}
+.appstmenu.comic li a {background:url(../images/zingappcomic_menusprt.html)}
+.appstmenu.comic li a {width:245px}
+.appstmenu.comic li.appm_all a:hover {background-position:0 -96px}
+.appstmenu.comic li.appm_all a.selected {background-psoition:0 -48px}
+.appstmenu.comic li.appm_recommend a {background-position: -244px 0}
+.appstmenu.comic li.appm_recommend a:hover {background-position: -244px -96px}
+.appstmenu.comic li.appm_recommend a.selected {background-position: -244px -48px}
+.appstmenu.comic li.appm_new a {background-position:-489px 0}
+.appstmenu.comic li.appm_new a:hover {background-position:-489px -96px}
+.appstmenu.comic li.appm_new a.selected {background-position:-489px -48px}
+.appstmenu.comic li.appm_all strong,.appstmenu.comic li.appm_recommend strong, .appstmenu.comic li.appm_new strong {right:55px}
+
+
+/* @@@@@[ eror 404 page]@@@@@ */
+.zapp_eror404 {padding:0 15px;margin:-40px auto 0;text-align:left;position:relative}
+.zapp_eror404 .maintitle {font-size:24px;font-weight:bold;color: #666;margin:60px 0 15px;}
+.zapp_eror404 .backlink {margin:10px auto;display:block}
+.zapp_eror404 .backlink li {width:78px;display:block;float:left;margin-left:40px}
+	.errbtn {width:78px;height:78px;display:block;margin-bottom:5px}
+	.errbtn:hover {opacity:0.8}
+	.backhomebtn {background-position: -371px 0}
+	.supportuser {background-position: -453px 0}
+	.sendreqbtn {background-position: -371px -82px}
+.zapp_no_content {font-size:16px;color: #666;margin-bottom:30px}
+.box_content {background: #edf4f9;border-top:1px solid #dfe9f0}
+.box_content .header_box {height:32px;border-radius: 5px 5px 0 0;}
+.box_content .header_box p {color: #505050;font-size:16px;font-weight:bold;padding:20px;text-transform:uppercase}
+.box_content ul {padding:7px;*height:1%;margin:15px 0 0}
+.box_content ul li {margin-left:40px;display:inline-block}
+.box_content ul li.end {margin-right:0}
+.box_content ul li .game_avt, .box_content ul li .game_avt img {width:185px;height:144px;display:block;margin-bottom:15px}
+.box_content ul li .game_avt img {border:4px solid #fff}
+.box_content ul li .game_txt {color: #005573;font-weight:bold;display:block;width:193px;overflow: hidden;text-overflow: ellipsis;
+white-space: nowrap;font-size:14px;margin-bottom:2px}
+.box_content ul li .game_txt:hover {text-decoration:underline}
+.app_store_link {display: block;height: 22px;position: absolute;right: 27px;top: 165px;width: 140px;}
+.errimg {float:left;margin-left:90px;margin-bottom:5p}
+.errcontent {position:absolute;top:15px;right:160px;width:390px;}
+
+.appst_wrapper .icoalert_imp {background-position: -237px -671px;display: inline-block;height: 13px;margin-right: 5px;vertical-align: -2px;
+width: 16px;}
+/* Aler-bar */
+.alert{color:#000;z-index:0;overflow:hidden;height:26px;background:#fff;width:100%;margin:0 auto;position:relative;}
+.alert .alert-inter{display:block;margin:0 auto;padding:4px 5px 0 28px; background-position: -313px -664px;background-color:#e3f5fa;}
+.alert .alert-inter.alert_imp{background:#faf6c8; background-position:-238px -688px;}
+.icoalert_imp{width:16px; height:13px; background-position:-35px -603px; margin-right:5px; display:inline-block; vertical-align:-2px;}
+.alert a.close-alert{display:block;height:22px;width:19px;background-position: -33px -142px;}
+.alert a:hover.close-alert{background-position: -47px -166px;}
+#contentAlert {font-size:11px}
+
+/* @@@@@[ News Box]@@@@@ */
+.zapp_newevtbox {margin: 20px 0;border:1px solid #dfdfdf;border-right:0 none;border-radius:5px}
+.zapp_newevtbox .box_news, .zapp_newevtbox .box_evt, .zapp_newevtbox .box_srv {float:left;width:240px}
+.zapp_newevtbox .boxtitle {display:block;padding: 8px;border:1px solid #dfdfdf;font-size:15px;border-width:0 1px 1px 0 }
+.zapp_newevtbox .boxtitle .newstitle {width:63px;height:16px;display:block;float:left;background-position:0 -1088px;text-indent:-9999em;}
+.zapp_newevtbox .boxtitle .vminfo {float:right;color: #6a6a6a;font-weight:normal;margin-right:5px;font-size:11px}
+.zapp_newevtbox .ctnbox {border-right:1px solid #dfdfdf;padding:10px 10px 0 10px}
+.zapp_newevtbox .ctnbox img {width:82px;height:59px;float:left;margin-right:7px}
+.zapp_newevtbox .ctnbox .hotnew {padding-bottom:16px;border-bottom:1px solid #dfdfdf}
+.zapp_newevtbox .ctnbox .hotnewtxt {display: block;font-weight: bold;height: 52px;line-height: 17px;overflow: hidden;color: #555}
+.list_news li {padding:5px 0;border-top:1px solid #dfdfdf}
+.list_news li:first-child {border-top:0 none;}
+.list_news li a {color: #333;display: inline-block;margin-right: 5px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.list_evt li .evtdt .evttime {color: #f8944b;float: right;font-size: 11px;font-weight: bold;}
+.list_news li em {background: #acacac;width:4px;height:4px;display:inline-block;margin-right:5px;vertical-align:6px}
+.list_news.detail a {max-width:82%}
+.list_news .date_news {color: #336699}
+.zapp_newevtbox .evttitle {width:64px;height:19px;display:block;background-position: -88px -1087px;text-indent:-9999em;float:left}
+.zapp_newevtbox .list_evt li {border-top:1px solid #dfdfdf;padding:8px 0;} 
+.zapp_newevtbox .list_evt li:first-child {border-top:0 none;padding-top:0}
+.zapp_newevtbox .list_evt li .titlename {font-weight:bold;color: #333}
+.zapp_newevtbox .list_evt li p {padding-top:2px}
+.zapp_newevtbox .srvtitle {width:113px;height:20px;display:block;float:left;text-indent:-9999em;background-position:-196px -1086px}
+.zapp_newevtbox .ctnbox .list_news li a, .zapp_newevtbox .list_evt li .titlename, .zapp_newevtbox .list_evt li p{max-width:200px;text-overflow: ellipsis;white-space: nowrap;overflow:hidden;display:inline-block;}
+.zapp_newevtbox .list_evt li .evtimg, .zapp_newevtbox .list_evt li .evtimg img {float:left;width:40px;height:40px;margin-right:5px;margin-top:-1px}
+.zapp_newevtbox .list_evt li .evtdt {margin-top:-1px;float:left;width:174px}
+.zapp_newevtbox .list_evt li .evtdt p {max-width:180px}
+
+
+/* @@@@@[ Profile ]@@@@@ */
+.myapp_loc {background: #f8f8f8;border-radius:5px;border:1px solid #ebebeb;margin-bottom:15px;border-right:0 none}
+.myapp_loc .myapp_box {padding:10px 10px 5px 10px;width:152px;border-left:1px solid #fff;border-right:1px solid #ebebeb;float:left;min-height:128px}
+.myapp_loc .myapp_box:first-child {border-left:0 none}
+.myapp_loc .myapp_box.profile {width:194px}
+.myapp_loc .myapp_box .avt_loc {position:relative;float:left;width:82px}
+.myapp_loc .myapp_box .avt_loc .myapp_avt img {width:75px;height:75px;display:block;border:3px solid #fff;box-shadow: 0 1px 0 0 #949494, 0 1px 0 0 #949494, 0 0 2px #949494;}
+.myapp_loc .myapp_box .avt_loc .avt_rib {width:35px;height:36px;display:block;background-position: -303px -614px;position:absolute;top:0;left:0}
+.myapp_loc .myapp_box .profdt {float:left;margin-left:10px;padding-top:3px}
+.myapp_loc .myapp_box .profdt span a {width:102px;overflow:hidden;display:block;text-overflow: ellipsis;white-space: nowrap;}
+.myapp_loc .myapp_box .profdt .numzgold {margin-top:5px}
+.myapp_loc .myapp_box .profdt .numzgold strong {color: #c00000}
+.zinggold {width:16px;height:16px;display:inline-block;background-position: -27px -574px;vertical-align:-3px;margin-right:1px}
+.vipmedal {background-position: -50px -575px;display:block;height:14px;margin:7px auto 0}
+.vipmedal.level0 {background-position: -95px -575px}
+.vipmedal.level0, .vipmedal.level1 {width:12px}
+.vipmedal.level2 {width:28px}
+.vipmedal.level3 {width:43px}
+.myapp_box .txtheadbox {color: #8e650d;font-weight:bold;}
+.myapp_box .myapp_inf {width:135px;margin:0 auto}
+.myapp_box ul {margin-top:5px}
+.myapp_box li {padding: 3px 0 10px;}
+.myapp_box li .mapp_thumb {margin-right:5px}
+.myapp_box li .mappname {width:105px}
+.myapp_box li .mappname strong {color: #555;font-size:11px}
+.applistview .listgame.prof {margin-left:-21px;}
+.applistview .listgame.prof li {width:230px;margin-left:20px;height:130px}
+.listgame.prof li .rapp_thumb {float:left;margin-right:8px}
+.listgame.prof li .app_tinystar {margin-top:4px}
+.listgame.prof li .desapp {margin-top:5px;max-height:72px;overflow:hidden;color: #666}
+.applistview .topcate {margin-top:0} 
+.charttab {background-position: 0 -654px;width:135px;height:25px;display:block;margin:5px 0 20px 0}
+
+/*Box Bao ve tk ca nhan*/
+.msnotice{color:#333;line-height:18px;background-color:#faf6c8;border:1px solid #888579;margin-bottom:10px;}
+.msnotice_close,.msnotice_btn a{background-image:url(../images/msnotice_close.html);}
+.msnotice_close{float:right;background-position:0 -17px;width:16px;height:15px;margin:5px 5px 0 0}
+.msnotice_close:hover{background-position:0 0;}
+.msnotice_inner{padding:10px;}
+.msnotice_htxt{padding:0 0 5px;margin:0;text-transform:uppercase; font-size:1.17em; font-weight:bold;}
+.msnotice_btn{margin:0;padding:8px 0 0}
+.msnotice_btn a{font-size:11px;font-weight:bold;color:#333;display:inline-block;padding:5px;line-height:normal;border-radius:3px;border:1px solid #999;text-decoration:none;background-color:#fff;text-transform:uppercase;color:#666;background-position:0 -32px;}
+.msnotice_btn a:hover{color:#333;border:1px solid #888; text-decoration:none;}
+
+/*Landing*/
+.zapp_landing {margin: -36px auto 0;padding: 20px 10px 0;}
+#wrapper{background:#FFF; width:737px; height:auto; float:left;}
+.cate_list .title{width:717px; height:38px;padding: 0 10px; background:#f5f5f5; border-radius:2px; box-shadow:1px 1px 0px #e6e6e6;margin-bottom:10px;text-transform:uppercase;font-weight:bold;font-size:14px}
+.cate_list{margin:0 auto;width:745px}
+.zapp_landing .cateblock{width:240px; height:320px; background:#f5f5f5; box-shadow:1px 1px 0px #e6e6e6; float:left; margin:0px 8px 15px 0px; position:relative;overflow:hidden}
+.zapp_landing .cateblock_endrow{width:240px; height:320px; background:#f5f5f5; box-shadow:1px 1px 0px #e6e6e6; float:right; margin-bottom:15px; position:relative;}
+.zapp_landing .cate_image{margin:5px;}
+.zapp_landing .cate_label{position:absolute; left:4px; top:4px;}
+.zapp_landing .game_emoracnt {color: #fff;background:url(../images/overlay_black.png) repeat;bottom: -193px;margin-left: 5px;padding: 8px 10px 5px;position: absolute;transition: all 0.2s ease-out 0.2s;width: 210px;z-index: 4;cursor:pointer;text-align:left}
+.zapp_landing .game_emoracnt .emora_inner {max-height: 115px;overflow: hidden;}
+.zapp_landing .cateblock:hover .game_emoracnt {bottom:5px;transition-delay: 0s;}
+.zapp_landing .cateblock .emora_inner a {color: #fff;font-weight:bold;}
+.zapp_landing .cateblock .emora_inner p {margin-bottom:3px}
+.zapp_landing .cateblock .emora_desc {margin-top:7px;}
+.cate_image{margin:5px;}
+.cate_label{position:absolute; left:4px; top:4px;}
+.appsicon {width:24px;height:15px;display:inline-block;background-position: -113px -182px;margin-right:5px}
+.patharr {width:5px;height:10px;display:inline-block;background-position: -15px -104px;margin:16px 7px 0 10px}
+
+/* Top Recent Box */
+.top_recentgame {margin-bottom: 2px;}
+.top_recentgame .tapp_thumb, .top_recentgame .tapp_thumb a, .top_recentgame .tapp_thumb img {display: block;height: 64px;width: 64px;}
+.top_recentgame .tapp_thumb {background-repeat: no-repeat;background-size: cover;border: 1px solid #979797;margin-bottom: 3px;position: relative;border-radius:6px}
+.top_recentgame .listgame{margin-top:5px}
+.top_recentgame .listgame li {display:block;width:67px;height:80px;position:relative;margin-right:7px;float:left}
+.top_recentgame .listgame li.end {margin-right:0}
+.top_recentgame .top_recentgame h1 {margin-bottom:10px;font-size:13px}
+.top_recentgame .remove_game {width:18px;height:21px;display:block;background-position: -1px -338px;position:absolute;top:-6px;right:-8px;z-index:999;display:none;}
+.top_recentgame .listgame li:hover .remove_game {display:block}
+
+
+/* Game suggest */
+.boxgame_suggest {background: #f7f7f7;border:1px solid #f2f2f2;padding:20px 20px 0 10px;position:relative;margin:35px 0 10px}
+.boxgame_suggest .listgame {width:900px;display:block}
+.game_suggest .listgame li {margin: 7px 22px 0 0;width:102px;height:120px;float:left}
+.game_suggest .listgame li.end {margin-right:0}	.funnygame {width:15px;height:15px;display:inline-block;margin-right:5px;float:left;border-radius:3px;margin-top:2px}
+	.game_today {width:15px;height:15px;display:inline-block;margin-right:5px;float:left;background-position:-18px 0;border-radius:3px;margin-top:2px}
+.game_suggest .tapp_thumb, .game_suggest .tapp_thumb a, .game_suggest .tapp_thumb img {display: block;height: 90px;width: 90px;}
+.game_suggest .tapp_thumb {background-repeat: no-repeat;background-size: cover;border: 1px solid #979797;margin-bottom: 3px;position: relative;border-radius:6px}
+.boxgame_suggest .headtitle {width:165px;height:30px;display:block;background-position: -274px -467px;position:absolute;top:-15px;left:-3px}
+.tappname {width:90px;display:block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+/* Support */
+.zingstore_event {width:750px;padding:0;margin:0; background-color: #FFF;border: 1px solid #000;box-shadow: 0 0 6px #111;margin: 5px auto;min-height: 300px;position:relative;}
+.closepopupbtn {width:20px;height:20px;display:block;background-position: -296px -224px;position:absolute;top:0;right:0}
+.closepopupbtn:hover {background-position: -316px -224px}
+
+/* Popup */
+.bg_transparent {background: url("../images/blank.html") no-repeat scroll 0 0 rgba(0, 0, 0, 0.5);bottom: 0;left: 0;overflow: hidden;position: fixed;right: 0;top: 0;z-index: 100;}
+.popup {background: #fff;border-radius:5px;width:350px;}
+.popup .inner {position:relative;padding:15px 15px 5px 15px;}	
+.popup .inner .content .sharezme {margin:10px auto}
+.popup .inner .content p {font-size:16px;line-height:24px;text-align:center}
+	.sharezme {width:101px;height:33px;display:block;text-align:center;line-height:33px;color: #fff;border-radius:5px;font-size:16px;font-weight:bold;text-transform:uppercase;margin-top:5px;background: #009bcb; /* Old browsers */
+background: -moz-linear-gradient(top,  #009bcb 0%, #04a7d9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009bcb), color-stop(100%,#04a7d9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #009bcb 0%,#04a7d9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #009bcb 0%,#04a7d9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #009bcb 0%,#04a7d9 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #009bcb 0%,#04a7d9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009bcb', endColorstr='#04a7d9',GradientType=0 ); /* IE6-9 */}
+	.sharezme:hover {background: #0db5e9; /* Old browsers */
+background: -moz-linear-gradient(top,  #0db5e9 0%, #04a7d9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0db5e9), color-stop(100%,#04a7d9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0db5e9 0%,#04a7d9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0db5e9 0%,#04a7d9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0db5e9 0%,#04a7d9 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0db5e9 0%,#04a7d9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0db5e9', endColorstr='#04a7d9',GradientType=0 ); /* IE6-9 */;color: #fff}
+	
+
+

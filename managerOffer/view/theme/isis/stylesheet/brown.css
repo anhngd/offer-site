@@ -1,0 +1,135 @@
+body {
+	background: url("../image/brown/container-bg.png");
+}
+#top-holder {
+    background: none repeat scroll 0 0 #645248;
+}
+#container {
+    background: none repeat scroll 0 0 #645248;
+}
+.menu {
+    border-color: #453831;
+}
+.menu ul#topnav li a {
+    border-right: 1px solid #453831;
+	color: #FFFFFF;
+}	
+#menu-holder {
+    border-bottom: 1px solid #453831;
+}
+.menu ul#topnav li.dropdown {
+	background:url(../image/brown/nav_arrow.png) 100% 21px no-repeat;
+}
+.menu ul#topnav li.dropdown:hover a {
+	background: #57473D url(../image/brown/nav_arrow2.png) 100% 21px no-repeat;
+}
+.menu ul#topnav ul.children li.dropdown, .menu ul#topnav li:hover ul.children li.dropdown {
+	background:url(../image/brown/nav_arrow3.png) top right no-repeat;
+}
+.menu ul#topnav li:hover a {
+	background-color:#57473D;
+}
+.menu ul#topnav ul.children {
+	background-color: #645248;
+	border-left: #453831 1px solid;
+	border-right: #453831 1px solid;
+	border-bottom: #453831 1px solid;
+}
+.menu ul#topnav ul.children2 {
+	background: #645248;
+	border: #453831 1px solid;
+}
+.menu ul#topnav ul.children li a:hover {
+	background-color:#57473D;
+}
+.menu ul#topnav ul.children a, .menu ul#topnav li:hover ul.children a {
+	color:#FFFFFF;
+}
+#header #welcome {
+    color: #FFFFFF;
+}
+#header .links a {
+    color: #FFFFFF;
+}
+#slide-holder {
+    background: url("../image/brown/slider-bg.png") repeat scroll 0 0 transparent;
+}
+.slides-wrapper {
+    background-color: #645248;
+}
+.nivoSlider {
+    border-bottom: 1px solid #453831!important;
+}	
+.nivo-controlNav a {
+	background-image: url('../image/brown/slideshow-dots.png')!important;
+}
+.nivo-directionNav a {
+	background-image: url('../image/brown/slideshow-arrows.png')!important;
+}
+.slideshow-bottom {
+	background: url("../image/brown/bottom-slider.png") repeat-x scroll 0 0 transparent;
+	border-bottom: 1px solid #453831;
+}	
+#content {
+    border: 1px solid #453831;
+}
+
+.pagination .links a {
+	border: 1px solid #453831;
+}
+
+.pagination .links b {
+	border: 1px solid #453831;
+}
+.box-product > div {
+	border: 1px solid #453831;	
+}
+.box-left .box-heading {
+	border: 1px #453831 solid;
+	border-bottom: none;
+}
+.box-left .box-content {
+	border: 1px #453831 solid;
+	border-top: none;
+}
+.product-grid > div {
+	border: 1px solid #453831;	
+}
+
+#footer {
+	border-top: 1px solid #453831;
+	background: #645248;
+}
+#powered {
+	background: #645248;
+}	
+.banner_4 div img {
+	border: 1px solid #453831;	
+}
+
+.banner_6 div img {
+	border: 1px solid #453831;	
+}
+
+.banner_12 div img {
+	border: 1px solid #453831;	
+}
+#isisside {
+	border-right: 1px #453831 solid;
+	border-top: 1px #453831 solid;
+	border-bottom: 1px #453831 solid;
+}
+.jcarousel-skin-opencart .jcarousel-container {
+    border: 1px solid #453831!important;
+}
+.box .box-heading {
+	color: #FFFFFF;
+}
+.footer-area .header_3, .footer-area .header_4, .footer-area .header_6, .footer-area .header_12,.footer-area .column_3 p ,.footer-area .column_4 p ,.footer-area .column_6 p ,.footer-area .column_12 p,#footer .column2 ul li ,
+.footer-area .column_3, .footer-area .column_4, .footer-area .column_6, .footer-area .column_12, #footer h4,#powered-holder   {
+	color: #FFFFFF;
+}
+#twitter li span a, #twitter li a, #footer .column a, #powered a {
+    color: #EEEEEE;
+	opacity: 1;
+}

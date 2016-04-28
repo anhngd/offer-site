@@ -1,0 +1,56 @@
+@media only screen and (max-width:1680px){
+	.fixed_banner .rightbanner {right:130px}
+}
+@media only screen and (max-width:1440px){
+	.fixed_banner .rightbanner {right:70px}
+}
+@media only screen and (max-width:1366px){
+	.fixed_banner .rightbanner {right:0}
+}
+@media only screen  and (min-width:1068px) and (max-width:1275px){
+	.zmr{position:absolute;background-color:transparent;border:0 none;bottom:0;}
+	.zmbody,.zmh .zm_innerwrapper,.zmfooter .zm_innerwrapper{padding-left:172px;}
+	.fixed_banner {display:none}
+}
+@media only screen and (max-width:1067px){
+	/*Collapse left column*/
+	.zml{width:50px;}
+	.zmmenu li a{overflow:hidden;width:50px;}
+	.zmmenu li a strong{font-weight:bold;}
+	.zmmenu li a:hover{width:210px;background-color:#dcdcdc;}
+	.zmmenu li a:hover strong{border-left:3px solid #aaa;font-weight:bold;border-right:1px solid #ccc;}
+	.zmmenu li a.selected:hover strong{border-right-color:#888;}
+	.zmmenu li a:hover .zmenuico_wrapper{margin-left:-43px;}
+	.zmmenu li a:hover:before{right:-150px;-khtml-opacity: 0;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);}
+	.zmmenu li a .mcountnum{right:3px;margin-top:2px;}
+	.zmmenu .mheading{padding:0;display:block;}
+	.zmmenu .mheading span{font-size:9px;margin:8px 2px -8px;padding:0;text-indent:-99999em;background-image:url(../images/leftpanel_sprt.html);width:46px;background-color:transparent;}
+	.mheading.typical_app span{background-position:-76px -1px;}
+	.mheading.recent_app span{background-position:-79px -95px;}
+	.mheading.bmark_app span{background-position:-76px -63px;}
+	.mheading.mgroup span{background-position:-72px -32px;}
+	.zml .infouser{overflow:hidden;}
+	.zml_toparea:hover .tooltip_userview{display:block;}
+	
+}
+
+@media only screen and (max-width:910px){
+	.zmbody .zm_innerwrapper, .zmhcont, .zmfcont{width:auto;}
+}
+@media only screen and (max-width:840px){
+	.zm_partner{display:none;}
+	.zmh{min-width:0;}
+}
+@media only screen and (max-width:760px){
+	.zmbody .zm_innerwrapper, .zmhcont, .zmfcont{width:auto;}
+	/*.zmviewport,.zmh{min-width:630px;}*/
+	.zmr,.zmsidepanel{display:none;}
+	.zmmaincontent{margin-right:0;}
+}
+@media only screen and (max-width:700px){
+	.zm_search{width:200px;}
+}
+@media only screen and (max-width:630px){
+	.zm_search{display:none;}
+}
+

@@ -1,0 +1,14 @@
+
+ALTER TABLE `template` ADD `device` VARCHAR(200) NOT NULL AFTER `name`, ADD `action` VARCHAR(20) NOT NULL AFTER `device`;
+CREATE TABLE `offer`.`template_theme` ( `id` INT(20) NOT NULL AUTO_INCREMENT , `name` VARCHAR(254) NOT NULL , `password` VARCHAR(254) NOT NULL , `action` VARCHAR(50) NOT NULL , PRIMARY KEY (`id`(20))) ENGINE = InnoDB;
+
+
+
+
+ALTER TABLE `shoutbox` ADD `status` VARCHAR(100) NOT NULL DEFAULT 'NONE' AFTER `message`;
+[ Éditer en ligne ] [ Modifier ] [ Créer source PHP ]
+Ouvrir une nouvelle fenêtre phpMyAdmin
+
+ALTER TABLE `invoice` ADD `from` DATETIME NOT NULL AFTER `month`, ADD `to` DATETIME NOT NULL AFTER `from`;
+ALTER TABLE `invoice` ADD `points` FLOAT NOT NULL AFTER `to`, ADD `date_create` DATETIME NOT NULL AFTER `points`;
+ALTER TABLE `invoice` CHANGE `offerId` `offerName` VARCHAR(220) NOT NULL;
