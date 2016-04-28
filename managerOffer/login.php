@@ -86,153 +86,95 @@ if(isset($_POST['login']))
 }
 else
 {?>
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<!-- start: Meta -->
-	<meta charset="utf-8">
-	<title>Login</title>
-	<meta name="description" content="Bootstrap Metro Dashboard">
-	<meta name="author" content="Dennis Ji">
-	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-	<!-- end: Meta -->
-	
-	<!-- start: Mobile Specific -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- end: Mobile Specific -->
-	
-	<!-- start: CSS -->
-	<link id="bootstrap-style" href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link id="base-style" href="css/style.css" rel="stylesheet">
-	<link id="base-style-responsive" href="css/style-responsive.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-	<!-- end: CSS -->
-	
 
-	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<link id="ie-style" href="css/ie.css" rel="stylesheet">
-	<![endif]-->
-	
-	<!--[if IE 9]>
-		<link id="ie9style" href="css/ie9.css" rel="stylesheet">
-	<![endif]-->
-		
-	<!-- start: Favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<!-- end: Favicon -->
-	
-			<style type="text/css">
-			body { background: url(img/bg-login.jpg) !important; }
-		</style>
-		
-		
-		
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="assets/plugins/iCheck/square/blue.css">
 
-<body>
-		<div class="container-fluid-full">
-		<div class="row-fluid">
-					
-			<div class="row-fluid">
-				<div class="login-box">
-					<div class="icons">
-						<a href="<?php echo $domainsite;?>/index.php"><i class="halflings-icon home"></i></a>
-						<a href="#"><i class="halflings-icon cog"></i></a>
-					</div>
-					<h2>Login to your account</h2>
-					<form class="form-horizontal" action="login.php" method="post">
-						<fieldset>
-							
-							<div class="input-prepend" title="Username">
-								<span class="add-on"><i class="halflings-icon user"></i></span>
-								<input class="input-large span10" name="userName" id="username" type="text" placeholder="Username"/>
-							</div>
-							<div class="clearfix"></div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="hold-transition login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <a href="assets/index2.html"><b>KUBYCAN</b> OFFER</a>
+      </div><!-- /.login-logo -->
+      <div class="login-box-body">
+        <p class="login-box-msg">Login to your account</p>
+        <form class="form-horizontal" action="login.php" method="post">
+          <div class="form-group has-feedback">
+            <input type="input" class="form-control" placeholder="Username" id="username" name="userName">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password" id="password" name="userPassword" >
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox"> Remember Me
+                </label>
+              </div>
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" name="login"  class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
 
-							<div class="input-prepend" title="Password">
-								<span class="add-on"><i class="halflings-icon lock"></i></span>
-								<input class="input-large span10" name="userPassword" id="password" type="password" placeholder="Password"/>
-							</div>
-							<div class="clearfix"></div>
-							
-							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
-							<label class="remember" for="remember"><a href='./register.php?ref=index' style='color:red'>Register</a></label>
-							<div class="button-login">	
-								<button type="submit" name="login" class="btn btn-primary">Login</button>
-							</div>
-							<div class="clearfix"></div>
-					</form>
-				</div><!--/span-->
-			</div><!--/row-->
-			
+        <div class="social-auth-links text-center">
+          <p>- OR -</p>
+          <a href='./register.php?ref=index' class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-key"></i> Register new account</a>
+          <!--
+          <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
+          <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
+          -->
+        </div>
+        <!-- /.social-auth-links -->
 
-	</div><!--/.fluid-container-->
-	
-		</div><!--/fluid-row-->
-	
-	<!-- start: JavaScript-->
+        <a href="#">I forgot my password</a><br>
+        <a href="register.html" class="text-center">Register a new membership</a>
 
-		<script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/jquery-migrate-1.0.0.min.js"></script>
-	
-		<script src="js/jquery-ui-1.10.0.custom.min.js"></script>
-	
-		<script src="js/jquery.ui.touch-punch.js"></script>
-	
-		<script src="js/modernizr.js"></script>
-	
-		<script src="js/bootstrap.min.js"></script>
-	
-		<script src="js/jquery.cookie.js"></script>
-	
-		<script src='js/fullcalendar.min.js'></script>
-	
-		<script src='js/jquery.dataTables.min.js'></script>
+      </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->
 
-		<script src="js/excanvas.js"></script>
-	<script src="js/jquery.flot.js"></script>
-	<script src="js/jquery.flot.pie.js"></script>
-	<script src="js/jquery.flot.stack.js"></script>
-	<script src="js/jquery.flot.resize.min.js"></script>
-	
-		<script src="js/jquery.chosen.min.js"></script>
-	
-		<script src="js/jquery.uniform.min.js"></script>
-		
-		<script src="js/jquery.cleditor.min.js"></script>
-	
-		<script src="js/jquery.noty.js"></script>
-	
-		<script src="js/jquery.elfinder.min.js"></script>
-	
-		<script src="js/jquery.raty.min.js"></script>
-	
-		<script src="js/jquery.iphone.toggle.js"></script>
-	
-		<script src="js/jquery.uploadify-3.1.min.js"></script>
-	
-		<script src="js/jquery.gritter.min.js"></script>
-	
-		<script src="js/jquery.imagesloaded.js"></script>
-	
-		<script src="js/jquery.masonry.min.js"></script>
-	
-		<script src="js/jquery.knob.modified.js"></script>
-	
-		<script src="js/jquery.sparkline.min.js"></script>
-	
-		<script src="js/counter.js"></script>
-	
-		<script src="js/retina.js"></script>
-
-		<script src="js/custom.js"></script>
-	<!-- end: JavaScript-->
-	
-</body>
+    <!-- jQuery 2.1.4 -->
+    <script src="assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="assets/plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' // optional
+        });
+      });
+    </script>
+  </body>
 </html>
 <?php
 }
