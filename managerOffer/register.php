@@ -102,156 +102,112 @@ $date = date("Y-m-d H:i:s");
 }
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<!-- start: Meta -->
-	<meta charset="utf-8">
-	<title>Register</title>
-	<meta name="description" content="Bootstrap Metro Dashboard">
-	<meta name="author" content="Dennis Ji">
-	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-	<!-- end: Meta -->
-	
-	<!-- start: Mobile Specific -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link id="bootstrap-style" href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link id="base-style" href="css/style.css" rel="stylesheet">
-	<link id="base-style-responsive" href="css/style-responsive.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-	
-	<link rel="shortcut icon" href="img/favicon.ico">
-	
-			<style type="text/css">
-			body { background: url(img/bg-login.jpg) !important; }
-		</style>
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Registration Page</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="assets/plugins/iCheck/square/blue.css">
 
-<body>
-		<div class="container-fluid-full">
-		<div class="row-fluid">
-					
-			<div class="row-fluid">
-				<div class="login-box">
-					<div class="icons">
-						<a href="index.html"><i class="halflings-icon home"></i></a>
-						<a href="#"><i class="halflings-icon cog"></i></a>
-					</div>
-					<h2><?php if(isset($final_report)){ echo $final_report;}else{echo "Create account";}?></h2>
-					<form class="form-horizontal" action="register.php" method="post">
-						<fieldset>
-							
-							<div class="input-prepend" title="Username">
-								<span class="add-on"><i class="halflings-icon user"></i></span>
-								<input class="input-large span10" name="username" id="username" type="text" placeholder="Username"/>
-							</div>
-							<div class="clearfix"></div>
-								
-							<div class="input-prepend" title="Email">
-								<span class="add-on"><i class="halflings-icon user"></i></span>
-								<input class="input-large span10" name="email" id="email" type="text" placeholder="Email"/>
-							</div>
-							<div class="clearfix"></div>
-							
-							<div class="input-prepend" title="Password">
-								<span class="add-on"><i class="halflings-icon lock"></i></span>
-								<input class="input-large span10" name="password" id="password" type="password" placeholder="Password"/>
-							</div>
-							<div class="clearfix"></div>
-							
-							<div class="input-prepend" title="codeLogin">
-								<span class="add-on"><i class="halflings-icon lock"></i></span>
-								<input class="input-large span10" name="codeLogin" id="codelogin" type="text" placeholder="Code Login"/>
-							</div>
-							<div class="clearfix"></div>
-							
-							<?php
-							if(isset($_GET['ref'])||isset($_POST['ref']))
-							{
-								$ref=$_REQUEST['ref'];
-								echo "<div class='input-prepend' title='Password'>
-											<span class='add-on'><i class='halflings-icon lock'></i></span>
-											<input class='input-large span10' name='ref_dis' id='ref' type='text' value='$ref' disabled='disabled'/>
-										</div>
-										<div class='clearfix'></div>";
-								echo "<input type='hidden' name='ref' class='txt' value='$ref' hidden=\"hidden\"/><br>";
-							}
-							?>
-														
-							<div class="button-login">	
-								<input type="submit" name="register" class="btn btn-primary" value="Register">
-							</div>
-							<div class="clearfix"></div>
-						</fieldset>
-					</form>
-				</div><!--/span-->
-			</div><!--/row-->
-			
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="hold-transition register-page">
+    <div class="register-box">
+      <div class="register-logo">
+        <a href="assets/index2.html"><b>Admin</b>LTE</a>
+      </div>
 
-	</div><!--/.fluid-container-->
-	
-		</div><!--/fluid-row-->
-	
-	<!-- start: JavaScript-->
+      <div class="register-box-body">
+        <p class="login-box-msg">Register a new membership</p>
+        <form class="form-horizontal" action="register.php" method="post">
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" placeholder="Username" name="username" id="username">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="email" class="form-control" placeholder="Email" name="email" id="email" >
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password" name="password" id="password" >
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+         
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Retype password">
+            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input class="form-control" placeholder="Code Login"  name="codeLogin" id="codelogin" >
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <?php
+				if(isset($_GET['ref'])||isset($_POST['ref']))
+				{
+					$ref=$_REQUEST['ref'];
+					echo "<div class='input-prepend' title='Password'>
+								<span class='add-on'><i class='halflings-icon lock'></i></span>
+								<input class='input-large span10' name='ref_dis' id='ref' type='text' value='$ref' disabled='disabled'/>
+							</div>
+							<div class='clearfix'></div>";
+					echo "<input type='hidden' name='ref' class='txt' value='$ref' hidden=\"hidden\"/><br>";
+				}
+				?>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox"> I agree to the <a href="#">terms</a>
+                </label>
+              </div>
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat" name="register" >Register</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+        <!--
+        <div class="social-auth-links text-center">
+          <p>- OR -</p>
+          <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign up using Facebook</a>
+          <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign up using Google+</a>
+        </div>
+		-->
+        <a href="login.html" class="text-center">I already have a membership</a>
+      </div><!-- /.form-box -->
+    </div><!-- /.register-box -->
 
-		<script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/jquery-migrate-1.0.0.min.js"></script>
-	
-		<script src="js/jquery-ui-1.10.0.custom.min.js"></script>
-	
-		<script src="js/jquery.ui.touch-punch.js"></script>
-	
-		<script src="js/modernizr.js"></script>
-	
-		<script src="js/bootstrap.min.js"></script>
-	
-		<script src="js/jquery.cookie.js"></script>
-	
-		<script src='js/fullcalendar.min.js'></script>
-	
-		<script src='js/jquery.dataTables.min.js'></script>
-
-		<script src="js/excanvas.js"></script>
-		<script src="js/jquery.flot.js"></script>
-		<script src="js/jquery.flot.pie.js"></script>
-		<script src="js/jquery.flot.stack.js"></script>
-		<script src="js/jquery.flot.resize.min.js"></script>
-	
-		<script src="js/jquery.chosen.min.js"></script>
-	
-		<script src="js/jquery.uniform.min.js"></script>
-		
-		<script src="js/jquery.cleditor.min.js"></script>
-	
-		<script src="js/jquery.noty.js"></script>
-	
-		<script src="js/jquery.elfinder.min.js"></script>
-	
-		<script src="js/jquery.raty.min.js"></script>
-	
-		<script src="js/jquery.iphone.toggle.js"></script>
-	
-		<script src="js/jquery.uploadify-3.1.min.js"></script>
-	
-		<script src="js/jquery.gritter.min.js"></script>
-	
-		<script src="js/jquery.imagesloaded.js"></script>
-	
-		<script src="js/jquery.masonry.min.js"></script>
-	
-		<script src="js/jquery.knob.modified.js"></script>
-	
-		<script src="js/jquery.sparkline.min.js"></script>
-	
-		<script src="js/counter.js"></script>
-	
-		<script src="js/retina.js"></script>
-
-		<script src="js/custom.js"></script>
-	<!-- end: JavaScript-->
-	
-</body>
+    <!-- jQuery 2.1.4 -->
+    <script src="assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="assets/plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' // optional
+        });
+      });
+    </script>
+  </body>
 </html>
