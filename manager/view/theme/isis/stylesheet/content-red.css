@@ -1,0 +1,195 @@
+.box-product > div, .jcarousel-skin-opencart .jcarousel-container, #content ,#welcome-content,.box-left,.product-grid > div   {
+	background: #D46053!important;
+}
+.box-product .name a, .box-product .price,.box-left .box-heading , .box-category > ul > li > a, .box-category > ul > li ul > li > a, .box-category > ul > li, .box-left .box-product-left .name a,.box-left .box-product-left .price ,
+#content, .breadcrumb a, .breadcrumb,h1, .welcome ,h2, .product-filter .display, .product-filter .sort, .product-filter .limit, .product-list .description, .product-list .price-tax, .product-list .wishlist a, .product-list .compare a,
+.product-grid .wishlist a, .product-grid .compare a, .product-info .description span, .product-info .price-tax, .product-info .options,.product-info .cart, .product-info .cart div > span, .product-info .cart .minimum, .htabs a ,
+.attribute tr td:first-child, .attribute td, table.form > * > * > td , .success, .warning, .attention, .information , #isisside #cart .heading a span, #isisside #cart .cart td, #isisside #cart table.total td, #isisside #currency a,
+.product-info .price .discount, .product-info .price .reward, #isisside #search input, .welcome
+{
+    color: #FFFFFF;
+}	
+.breadcrumb a{
+	color: #FFFFFF!important;
+}
+.product-filter {
+	border-bottom: 1px solid #A03428;
+}
+.product-list > div + div, .pagination  {
+    border-top: 1px solid #A03428;
+}
+.pagination .links b,.pagination .links a:hover {
+    background: none repeat scroll 0 0 #C5594C;
+    border: 1px solid #A03428;
+}
+.pagination .links a {
+    border: 1px solid #A03428;
+    color: #FFFFFF;
+	background: none repeat scroll 0 0 #D46053;
+}
+
+select {
+    background: none repeat scroll 0 0 #C5594C;
+    border: 1px solid #A03428;
+	color: #FFFFFF;
+}
+.buttons {
+	background: none;
+}
+.product-grid > div {
+	background: #D46053!important;
+	border: 1px solid #A03428;
+}
+.product-info .image {
+	border: 1px solid #A03428;
+}
+
+input[type="text"], input[type="password"], textarea {
+    background: none repeat scroll 0 0 #C5594C;
+    border: 1px solid #A03428;
+	color: #FFFFFF;
+}
+.product-info .review > div {
+    border-bottom: 1px solid #A03428;
+	color: #FFFFFF;
+}
+.product-info .review {
+    border-left: 1px solid #A03428;
+    border-right: 1px solid #A03428;
+    border-top: 1px solid #A03428;
+}
+.htabs a {
+    border-left: 1px solid #A03428;
+    border-right: 1px solid #A03428;
+    border-top: 1px solid #A03428;
+}	
+.tab-content {
+    border-bottom: 1px solid #A03428;
+    border-left: 1px solid #A03428;
+    border-right: 1px solid #A03428;
+}
+.htabs {
+    border-bottom: 1px solid #A03428;	
+}
+.htabs a.selected {
+    background: none repeat scroll 0 0 #C5594C;
+}	
+
+.attribute thead td, .attribute thead tr td:first-child {
+    background: none repeat scroll 0 0 #C5594C;
+    color: #FFFFFF;
+}	
+.attribute td {
+    border-bottom: 1px solid #A03428;
+    border-right: 1px solid #A03428;
+}	
+.attribute {
+    border-left: 1px solid #A03428;
+    border-top: 1px solid #A03428;	
+}
+
+.cart-info thead td {
+    background: url("../image/red/container-bg.png");
+}
+.cart-module .cart-heading {
+    background: url("../image/red/container-bg.png");
+}	
+.cart-info thead td {
+	border-bottom: 1px solid #A03428;
+}
+.cart-info tbody td {
+    border-bottom: 1px solid #A03428;
+}	
+.cart-info table {
+    border-collapse: collapse;
+    border-left: 1px solid #A03428;
+    border-right: 1px solid #A03428;
+    border-top: 1px solid #A03428;
+}	
+.cart-module .cart-heading {
+	border: 1px solid #A03428;
+}	 
+.cart-total {
+    border-top: 1px solid #A03428;
+}	
+
+.checkout-heading {
+	background: url("../image/red/container-bg.png");
+    border: 1px solid #A03428;
+}	
+.order-list .order-content {
+    border-bottom: 1px solid #A03428;
+    border-top: 1px solid #A03428;
+}
+
+table.list thead td,.wishlist-product thead td  {
+    background-color: #C5594C;
+	color: #FFFFFF;
+}	
+table.list td {
+    border-bottom: 1px solid #A03428;
+    border-right: 1px solid #A03428;
+}
+table.list {
+    border-left: 1px solid #A03428;
+    border-top: 1px solid #A03428;
+}	
+.wishlist-product thead td {
+	border-bottom: 1px solid #A03428;
+}
+.wishlist-product table {
+    border-collapse: collapse;
+    border-left: 1px solid #A03428;
+    border-right: 1px solid #A03428;
+    border-top: 1px solid #A03428;
+}	
+.wishlist-product tbody td {
+    border-bottom: 1px solid #A03428;
+}	
+.success {
+	background: #C5594C url('../image/success.png') 10px center no-repeat;
+
+}
+.warning {
+	background: #C5594C url('../image/warning.png') 10px center no-repeat;
+}
+.attention {
+	background: #C5594C url('../image/attention.png') 10px center no-repeat;
+}
+#isisside{
+    background-color: #D46053;
+
+}	
+#isisside #cart .heading  {
+	border: 1px solid #A03428;
+	background-color: #D46053;
+}	
+#isisside #cart .content {
+    background: none repeat scroll 0 0 #D46053;
+    border: 1px solid #A03428;
+	color: #FFFFFF;
+}	
+
+#isisside #currency, #isisside #language, #isisside #search  {
+    background: none repeat scroll 0 0 #D46053;
+    border: 1px solid #A03428;
+	color: #FFFFFF;
+}	
+#isisside ul li.side_cart span.icon {
+    background: url("../image/red/cart_icon.png") no-repeat scroll 50% 50% transparent;
+}
+#isisside ul li.side_lang span.icon {
+    background: url("../image/red/lang_icon.png") no-repeat scroll 50% 50% transparent;
+}	
+#isisside ul li.side_search span.icon {
+    background: url("../image/red/search_icon.png") no-repeat scroll 50% 50% transparent;
+}
+#isisside .button-search {
+    background: url("../image/red/search_icon.png") no-repeat scroll 50% 50% transparent;
+}
+#isisside ul li.side_currency span.icon {
+    background: url("../image/red/currency_icon.png") no-repeat scroll 50% 50% transparent;
+}	
+#isisside #cart .cart td {
+    border-bottom: 1px solid #A03428;
+}	

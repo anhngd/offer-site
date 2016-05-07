@@ -1,0 +1,88 @@
+
+<div style="height:40px;margin:5px;">
+	<div style="float:right;">
+		<span name="check_ssh" class="btn btn-info" href="#" id='button_add_app'>ADD APP</span>
+	</div>
+	<div style="clear:right;"></div>
+</div>
+<div class="box" style="margin:0px auto !important; display: block;padding:5px;width:630px;margin-bottom:10px;" id="box_add_app">
+	<div class="box-content" id="form_add_app">
+		<form class="form-horizontal" id='form_add_app_submit' action='./index.php?managerapp=add_app' method='post'  enctype="multipart/form-data">
+		  <fieldset>
+			<div class="control-group">
+			  <label class="control-label" for="typeahead">Name:</label>
+			  <div class="controls">
+				<input type="text" class="span6 typeahead" id="typeahead" name="name_app">
+			  </div>
+			</div>
+			
+			<div class="control-group">
+			  <label class="control-label" for="typeahead">Version:</label>
+			  <div class="controls">
+				<input type="text" class="span6 typeahead" id="typeahead" name="version">
+			  </div>
+			</div>
+			
+			<div class="control-group">
+			  <label class="control-label" for="typeahead">Size:</label>
+			  <div class="controls">
+				<input type="text" class="span6 typeahead" id="typeahead" name="size">
+			  </div>
+			</div>
+			
+			<div class="control-group">
+			  <label class="control-label" for="typeahead">Link offer:</label>
+			  <div class="controls">
+				<input type="text" class="span6 typeahead" id="typeahead" name="link_offer">
+			  </div>
+			</div>
+			
+			<div class="control-group">
+			  <label class="control-label" for="typeahead">Producer:</label>
+			  <div class="controls">
+				<input type="text" class="span6 typeahead" id="typeahead" name="producer">
+			  </div>
+			</div>
+			
+			
+			
+			<div class="control-group">
+			  <label class="control-label" for="date01">OS</label>
+			  <div class="controls">
+				<select id="selectError3" name="os">
+					<option value="android">Android</option>
+					<option value="winphone">Window phone</option>
+					<option value="ios">iOS</option>
+				</select>
+			  </div>
+			</div>
+			
+			<div class="control-group">
+			  <label class="control-label" for="date01">Day update</label>
+			  
+			  <div class="controls">
+				<input type="text" class="input-xlarge datepicker" id="date03"  name="date_update" value="02/16/2012">
+			  </div>
+			</div>
+
+			<div class="control-group">
+			  <label class="control-label" for="fileInput">Image</label>
+			  <div class="controls">
+				<input class="input-file uniform_on" id="fileInput"  name="image_file" type="file">
+			  </div>
+			</div>          
+			<div class="control-group hidden-phone">
+			  <label class="control-label" for="textarea2">Content</label>
+			  <div class="controls">
+				<textarea class="cleditor" id="textarea2" rows="3"  name="content_app"></textarea>
+			  </div>
+			</div>
+			<div class="form-actions">
+			  <button type="submit" class="btn btn-primary" >Add app</button>
+			  <button type="reset" class="btn">Cancel</button>
+			</div>
+		  </fieldset>
+		</form>
+	</div>
+</div>
+

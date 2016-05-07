@@ -1,0 +1,149 @@
+body {
+	background: url("../image/dark/container-bg.png");
+}
+#top-holder {
+    background: none repeat scroll 0 0 #2E2E2E;
+}
+#container {
+    background: none repeat scroll 0 0 #2E2E2E;
+}
+.menu {
+    border-color: #000000;
+}
+.menu ul#topnav li a {
+    border-right: 1px solid #000000;
+	color: #FFFFFF;
+}	
+#menu-holder {
+    border-bottom: 1px solid #000000;
+}
+.menu ul#topnav li.dropdown {
+	background:url(../image/dark/nav_arrow.png) 100% 21px no-repeat;
+}
+.menu ul#topnav li.dropdown:hover a {
+	background: #242424 url(../image/dark/nav_arrow2.png) 100% 21px no-repeat;
+}
+.menu ul#topnav ul.children li.dropdown, .menu ul#topnav li:hover ul.children li.dropdown {
+	background:url(../image/dark/nav_arrow3.png) top right no-repeat;
+}
+.menu ul#topnav li:hover a {
+	background-color:#242424;
+}
+.menu ul#topnav ul.children {
+	background-color: #2E2E2E;
+	border-left: #000000 1px solid;
+	border-right: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+}
+.menu ul#topnav ul.children2 {
+	background: #2E2E2E;
+	border: #000000 1px solid;
+}
+.menu ul#topnav ul.children li a:hover {
+	background-color:#242424;
+}
+.menu ul#topnav ul.children a, .menu ul#topnav li:hover ul.children a {
+	color:#FFFFFF;
+}
+#header #welcome {
+    color: #FFFFFF;
+}
+#header .links a {
+    color: #FFFFFF;
+}
+#slide-holder {
+    background: url("../image/dark/slider-bg.png") repeat scroll 0 0 transparent;
+}
+.slides-wrapper {
+    background-color: #2E2E2E;
+}
+.nivoSlider {
+    border-bottom: 1px solid #000000!important;
+}	
+.nivo-controlNav a {
+	background-image: url('../image/dark/slideshow-dots.png')!important;
+}
+.nivo-directionNav a {
+	background-image: url('../image/dark/slideshow-arrows.png')!important;
+}
+.slideshow-bottom {
+	background: url("../image/dark/bottom-slider.png") repeat-x scroll 0 0 transparent;
+	border-bottom: 1px solid #000000;
+}	
+#content {
+    border: 1px solid #000000;
+}
+
+.pagination .links a {
+	border: 1px solid #000000;
+}
+
+.pagination .links b {
+	border: 1px solid #000000;
+}
+.box-product > div {
+	border: 1px solid #000000;	
+}
+.box-left .box-heading {
+	border: 1px #000000 solid;
+	border-bottom: none;
+}
+.box-left .box-content {
+	border: 1px #000000 solid;
+	border-top: none;
+}
+.product-grid > div {
+	border: 1px solid #000000;	
+}
+
+#footer {
+	border-top: 1px solid #000000;
+	background: #2E2E2E;
+}
+#powered {
+	background: #2E2E2E;
+}	
+.banner_4 div img {
+	border: 1px solid #000000;	
+}
+
+.banner_6 div img {
+	border: 1px solid #000000;	
+}
+
+.banner_12 div img {
+	border: 1px solid #000000;	
+}
+#isisside {
+	border-right: 1px #000000 solid;
+	border-top: 1px #000000 solid;
+	border-bottom: 1px #000000 solid;
+}
+.jcarousel-skin-opencart .jcarousel-container {
+    border: 1px solid #000000!important;
+}
+.box .box-heading {
+	color: #FFFFFF;
+}
+.footer-area .header_3, .footer-area .header_4, .footer-area .header_6, .footer-area .header_12,.footer-area .column_3 p ,.footer-area .column_4 p ,.footer-area .column_6 p ,.footer-area .column_12 p,#footer .column2 ul li ,
+.footer-area .column_3, .footer-area .column_4, .footer-area .column_6, .footer-area .column_12, #footer h4,#powered-holder   {
+	color: #FFFFFF;
+}
+#twitter li span a, #twitter li a, #footer .column a, #powered a {
+    color: #EEEEEE;
+	opacity: 1;
+}
+
+.slider-shadow1 {
+	background: url("../image/dark/shadow-1.png") no-repeat scroll center center transparent;
+}	
+
+ .slider-shadow2 {
+	background: url("../image/dark/shadow-2.png") no-repeat scroll 0 0 transparent;
+}	
+ .slider-shadow3 {
+	background: url("../image/dark/shadow-3.png") no-repeat scroll 0 0 transparent;
+}
+ .slider-shadow4 {
+	background: url("../image/dark/shadow-4.png") no-repeat scroll 0 0 transparent;
+}

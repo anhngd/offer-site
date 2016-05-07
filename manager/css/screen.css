@@ -1,0 +1,297 @@
+/*
+yellow - ffc920
+dark grey - 555
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+
+body {
+	position: relative;
+	font-size: 14px; line-height: 1.3em;	color:#ddd;
+	font-family: "proxima-nova-soft",sans-serif; 
+	background: url('../images/body-fw-bg-2.png') #333 top repeat-x fixed;
+	margin-top: 0px;
+}
+
+body.howitworks-android, body.howitworks-ios{	background: url('../images/body-fw-bg-4.png') #fff top center repeat-x;} /*white background*/
+body.advertise{	background: url('../images/body-fw-bg-4.png') #fff top center repeat-x;} /*white background*/
+body.privacy, body.terms{background-image:none;}
+
+p,h1,h2,h3,hr{ margin-bottom: 14px; }
+
+a{	color: #fff;text-decoration: underline;}
+a:hover{	color: #555;text-decoration: underline;}
+
+ul, ol{	margin-left: 20px; margin-bottom: 14px;}
+ul  ul, ol ol{ padding-top: 14px;}
+li{	margin-bottom: 14px;}
+h1{	 font-size: 37px;  line-height: 1.3em; color: #ffc920; font-weight: 400;}
+body.home h1{	font-size: 52px; padding-bottom: 40px;}
+h2{ font-size: 27px;  line-height: 1.1em; font-weight: 400;}
+body.home h2{ font-size: 27px;  line-height: 1.1em; font-weight: 400;}
+h3{ font-size: 17px;  line-height: 30px; font-weight: 400;}
+hr {	border: 0px; border-top: 1px solid #fff; height: 0px; background:none;}
+
+.clear{    height: 0px; clear: both;  overflow: hidden;}
+
+#main-wrapper {  position: relative;  width: 980px; margin: 0 auto; z-index: 20;}
+
+#header{	padding-top: 10px; height: 130px;	width: 100%;}
+
+body.home #header{	 height: 70px;}
+
+
+#content{	height:auto !important; height:520px; min-height:520px; padding: 20px 0; position: relative;}
+body.howitworks-android #content, body.howitworks-ios #content{	height:auto !important; height:640px; min-height:640px; padding: 20px 0; position: relative;}
+#content-2{	color: #555;	text-align: center;	padding-bottom: 80px; position: relative;}
+#content-3{	color: #555;	text-align: center; position: relative;}
+
+#content-2 p, #content-3 p{font-size: 19px; line-height: 1.3em; }
+body.advertise #content-2{	padding-bottom: 80px;}
+body.advertise #content-3{	padding-bottom: 200px;}
+body.howitworks-android #content-2, body.howitworks-ios #content-2{padding-bottom: 100px;}
+
+#content-3 h2, #content-2 h2{	color: #68686e;	font-size: 45px;}
+#content-3 h3, #content-2 h3{	font-size: 27px;	margin-bottom: 35px;	color:#333;}
+
+#banners{	position: absolute; top: 0px; 	width: 100% !important;	height: 700px; overflow: hidden;	z-index:1;}
+#banners > div{	position: absolute;	top: 0px;	width: 100% !important; height: 700px;}
+
+
+
+body.support #banner{ background:url('../images/banners/support.jpg') top center no-repeat;}
+body.contact #banner{ background:url('../images/banners/contact.jpg') top center no-repeat;}
+body.advertise #banner{ background:url('../images/banners/advertise.jpg') top center no-repeat;}
+body.howitworks-android #banner{ background:url('../images/banners/howitworks-android.jpg') top center no-repeat;}
+body.howitworks-ios #banner{ background:url('../images/banners/howitworks-ios.jpg') top center no-repeat;}
+
+
+
+#footer-fw{	text-decoration:bold;text-align:center;	 width: 100%; height: 60px; position: absolute;	background-image: url(../images/footer-fw-bg.png);	background-repeat: repeat-x;	z-index:20;}
+#footer{	width: 980px; margin: 0px auto;	background: url('../images/footer-b.png') top right no-repeat;	padding-top: 22px; color: #000;	z-index:20;}
+#footer a{	text-decoration: none; color: #000;}
+#footer a:hover{ color: #fff;}
+#footer-left{	width: 300px; float: left;}
+#footer-right{	width: 200px; float: right;}
+
+#free-my-apps-logo{
+	float: left; display: block; width: 254px; height:67px; 
+	background: url('../images/free-my-apps-logo.png') top center no-repeat;	
+}
+
+#nav {
+	float:left; width: 520px; padding: 0; margin-top:15px; margin-left: 10px;
+	list-style: none;	font-size: 16px;
+}
+#nav > li {
+	position:relative;height: 31px; padding: 0 0 0 10px; margin: 10px 0 0 10px;
+	display: inline-block; 
+	*display: inline;zoom: 1; /*internet explorer */
+	text-align: center; vertical-align:middle; 
+	background: url('../images/nav-item-bg.png') top left no-repeat;
+}
+#nav > li:first-child{	background: none;	}
+#nav > a{ display: inline-block; height: 41px; }
+#nav a {  font-weight: normal;text-decoration: none;}
+#nav a.active {	color: #ffc920;	}
+#nav a:hover { color: #ffc920;}
+#nav ul {
+    display:none;	position:absolute;	left:0;	top: 30px;		margin:0;	padding:10px 0 0 0;
+    list-style:none; z-index: 50; 
+    background: url('../images/sub-nav-bg.png') #1f1f1f top left repeat-x;
+}
+#nav ul li {
+    display: block;  min-width: 150px; margin-left: 0px; margin-bottom: 0px; padding: 10px 7px 10px 15px;
+    font-size: 13px; text-align: left;
+}
+#social-nav{
+	float: left;	list-style: none; 	margin-top: 20px;
+}
+#social-nav li{
+	display: inline-block;
+	*display: inline;zoom: 1; /*internet explorer */
+}
+
+
+
+
+
+.big-column-home{text-align: center;margin:0px auto;padding:0px auto;}
+
+
+.advertise-column{ width: 650px; height: 340px;}
+.advertise-column h1{padding-bottom:20px;}
+.advertise-column h2{font-size: 37px; line-height: 1.2em;}
+.advertise-column a{text-decoration: none;}
+
+.support-column{ width: 520px;}
+.support-column h1{font-size: 58px;}
+.support-column h2{font-size: 33px; line-height: 1.3em; padding-bottom: 0px;}
+.support-column p{font-size: 25px; line-height: 1.3em; padding-bottom: 0px;}
+
+.contact-column{ width: 570px;}
+.contact-column h1{font-size: 58px;}
+.contact-column h2{font-size: 33px; line-height: 1.3em; padding-bottom: 50px;}
+
+body.advertise .column-1{float:left; width:330px; height: 280px;background: url('../images/number-one-bg.png') bottom right no-repeat; margin-right: 10px;}
+body.advertise .column-1 p{padding-right: 120px;}
+body.advertise .column-2{float:left; width:315px;height: 290px;background: url('../images/heart-bg.png') bottom right no-repeat;margin-right: 10px;}
+body.advertise .column-2 p{padding-right: 120px;}
+body.advertise .column-3{float:left; width:300px;height: 330px;background: url('../images/graph-bg.png') bottom right no-repeat;margin-right: 10px;position: relative;}
+body.advertise .column-3 p{padding-right: 140px;}
+
+
+body.howitworks-android .column-1{float:left; width:330px; height: 340px; margin-right: 10px;}
+body.howitworks-android .column-1 p{padding-right: 120px;}
+body.howitworks-android .column-2{float:left; width:315px;height: 250px;margin-right: 10px;}
+body.howitworks-android .column-2 p{padding-right: 120px;}
+body.howitworks-android .column-3{float:left; width:300px;height: 330px;position: relative;}
+body.howitworks-android .column-3 p{padding-right: 140px;}
+
+
+body.howitworks-ios .column-1{float:left; width:330px; height: 340px; margin-right: 10px;}
+body.howitworks-ios .column-1 p{padding-right: 120px;}
+body.howitworks-ios .column-2{float:left; width:315px;height: 250px;margin-right: 10px;}
+body.howitworks-ios .column-2 p{padding-right: 120px;}
+body.howitworks-ios .column-3{float:left; width:300px;height: 330px;position: relative;}
+body.howitworks-ios .column-3 p{padding-right: 140px;}
+
+
+.half-column{
+	float: left; width: 460px; padding-right: 20px;text-align:left;}
+
+.half-column-2{
+	float: left; width: 460px; padding-right: 0px;text-align:left;	}
+
+#privacy-sticky{
+	position: absolute;	top: 300px; right: 50px; z-index: 20;}
+
+#howitworks-sticky{
+	display: block; position: absolute; top: 500px; left: 400px; z-index: 20; width: 176px; height: 177px;
+	background: url('../images/howitworks-sticky.jpg') top left no-repeat;
+}
+
+.form-1{ float: left; width: 350px; padding: 0 60px 0 100px;}
+.form-2{ float: left; width: 380px;}
+
+form{text-align: left; padding-top: 30px;}
+
+#home-lower-banner{	width: 960px; height: 210px; padding: 15px 0px 0px 20px;	background: url('../images/home-banner-bg.png') top left no-repeat;}
+#home-lower-banner h3{	font-size: 28px; }
+#home-lower-banner p{font-size:16px; line-height: 1.4em;}
+#home-banner-column-1{
+	float:left; width: 400px; height: 100%; padding-right: 30px; position: relative;	background: url('../images/column-bg.png') top right no-repeat;
+}
+
+#home-banner-column-1 p {	display: block; width: 280px;	}
+#home-banner-column-2{	float:left; width: 320px; height: 100%; position: relative; padding-left: 20px;	background: url('../images/column-bg.png')  top right no-repeat;}
+#home-banner-column-2 p{	display: block; width: 220px;}
+#home-banner-column-3{	float:left; width: 180px; padding-left: 10px;}
+
+#home-phonepic{	position: absolute; top: 35px; right: 20px;}
+#home-phonepic-2{	position: absolute; top: 35px; right: 10px;}
+
+#free-apps-button{	position: absolute; top: 130px; left: 0px;	display: block; width: 264px; height: 34px; 	background: url('../images/free-apps-button.png') top left no-repeat;}
+#free-apps-button:hover{	background-position: 0px -34px;}
+/*#beta-button{	position: absolute; top: 130px; left: 20px;	display: block; width: 264px; height: 29px; background: url('../images/beta-button.png') top left no-repeat; z-index: 30;}
+#beta-button:hover{	background-position: 0px -29px;}*/
+#google-play-button{	position: absolute; top: 530px; left: 435px;	display: block; width: 140px; height: 46px; background: url('../images/google-play-button.png') top left no-repeat; z-index: 30;}
+#google-play-button:hover{	background-position: 0px -46px;}
+
+body.home #google-play-button{	position: absolute; top: 130px; left: 20px;}
+
+/*#howitworks-ios-address{position: absolute;top: 220px; left: 350px;}
+*/
+
+#m-freemyapps-com-icon{	position: absolute; top: 545px; left: 370px;}
+
+#credits-button{	display: block;	width: 260px;	height: 49px;		background: url('../images/credits-button.png') top left no-repeat;}
+
+#swoop{position: absolute; top: 250px; left: 0px;}
+
+.tell-me-more-button{	display: block;	width: 238px; height: 61px;	background:url('../images/tell-me-more-button.png') top left no-repeat;}
+#button-1{position: absolute; top: 600px; left: 390px;}
+
+.slideshow-home{height:20px; margin:0px auto;padding:0px 0px 0px 190px;}
+
+/*form iframed
+label { margin-right: 12px; margin-bottom: 9px; color: #444; font-size: 1.2em; padding-left: 10px;}
+
+.txt { 
+	display: block; width: 350px; margin-bottom: 10px; padding: 8px 9px;border: 1px solid #ddd; 
+	color: #676767;font-size: 1em;line-height: 1.2em;
+	-webkit-border-radius: 12px; border-radius: 12px;
+	-moz-box-shadow: inset 0 0 5px 5px #eee;
+	-webkit-box-shadow: inset 0 0 5px 5px#eee;
+	box-shadow: inset 0 0 5px 5px #eee;
+}
+
+.txtarea { 
+	display: block; resize: none;width: 350px; height: 100px; padding: 5px 9px; border: 1px solid #ddd;  margin-bottom: 10px; 
+	color: #676767; font-size: 1em; line-height: 1.2em;
+	-webkit-border-radius: 12px;border-radius: 12px;
+	-moz-box-shadow: inset 0 0 5px 5px #eee;
+	-webkit-box-shadow: inset 0 0 5px 5px#eee;
+	box-shadow: inset 0 0 5px 5px #eee;
+}
+
+.txt:focus, .txtarea:focus { border-style: solid; border-color: #bababa; color: #444; }
+
+input.error, textarea.error { border-color: #973d3d; border-style: solid; background: #f0bebe; color: #a35959; }
+input.error:focus, textarea.error:focus { border-color: #973d3d; color: #a35959; }
+
+#send { 
+	float: right; display: block;cursor: pointer;border: none;
+	 background: url('../images/send-button.png') top left no-repeat;
+	 width: 175px; height: 49px;
+}
+
+*/
+
+
+.stepVideo {
+	position:absolute;
+	top: 430px;
+	right: 70px;
+	width:168px;
+	height:168px;
+	background:url(../images/watch-video.png) top left no-repeat;
+	display:block;	
+}
+
+
+.videoWrap {
+	width:720px;
+	height:304px;
+	margin:0 auto;
+}
+
+
+
+.faqWrapper {
+	width: 100%;
+	/*height: 400px;;*/
+	
+	max-width: 686px;
+}
+body.faqP {
+	background-color: #95959d;
+}
+.faqPage {
+	min-height: 800px;
+}
+
+
+.faqBtn{
+	position:absolute;
+	top: 430px;
+	left: 70px;
+	width:168px;
+	height:168px;
+	background:url(../images/faqBtn.png) top left no-repeat;
+	display:block;
+}
+
+.faqChoose {
+	display: block;
+	margin: 0 0 20px 0;
+}
