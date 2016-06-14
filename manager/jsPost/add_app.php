@@ -14,7 +14,7 @@ if(isset($_POST['name_app']))
 	$content_app=addslashes($_POST['content_app']);
 	$file_name = addslashes($_POST['image']); 
 	$hot = addslashes($_POST['hot']); 
-	$query_add_app=mysql_query("Insert into app_info(`name`,`version`,`size`,`link_offer`,`producer`,`link_img`,`OS`,`date_update`,`content`,`status`,`view`,`hot`) value('$name_app','$version','$size','$link_offer','$producer','$file_name','$os','$date_update','$content_app','$status','$view','$hot')");
+	$query_add_app=mysqli_query($conn,"Insert into app_info(`name`,`version`,`size`,`link_offer`,`producer`,`link_img`,`OS`,`date_update`,`content`,`status`,`view`,`hot`) value('$name_app','$version','$size','$link_offer','$producer','$file_name','$os','$date_update','$content_app','$status','$view','$hot')");
 	if($query_add_app)
 	{
 		echo "oke";

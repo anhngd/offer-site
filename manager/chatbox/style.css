@@ -29,18 +29,7 @@ margin:5px;
 #nav_link{
 	float:left}	
 #welcome{
-	float:right}		
-#content_chat{
-	word-wrap:break-word;
-	overflow:auto !important;
-	height:200px !important;
-	background:#fff auto !important;
-	width:100% auto !important;
-	}
-#content_chat a{
-	text-decoration:none;
-	color:blue;}	
-
+	float:right}
 #userlist{
 	overflow:auto;
 	height:350px;

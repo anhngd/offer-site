@@ -37,9 +37,11 @@ $view=0;
             <!-- form start -->
             <form class="form-horizontal">
               <div class="box-body">
+
                 <div class="form-group">
                   <label for="typeahead" class="col-sm-2 control-label">Name</label>
                   <div class="col-sm-10">
+                  	<input type="hidden" name="id_app" value="">
                     <input type="text" class="span6 typeahead form-control" id="typeahead" name="name_app" value="<?php echo $name_app;?>">
                   </div>
                 </div>
@@ -78,7 +80,7 @@ $view=0;
 				<div class="form-group">
 				  <label class="col-sm-2 control-label" for="typeahead">Hot:</label>
 				  <div class="col-sm-10">
-					<input type="checkbox" class="span6 typeahead form-control" id="typeahead" name="hot" value="ON">
+					<input type="checkbox" class="span6 typeahead" id="typeahead" name="hot" value="ON">
 				  </div>
 				</div>
 				
@@ -204,7 +206,7 @@ function show_form_edit_app(id_app)
 	$.post('./jsPost/form_edit_post.php',{id_app:id_app},function (data){
 		if(data=="error")
 		{
-			alert("Id app don't exist! Please refresh and try again!");
+			alert("This app does not exist! Please refresh and try again!");
 		}
 		else
 		{
@@ -230,7 +232,7 @@ function show_form_edit_app(id_app)
 			{
 				document.getElementsByName("hot")[0].checked = true;
 			}
-			document.getElementById("app_submit").innerHTML="Edit app";
+			document.getElementById("app_submit").innerHTML="UPDATE";
 		}
 	});
 }
@@ -270,13 +272,13 @@ function status_off(id)
 				document.getElementsByName("status_app")[0].value=0;
 				document.getElementsByName("view").innerHTML=0;
 				document.getElementById("form_images").innerHTML="";
-				document.getElementById("app_submit").innerHTML="Add app";
+				document.getElementById("app_submit").innerHTML="ADD";
 				CKEDITOR.instances['edit_app'].setData("");
 			});
 			
 			$("#app_submit").click(function(){
 				var type_submit=document.getElementById("app_submit").innerHTML;
-				if(type_submit=="Add app")
+				if(type_submit=="ADD")
 				{
 					var name_app=document.getElementsByName("name_app")[0].value;
 					var version=document.getElementsByName("version")[0].value;
@@ -323,7 +325,7 @@ function status_off(id)
 					});
 				}
 				else
-				if(type_submit=="Edit app")
+				if(type_submit=="UPDATE")
 				{
 					var id=document.getElementsByName("id_app")[0].value;
 					var name_app=document.getElementsByName("name_app")[0].value;

@@ -1,56 +1,58 @@
+<?php
+	$text = "";
+	if(isset($_GET['mods']))
+	{
+		$text = "Manager Mods";
+	}
+	else
+	if(isset($_GET['category']))
+	{
+		$text =  "Category";
+	}
+	else
+	if(isset($_GET['users']))
+	{
+		$text =  "Manager Users";
+	}
+	else
+	if(isset($_GET['networks']))
+	{
+		$text =  "Manager Networks";
+	}
+	else
+	if(isset($_GET['offers']))
+	{
+		$text =  "Manager Offers";
+	}
+	else
+	if(isset($_GET['report']))
+	{
+		if($_GET['report']=="clicks")
+		{
+			$text =  "Report Clicks";
+		}
+		else
+		if($_GET['report']=="leads")
+		{
+			$text =  "Report Leads";
+		}
+		else
+		if($_GET['report']=="offers")
+		{
+			$text =  "Report Offers";
+		}
+	}
+?>
+
 <section class="content-header">
-  <h1>
-    Dashboard
-    <small>Version 2.0</small>
+  <h1>  		
+    <?php echo $text; ?>
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
     <li>
     	<a href="#">
-			<?php 
-				if(isset($_GET['mods']))
-				{
-					echo "Manager Mods";
-				}
-				else
-				if(isset($_GET['category']))
-				{
-					echo "Category";
-				}
-				else
-				if(isset($_GET['users']))
-				{
-					echo "Manager Users";
-				}
-				else
-				if(isset($_GET['networks']))
-				{
-					echo "Manager Networks";
-				}
-				else
-				if(isset($_GET['offers']))
-				{
-					echo "Manager Offers";
-				}
-				else
-				if(isset($_GET['report']))
-				{
-					if($_GET['report']=="clicks")
-					{
-						echo "Report Clicks";
-					}
-					else
-					if($_GET['report']=="leads")
-					{
-						echo "Report Leads";
-					}
-					else
-					if($_GET['report']=="offers")
-					{
-						echo "Report Offers";
-					}
-				}
-			?>
+			<?php echo $text; ?>
 		</a>
 	</li>
   </ol>

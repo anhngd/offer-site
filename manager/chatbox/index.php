@@ -1,82 +1,10 @@
 
-<!-- Chat box -->
-  <div class="box box-success">
-    <div class="box-header">
-      <i class="fa fa-comments-o"></i>
-      <h3 class="box-title">Chat</h3>
-      <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
-        <div class="btn-group" data-toggle="btn-toggle" >
-          <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
-          <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
-        </div>
-      </div>
-    </div>
-    <div class="box-body chat" id="chat-box">
-      <!-- chat item -->
-      <div class="item">
-        <img src="/assest/dist/img/user4-128x128.jpg" alt="user image" class="online">
-        <p class="message">
-          <a href="#" class="name">
-            <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
-            Mike Doe
-          </a>
-          I would like to meet you to discuss the latest news about
-          the arrival of the new theme. They say it is going to be one the
-          best themes on the market
-        </p>
-        <div class="attachment">
-          <h4>Attachments:</h4>
-          <p class="filename">
-            Theme-thumbnail-image.jpg
-          </p>
-          <div class="pull-right">
-            <button class="btn btn-primary btn-sm btn-flat">Open</button>
-          </div>
-        </div><!-- /.attachment -->
-      </div><!-- /.item -->
-      <!-- chat item -->
-      <div class="item">
-        <img src="../manager/img/user3-128x128.jpg" alt="user image" class="offline">
-        <p class="message">
-          <a href="#" class="name">
-            <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
-            Alexander Pierce
-          </a>
-          I would like to meet you to discuss the latest news about
-          the arrival of the new theme. They say it is going to be one the
-          best themes on the market
-        </p>
-      </div><!-- /.item -->
-      <!-- chat item -->
-      <div class="item">
-        <img src="../manager/img/user2-160x160.jpg" alt="user image" class="offline">
-        <p class="message">
-          <a href="#" class="name">
-            <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
-            Susan Doe
-          </a>
-          I would like to meet you to discuss the latest news about
-          the arrival of the new theme. They say it is going to be one the
-          best themes on the market
-        </p>
-      </div><!-- /.item -->
-    </div><!-- /.chat -->
-    <div class="box-footer">
-      <div class="input-group">
-        <input class="form-control" placeholder="Type message...">
-        <div class="input-group-btn">
-          <button class="btn btn-success"><i class="fa fa-plus"></i></button>
-        </div>
-      </div>
-    </div>
-  </div><!-- /.box (chat box) -->
-
 <?php 
 define('CHIP_ROOT',true);
 include './chatbox/inc/config.php';
 include './chatbox/inc/functions.php';
+?>
 
-?> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="./chatbox/style.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="./chatbox/js/function.js"></script>
@@ -88,15 +16,17 @@ function ajax_load(url,id){
 	ajax.onreadystatechange(change_);
 	ajax.send(url);		
 	function change_(){
-		if(ajax.handler.readyState == 4 && ajax.handler.status == 200)
+		try{
+			if(ajax.handler.readyState == 4 && ajax.handler.status == 200)
 			document.getElementById(id).innerHTML = ajax.handler.responseText;
+		}catch(e){}		
 	}
 }
 function _load(value){
 	if(value == 'content_chat'){
 		ajax_load('./chatbox/content.php','content_chat');
 		var objDiv = document.getElementById("mainchat");
-		objDiv.scrollTop = objDiv.scrollHeight;
+		//objDiv.scrollTop = objDiv.scrollHeight;
 	}
 	else if(value == 'online')
 		ajax_load('./chatbox/online.php','userlist');	
@@ -109,13 +39,13 @@ function _refresh(value){
 		setTimeout("_load('online');_refresh('online');", <?php echo $config['refresh_online']?>000);
 	
 }
-var objDiv = document.getElementById("mainchat");
-objDiv.scrollTop = objDiv.scrollHeight;
+//var objDiv = document.getElementById("mainchat");
+//objDiv.scrollTop = objDiv.scrollHeight;
 
 $('#content_chat').each(function () {
     $(this).scrollTop($(this)[0].scrollHeight);
 });
-alert('@@');
+//alert('@@');
 </script>
 </head>
 
@@ -135,24 +65,105 @@ switch($param):
 	case 'logout': session_destroy(); print_cp_mess('./','',0);break;
 	default:
 ?>
-<div class="box blue span3" ontablet="span6" ondesktop="span3">
-	<div class="box-header">
-		<h2><i class="halflings-icon list"></i><span class="break"></span>MAIN CHAT</h2>
-		<div class="box-icon">
-			<a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
-			<a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
-		</div>
-	</div>
-	<div class="box-content">
-	<div id="mainchat" class="box span12 noMargin" ontablet="span6">
-		<div id="content_chat">
-				Loading...
-		</div><!--/#main-->
-	</div>
-			<div class="row-fluid" id="shoutform" >
-			<div id="upwrite">
-				<form name="chatform" method="post" id="chatbox_form" action="javascript:check_form();">
-					<div id="upstyle_chat" style="visibility:hidden;width:0px;height:0px">
+
+<!-- DIRECT CHAT -->
+  <div class="box box-warning direct-chat direct-chat-warning">
+    <div class="box-header with-border">
+      <h3 class="box-title">DIRECT CHAT</h3>
+      <div class="box-tools pull-right">
+        <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+        <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+      </div>
+    </div><!-- /.box-header -->
+    <div class="box-body">
+      <!-- Conversations are loaded here -->
+      <div class="direct-chat-messages" id="content_chat">        
+
+      </div><!--/.direct-chat-messages-->
+
+      <!-- Contacts are loaded here -->
+      <div class="direct-chat-contacts">
+        <ul class="contacts-list">
+          <li>
+            <a href="#">
+              <img class="contacts-list-img" src="../manager/assets/dist/img/user4-128x128.jpg">
+              <div class="contacts-list-info">
+                <span class="contacts-list-name">
+                  Count Dracula
+                  <small class="contacts-list-date pull-right">2/28/2015</small>
+                </span>
+                <span class="contacts-list-msg">How have you been? I was...</span>
+              </div><!-- /.contacts-list-info -->
+            </a>
+          </li><!-- End Contact Item -->
+          <li>
+            <a href="#">
+              <img class="contacts-list-img" src="../manager/assets/dist/img/user4-128x128.jpg">
+              <div class="contacts-list-info">
+                <span class="contacts-list-name">
+                  Sarah Doe
+                  <small class="contacts-list-date pull-right">2/23/2015</small>
+                </span>
+                <span class="contacts-list-msg">I will be waiting for...</span>
+              </div><!-- /.contacts-list-info -->
+            </a>
+          </li><!-- End Contact Item -->
+          <li>
+            <a href="#">
+              <img class="contacts-list-img" src="../manager/assets/dist/img/user4-128x128.jpg">
+              <div class="contacts-list-info">
+                <span class="contacts-list-name">
+                  Nadia Jolie
+                  <small class="contacts-list-date pull-right">2/20/2015</small>
+                </span>
+                <span class="contacts-list-msg">I'll call you back at...</span>
+              </div><!-- /.contacts-list-info -->
+            </a>
+          </li><!-- End Contact Item -->
+          <li>
+            <a href="#">
+              <img class="contacts-list-img" src="../manager/assets/dist/img/user4-128x128.jpg">
+              <div class="contacts-list-info">
+                <span class="contacts-list-name">
+                  Nora S. Vans
+                  <small class="contacts-list-date pull-right">2/10/2015</small>
+                </span>
+                <span class="contacts-list-msg">Where is your new...</span>
+              </div><!-- /.contacts-list-info -->
+            </a>
+          </li><!-- End Contact Item -->
+          <li>
+            <a href="#">
+              <img class="contacts-list-img" src="../manager/assets/dist/img/user4-128x128.jpg">
+              <div class="contacts-list-info">
+                <span class="contacts-list-name">
+                  John K.
+                  <small class="contacts-list-date pull-right">1/27/2015</small>
+                </span>
+                <span class="contacts-list-msg">Can I take a look at...</span>
+              </div><!-- /.contacts-list-info -->
+            </a>
+          </li><!-- End Contact Item -->
+          <li>
+            <a href="#">
+              <img class="contacts-list-img" src="../manager/assets/dist/img/user4-128x128.jpg">
+              <div class="contacts-list-info">
+                <span class="contacts-list-name">
+                  Kenneth M.
+                  <small class="contacts-list-date pull-right">1/4/2015</small>
+                </span>
+                <span class="contacts-list-msg">Never mind I found...</span>
+              </div><!-- /.contacts-list-info -->
+            </a>
+          </li><!-- End Contact Item -->
+        </ul><!-- /.contatcts-list -->
+      </div><!-- /.direct-chat-pane -->
+    </div><!-- /.box-body -->
+    <div class="box-footer">
+      <form name="chatform" method="post" id="chatbox_form" action="javascript:check_form();">
+      	<div id="upstyle_chat" style="visibility:hidden;width:0px;height:0px">
 						<input id="upb" onclick="upstyle_chat('b')" type="button" class="btn btnChat" style="font-weight:bold" value="B" />
 						<input id="upi" onclick="upstyle_chat('i')" type="button" class="btn btnChat" style="font-style:italic" value="I" />
 						<input id="upu" onclick="upstyle_chat('u')" type="button" class="btn btnChat" style="text-transform:uppercase" value="U" />
@@ -198,15 +209,17 @@ switch($param):
 						</select>
 						<input type="button" class="btn btnChat" value="Smilies" onclick="smiliepopup();" />
 					</div>
-						<input type="text" id="uptext" />
-						<input type="submit" id="submitform" class="btn btn-primary" value="Send" />
-						<input type="hidden" id="name" value="<?php echo $_SESSION['userName']?>" />
-						<input type="hidden" id="ip" value="<?php echo $_SERVER['REMOTE_ADDR']?>" />
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+        <div class="input-group">
+          <input type="text" name="message" id="uptext" placeholder="Type Message ..." class="form-control">
+          <span class="input-group-btn">
+            <input type="submit" id="submitform" class="btn btn-warning btn-flat" value="Send"/>
+            <input type="hidden" id="name" value="<?php echo $_SESSION['userName']?>" />
+			<input type="hidden" id="ip" value="<?php echo $_SERVER['REMOTE_ADDR']?>" />
+          </span>						
+        </div>
+      </form>
+    </div><!-- /.box-footer-->
+  </div><!--/.direct-chat -->
 
 <script>
 _load('content_chat');

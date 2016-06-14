@@ -36,8 +36,11 @@ if(isset($_POST['text'])&&trim($_POST['text'])){
 $content =  file('./data/content.txt');
 $count = count($content);
 $config['chatline'] = $config['chatline']>$count ? $count : $config['chatline'];
-$tempalte = '<div><span class="time">[{$time}]</span> <b>{$name}</b>: {$bcolor}{$bfont}{$bb}{$bu}{$bi}{$text}{$ei}{$eu}{$eb}{$efont}{$ecolor}</div>';
+$curUser = $_SESSION['userName'];
+$className = "";
+$template = '<div class="direct-chat-msg {$className}"><div class="direct-chat-info clearfix"><span class="direct-chat-name pull-left">{$name}</span><span class="direct-chat-timestamp pull-right">{$time}</span></div><img class="direct-chat-img" src="../manager/assets/dist/img/user4-128x128.jpg" alt="message user image"><div class="direct-chat-text">{$bcolor}{$bfont}{$bb}{$bu}{$bi}{$text}{$ei}{$eu}{$eb}{$efont}{$ecolor}</div></div>';
 for($i=$count-$config['chatline'];$i<=$count-1;$i++){
+	$className = "";
 	$value = $content[$i];
 	if(strlen($value)>5){
 		$x = explode('*|*',$value);
@@ -55,20 +58,20 @@ for($i=$count-$config['chatline'];$i<=$count-1;$i++){
 		$bfont 		= $x[8] ? '<span style=\'font-family:'.$x[8].'\'>' : '';
 		$efont 		= $x[8] ? '</span>' : '';
 		$ip 		= $x[9];
-		if(trim($x[10])=='isAdmin')
-		{
+		if(trim($x[10])=='isAdmin'){
 			$name='<b style="color:red">'.$x[2].'</b>';
 		}
 		else
-		if(trim($x[10])=="isMod")
-		{
+		if(trim($x[10])=="isMod"){
 			$name='<b style="color:blue">'.$x[2].'</b>';
 		}
-		else
-		{
+		else{
 			$name='<b style="color:black">'.$x[2].'</b>';
 		}
-		eval('$scontent .= "'.addslashes($tempalte).'";');
+
+		if($x[2] == $curUser)
+			$className = "right";
+		eval('$scontent .= "'.addslashes($template).'";');
 	}
 }
 $scontent = stripslashes($scontent);

@@ -17,14 +17,14 @@
 		$ip=trim(preg_replace("/\|(.+)/","",$ip));
 		if($check_box=="check_clicks")
 		{
-			$array_ip_query=mysql_query("Select ip from clicks where ip='$ip' and offerId='$offerId'");
+			$array_ip_query=mysqli_query($conn,"Select ip from clicks where ip='$ip' and offerId='$offerId'");
 		}
 		else
 		{
-			$array_ip_query=mysql_query("Select ip from leads where ip='$ip' and offerId='$offerId'");
+			$array_ip_query=mysqli_query($conn,"Select ip from leads where ip='$ip' and offerId='$offerId'");
 
 		}
-		if(mysql_num_rows($array_ip_query))
+		if(mysqli_num_rows($array_ip_query))
 		{
 			echo "error";
 		}
@@ -282,8 +282,8 @@
 		else
 		if($member->post_edit_user()==1)
 		{
-			$query_member=mysql_query("Select * from members where username='".$member->username."'");
-			$array_member=mysql_fetch_array($query_member);
+			$query_member=mysqli_query($conn,"Select * from members where username='".$member->username."'");
+			$array_member=mysqli_fetch_array($query_member);
 			if($array_member['banned']==1)
 			{
 				$banned="<div class='ban_".$array_member['userName']."'><center><a  style='color:red' class='mousepointer' onclick=\"unban_user('".$array_member['userName']."')\">UNBAN</a></center></div>";
@@ -331,8 +331,8 @@
 		else
 		if($member->post_edit_user()==1)
 		{
-			$query_member=mysql_query("Select * from members where username='".$member->username."'");
-			$array_member=mysql_fetch_array($query_member);
+			$query_member=mysqli_query($conn,"Select * from members where username='".$member->username."'");
+			$array_member=mysqli_fetch_array($query_member);
 			if($array_member['banned']==1)
 			{
 				$banned="<div class='ban_".$array_member['userName']."'><center><a  style='color:red' class='mousepointer' onclick=\"unban_user('".$array_member['userName']."')\">UNBAN</a></center></div>";
@@ -433,22 +433,22 @@
 		$mod->modname=addslashes($_POST['modname']);
 		$mod->password=md5(addslashes($_POST['password']));
 		$mod->email=addslashes($_POST['email']);
-		$query_mod=mysql_query("Select * from `mod` where modName='".$mod->modname."'");
-		$rows_mod=mysql_fetch_array($query_mod);
-		$getMember=mysql_query("Select sum(points) as sum_point,count(userName) as count_user from `members` where groupName='".$mod->modname."'");
-		if(mysql_num_rows($getMember))
+		$query_mod=mysqli_query($conn,"Select * from `mod` where modName='".$mod->modname."'");
+		$rows_mod=mysqli_fetch_array($query_mod);
+		$getMember=mysqli_query($conn,"Select sum(points) as sum_point,count(userName) as count_user from `members` where groupName='".$mod->modname."'");
+		if(mysqli_num_rows($getMember))
 		{
-			$array_getMember=mysql_fetch_array($getMember);
+			$array_getMember=mysqli_fetch_array($getMember);
 			$sum_point=$array_getMember['sum_point'];
 		}
 		else
 		{
 			$sum_point=0;
 		}
-		$cMember=mysql_query("Select count(userName) as count_user from members where groupName='".$mod->modname."'");
+		$cMember=mysqli_query($conn,"Select count(userName) as count_user from members where groupName='".$mod->modname."'");
 		if($cMember==true)
 		{
-			$countMember=mysql_fetch_array($cMember);
+			$countMember=mysqli_fetch_array($cMember);
 			$countName=$countMember['count_user'];
 		}
 		else
@@ -536,8 +536,8 @@
 		$offer->url = addslashes($_POST['url']);
 		$offer->image_url = addslashes($_POST['image_url']);
 		$offer->cc = addslashes($_POST['country']);
-		$query_network=mysql_query("Select * from networks where id='".addslashes($_POST['network'])."'");
-		$row_network=mysql_fetch_array($query_network);
+		$query_network=mysqli_query($conn,"Select * from networks where id='".addslashes($_POST['network'])."'");
+		$row_network=mysqli_fetch_array($query_network);
 		$offer->network = $row_network['name'];		
 		$offer->payout = addslashes($_POST['payout']);
 		$offer->os = addslashes($_POST['os']);
@@ -577,8 +577,8 @@
 		$offer->url = addslashes($_POST['url']);
 		$offer->image_url = addslashes($_POST['image_url']);
 		$offer->cc = addslashes($_POST['country']);
-		$query_network=mysql_query("Select * from networks where id='".addslashes($_POST['network'])."'");
-		$row_network=mysql_fetch_array($query_network);
+		$query_network=mysqli_query($conn,"Select * from networks where id='".addslashes($_POST['network'])."'");
+		$row_network=mysqli_fetch_array($query_network);
 		$offer->network = $row_network['name'];		
 		$offer->payout = addslashes($_POST['payout']);
 		$offer->os = addslashes($_POST['os']);
@@ -594,8 +594,8 @@
 		$offer->url = addslashes($_POST['url']);
 		$offer->image_url = addslashes($_POST['image_url']);
 		$offer->cc = addslashes($_POST['country']);
-		$query_network=mysql_query("Select * from networks where id='".addslashes($_POST['network'])."'");
-		$row_network=mysql_fetch_array($query_network);
+		$query_network=mysqli_query($conn,"Select * from networks where id='".addslashes($_POST['network'])."'");
+		$row_network=mysqli_fetch_array($query_network);
 		$offer->network = $row_network['name'];		
 		$offer->payout = addslashes($_POST['payout']);
 		$offer->os = addslashes($_POST['os']);
@@ -620,8 +620,8 @@
 		$offer->url = addslashes($_POST['url']);
 		$offer->image_url = addslashes($_POST['image_url']);
 		$offer->cc = addslashes($_POST['country']);
-		$query_network=mysql_query("Select * from networks where id='".addslashes($_POST['network'])."'");
-		$row_network=mysql_fetch_array($query_network);
+		$query_network=mysqli_query($conn,"Select * from networks where id='".addslashes($_POST['network'])."'");
+		$row_network=mysqli_fetch_array($query_network);
 		$offer->network = $row_network['name'];		
 		$offer->payout = addslashes($_POST['payout']);
 		$offer->os = addslashes($_POST['os']);
@@ -741,8 +741,8 @@
 		<select name="country_list" multiple="multiple" size="5" ondblclick="add_country(this.value,this.options[this.selectedIndex].text);">
 		<?php
 			$array_country=explode(",,",$array_offer['country']);
-			$queryCountry = mysql_query("SELECT name, cc FROM countries ORDER BY name") or die(mysql_error());
-			while($country = mysql_fetch_assoc($queryCountry)) 
+			$queryCountry = mysqli_query($conn,"SELECT name, cc FROM countries ORDER BY name") or die(mysqli_error());
+			while($country = mysqli_fetch_assoc($queryCountry)) 
 			{
 				if (!in_array($country['cc'],$array_country)) 
 				{
@@ -763,9 +763,9 @@
 		<td>
 		<select name="country_selected" multiple="multiple" size="5" ondblclick="remove_country(this.value,this.options[this.selectedIndex].text);">
 		<?php
-			$queryCountry = mysql_query("SELECT name, cc FROM countries ORDER BY name") or die(mysql_error());
+			$queryCountry = mysqli_query($conn,"SELECT name, cc FROM countries ORDER BY name") or die(mysqli_error());
 			$list_country="";
-			while($country = mysql_fetch_assoc($queryCountry)) {
+			while($country = mysqli_fetch_assoc($queryCountry)) {
 			if (in_array($country['cc'],$array_country)) 
 			{
 				$list_country.=$country['cc'].",";
@@ -783,8 +783,8 @@
 		Network *</label></td><td>
 		<select name="network">
 		<?php
-			$queryNetwork = mysql_query("SELECT name FROM networks ORDER BY name") or die(mysql_error());
-			while($network = mysql_fetch_assoc($queryNetwork)) {
+			$queryNetwork = mysqli_query($conn,"SELECT name FROM networks ORDER BY name") or die(mysqli_error());
+			while($network = mysqli_fetch_assoc($queryNetwork)) {
 			if($network['name'] == $array_offer['network']) {
 		?>	
 			<option value="<?php echo $network['name'];?>" selected="selected"><?php echo $network['name'];?></option>

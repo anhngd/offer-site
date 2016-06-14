@@ -71,7 +71,7 @@ function send_chat(){
 		}
 	}
 	var objDiv = document.getElementById("main");
-	objDiv.scrollTop = objDiv.scrollHeight;
+	//objDiv.scrollTop = objDiv.scrollHeight;
 }
 function reg_check(){
 	var user = document.getElementById('username');
@@ -104,9 +104,9 @@ function reg_submit(user,pass){
 	document.getElementById('main').innerHTML = 'Loading...';	
 	function send_reg_done()
 	{
-		if(ajax.handler.readyState == 4 && ajax.handler.status == 200){
+		try{if(ajax.handler.readyState == 4 && ajax.handler.status == 200){
 			document.getElementById('main').innerHTML = ajax.handler.responseText;
-		}
+		}}catch(e){Ư}
 	}
 }
 function log_check(){

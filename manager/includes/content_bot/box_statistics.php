@@ -18,7 +18,7 @@
 	<div class="col-md-3">
 		<div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Top member today</h3>
+              <h3 class="box-title">Top members today</h3>
               <div class="box-tools pull-right">
                 <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
               </div>
@@ -69,7 +69,7 @@
 	<div class="col-md-3">
 		<div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Top group today</h3>
+              <h3 class="box-title">Top groups today</h3>
               <div class="box-tools pull-right">
                 <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
               </div>
